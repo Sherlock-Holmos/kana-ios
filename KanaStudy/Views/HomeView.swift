@@ -5,6 +5,9 @@ struct HomeView: View {
 
     @EnvironmentObject private var srs: SRSStore
     @EnvironmentObject private var ability: AbilityProfile
+    @EnvironmentObject private var bkt: BKTStore
+    @EnvironmentObject private var goal: DailyGoalStore
+    @EnvironmentObject private var sync: SyncService
 
     @State private var counts: ContentService.Counts?
     @State private var recommendations: [Planner.Recommendation] = []
@@ -15,10 +18,11 @@ struct HomeView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     header
+                    goalCard
                     if let counts { countsCard(counts) }
                     quickActions
                     recommendationsCard
-                    if let loadError {
+                    if let loadError = {
                         Text(loadError)
                             .font(.footnote)
                             .foregroundStyle(.red)
@@ -28,6 +32,15 @@ struct HomeView: View {
                 .padding()
             }
             .navigationTitle("日语学习")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink {
+                        SettingsView()
+                    } label: {
+                        Image(systemName: "gearshape.fill")
+                    }
+                }
+            }
             .task { await load() }
         }
     }
@@ -40,6 +53,40 @@ struct HomeView: View {
             Text("开始今天的学习")
                 .font(.largeTitle.bold())
         }
+    }
+
+    private var goalCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            HStack {
+                Text("今日目标")
+                    .font(.headline)
+                Spacer()
+                Text("\(goal.reviewsToday) / \(goal.dailyGoal)")
+                    .font(.caption.monospacedDigit())
+                    .foregroundStyle(.secondary)
+            }
+            ProgressView(value: goal.goalProgress)
+                .tint(goal.goalHitToday ? .green : .accentColor)
+            HStack(spacing: 16) {
+                streakPill(value: goal.currentStreak, label: "连续天数")
+                streakPill(value: goal.goalStreak, label: "达成连续")
+            }
+        }
+        .padding()
+        .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 14))
+    }
+
+    private func streakPill(value: Int, label: String) -> some View {
+        VStack(spacing: 2) {
+            HStack(spacing: 4) {
+                Image(systemName: "flame.fill").foregroundStyle(.orange)
+                Text("\(value)").font(.headline.monospacedDigit())
+            }
+            Text(label).font(.caption2).foregroundStyle(.secondary)
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 6)
+        .background(Color(.systemBackground), in: RoundedRectangle(cornerRadius: 10))
     }
 
     private func countsCard(_ c: ContentService.Counts) -> some View {
@@ -95,7 +142,7 @@ struct HomeView: View {
 
     private var recommendationsCard: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("自适应推荐")
+            Text("BKT 自适应推荐")
                 .font(.headline)
             if recommendations.isEmpty {
                 Text("暂无推荐 — 去「学习」里走一遍即可生成。")
@@ -144,7 +191,7 @@ struct HomeView: View {
             counts = try ContentService.shared.counts()
             let kana = try ContentService.shared.loadKana()
             let vocab = try ContentService.shared.loadVocabulary()
-            recommendations = Planner(srs: srs, ability: ability)
+            recommendations = Planner(srs: srs, bkt: bkt, goal: goal)
                 .recommend(limit: 6, kana: kana, vocab: vocab)
             loadError = nil
         } catch {
@@ -152,4 +199,3 @@ struct HomeView: View {
         }
     }
 }
-

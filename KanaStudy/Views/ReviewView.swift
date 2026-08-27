@@ -3,6 +3,8 @@ import SwiftUI
 struct ReviewView: View {
     @EnvironmentObject private var srsStore: SRSStore
     @EnvironmentObject private var ability: AbilityProfile
+    @EnvironmentObject private var bkt: BKTStore
+    @EnvironmentObject private var goal: DailyGoalStore
 
     @State private var kanaItems: [KanaItem] = []
     @State private var vocabItems: [VocabularyItem] = []
@@ -38,11 +40,11 @@ struct ReviewView: View {
 
     private var summary: some View {
         let due = srsStore.dueItems().count
-        return HStack(spacing: 12) {
+        return HStack(spacing: 10) {
             stat("到期", value: due)
             stat("已跟踪", value: srsStore.totalTracked)
-            stat("总复习", value: srsStore.totalReviews)
-            stat("遗忘", value: srsStore.totalLapses)
+            stat("今日", value: goal.reviewsToday)
+            stat("连续", value: goal.currentStreak)
         }
     }
 
@@ -119,7 +121,11 @@ struct ReviewView: View {
                     srsStore.grade(id, as: grade)
                     if let snapshot = snapshot(for: id) {
                         ability.recordOutcomes(snapshot.abilities, success: success)
+                        for ab in snapshot.abilities {
+                            bkt.update(abilityId: ab, correct: success)
+                        }
                     }
+                    goal.recordReview()
                     revealed = false
                     advance()
                 } label: {
