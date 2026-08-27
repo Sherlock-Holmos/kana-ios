@@ -39,7 +39,7 @@ struct ProgressViewScreen: View {
 
                 Section("12 周热力图") {
                     HeatmapGrid(cells: goal.heatmapLast12Weeks())
-                        .frame(height: 120)
+                        .padding(.vertical, 6)
                 }
 
                 Section("学习进度") {
@@ -124,25 +124,64 @@ struct ProgressViewScreen: View {
 struct HeatmapGrid: View {
     let cells: [HeatmapCell]
     private let columns = 12
+    private let cellSize: CGFloat = 16
+    private let cellSpacing: CGFloat = 3
+    private let weekdayLabels = ["", "一", "", "三", "", "五", ""]   // 7 rows; labels for Mon/Wed/Fri
 
     var body: some View {
-        let rows = stride(from: 0, to: cells.count, by: columns).map {
-            Array(cells[$0..<min($0 + columns, cells.count)])
-        }
-
-        GeometryReader { geo in
-            let side = min(geo.size.width / CGFloat(columns), geo.size.height / CGFloat(rows.count))
-            VStack(spacing: 2) {
-                ForEach(0..<rows.count, id: \.self) { r in
-                    HStack(spacing: 2) {
-                        ForEach(0..<rows[r].count, id: \.self) { c in
-                            HeatmapCellView(cell: rows[r][c])
-                                .frame(width: side, height: side)
+        VStack(alignment: .leading, spacing: 4) {
+            ForEach(0..<7, id: \.self) { row in
+                HStack(spacing: cellSpacing) {
+                    Text(weekdayLabels[row])
+                        .font(.system(size: 9))
+                        .foregroundStyle(Color.textTertiary)
+                        .frame(width: 14, alignment: .trailing)
+                    ForEach(0..<columns, id: \.self) { col in
+                        let index = row * columns + col
+                        if index < cells.count {
+                            HeatmapCellView(cell: cells[index])
+                                .frame(width: cellSize, height: cellSize)
+                        } else {
+                            Color.clear
+                                .frame(width: cellSize, height: cellSize)
                         }
                     }
+                    Spacer(minLength: 0)
                 }
             }
+            legend
+                .padding(.top, 6)
         }
+    }
+
+    private var legend: some View {
+        HStack(spacing: 6) {
+            Text("少")
+                .font(.caption2)
+                .foregroundStyle(Color.textTertiary)
+            ForEach(intensityColors, id: \.self) { color in
+                RoundedRectangle(cornerRadius: 2)
+                    .fill(color)
+                    .frame(width: 10, height: 10)
+            }
+            Text("多")
+                .font(.caption2)
+                .foregroundStyle(Color.textTertiary)
+            Spacer()
+            Text("\(cells.count) 天")
+                .font(.caption2.monospacedDigit())
+                .foregroundStyle(Color.textTertiary)
+        }
+    }
+
+    private var intensityColors: [Color] {
+        [
+            HeatmapCellView.color(forCount: 0),
+            HeatmapCellView.color(forCount: 3),
+            HeatmapCellView.color(forCount: 10),
+            HeatmapCellView.color(forCount: 20),
+            HeatmapCellView.color(forCount: 30)
+        ]
     }
 }
 
@@ -150,15 +189,27 @@ struct HeatmapCellView: View {
     let cell: HeatmapCell
 
     var body: some View {
-        RoundedRectangle(cornerRadius: 2)
+        RoundedRectangle(cornerRadius: 3)
             .fill(color)
+            .overlay(
+                RoundedRectangle(cornerRadius: 3)
+                    .stroke(Color(.separator).opacity(0.3), lineWidth: 0.5)
+            )
     }
 
-    private var color: Color {
-        if cell.count == 0 { return Color(.tertiarySystemBackground) }
-        if cell.count >= 30 { return .green }
-        if cell.count >= 15 { return Color.green.opacity(0.6) }
-        if cell.count >= 5  { return Color.green.opacity(0.35) }
-        return Color.green.opacity(0.18)
+    fileprivate var color: Color {
+        Self.color(forCount: cell.count)
+    }
+
+    /// Map a per-day review count to a heatmap color.
+    /// Empty days now use a slightly tinted background so the grid is visible
+    /// against the Form/Section row background.
+    static func color(forCount count: Int) -> Color {
+        if count == 0  { return Color(.systemGray6) }
+        if count >= 30 { return .green }
+        if count >= 15 { return Color.green.opacity(0.7) }
+        if count >= 5  { return Color.green.opacity(0.4) }
+        if count >= 1  { return Color.green.opacity(0.22) }
+        return Color(.systemGray6)
     }
 }
