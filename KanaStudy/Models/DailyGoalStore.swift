@@ -8,8 +8,20 @@ final class DailyGoalStore: ObservableObject {
     @Published private(set) var activityByDay: [String: Int] = [:]   // "yyyy-MM-dd" → count
     @Published private(set) var totalReviews: Int = 0
 
+    // Daily Mission counters — keyed by "yyyy-MM-dd" so they auto-reset each day.
+    @Published private(set) var learnedByDay: [String: Int] = [:]
+    @Published private(set) var listeningByDay: [String: Int] = [:]
+    @Published private(set) var readingByDay: [String: Int] = [:]
+
+    /// Targets for the three Daily Mission rings on HomeView.
+    static let dailyLearnTarget = 5
+    static let dailyListenTarget = 1
+
     private let goalKey = "kana-study.daily.goal"
     private let activityKey = "kana-study.daily.activity.v1"
+    private let learnedKey = "kana-study.daily.learned.v1"
+    private let listeningKey = "kana-study.daily.listening.v1"
+    private let readingKey = "kana-study.daily.reading.v1"
     private let defaults = UserDefaults.standard
 
     init() { load() }
@@ -27,6 +39,46 @@ final class DailyGoalStore: ObservableObject {
         activityByDay[key, default: 0] += count
         totalReviews += count
         save()
+    }
+
+    func recordLearned(count: Int = 1, at date: Date = Date()) {
+        guard count > 0 else { return }
+        learnedByDay[dayKey(date), default: 0] += count
+        save()
+    }
+
+    func recordListening(at date: Date = Date()) {
+        listeningByDay[dayKey(date), default: 0] += 1
+        save()
+    }
+
+    func recordReading(at date: Date = Date()) {
+        readingByDay[dayKey(date), default: 0] += 1
+        save()
+    }
+
+    var learnedToday: Int { learnedByDay[dayKey(Date()), default: 0] }
+    var listeningToday: Int { listeningByDay[dayKey(Date()), default: 0] }
+    var readingToday: Int { readingByDay[dayKey(Date()), default: 0] }
+
+    var missionReviewProgress: Double {
+        guard dailyGoal > 0 else { return 0 }
+        return min(1.0, Double(reviewsToday) / Double(dailyGoal))
+    }
+
+    var missionLearnProgress: Double {
+        min(1.0, Double(learnedToday) / Double(Self.dailyLearnTarget))
+    }
+
+    var missionListenProgress: Double {
+        min(1.0, Double(listeningToday + readingToday) / Double(Self.dailyListenTarget))
+    }
+
+    /// True once all three mission rings hit 100%.
+    var dailyMissionComplete: Bool {
+        missionReviewProgress >= 1.0 &&
+        missionLearnProgress >= 1.0 &&
+        missionListenProgress >= 1.0
     }
 
     var reviewsToday: Int {
@@ -100,19 +152,31 @@ final class DailyGoalStore: ObservableObject {
     private func load() {
         let stored = defaults.integer(forKey: goalKey)
         if stored > 0 { dailyGoal = stored }
-        if let data = defaults.data(forKey: activityKey),
-           let decoded = try? JSONDecoder().decode([String: Int].self, from: data) {
-            activityByDay = decoded
-            totalReviews = decoded.values.reduce(0, +)
-        }
+        activityByDay = decodeIntDict(activityKey)
+        learnedByDay  = decodeIntDict(learnedKey)
+        listeningByDay = decodeIntDict(listeningKey)
+        readingByDay   = decodeIntDict(readingKey)
+        totalReviews = activityByDay.values.reduce(0, +)
     }
 
     private func save() {
         defaults.set(dailyGoal, forKey: goalKey)
-        if let encoded = try? JSONEncoder().encode(activityByDay) {
-            defaults.set(encoded, forKey: activityKey)
-            SyncTrigger.shared.bump()
-        }
+        encodeIntDict(activityByDay, forKey: activityKey)
+        encodeIntDict(learnedByDay,  forKey: learnedKey)
+        encodeIntDict(listeningByDay, forKey: listeningKey)
+        encodeIntDict(readingByDay,   forKey: readingKey)
+        SyncTrigger.shared.bump()
+    }
+
+    private func decodeIntDict(_ key: String) -> [String: Int] {
+        guard let data = defaults.data(forKey: key),
+              let decoded = try? JSONDecoder().decode([String: Int].self, from: data) else { return [:] }
+        return decoded
+    }
+
+    private func encodeIntDict(_ dict: [String: Int], forKey key: String) {
+        guard let encoded = try? JSONEncoder().encode(dict) else { return }
+        defaults.set(encoded, forKey: key)
     }
 
     // MARK: - Server merge helpers

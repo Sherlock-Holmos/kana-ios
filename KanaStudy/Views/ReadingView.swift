@@ -40,6 +40,8 @@ struct ReadingListView: View {
 
 struct ReadingDetailView: View {
     let item: ReadingItem
+    @EnvironmentObject private var goal: DailyGoalStore
+
     @State private var selectedAnswer: String?
     @State private var revealed = false
     @State private var autoDismissTask: Task<Void, Never>?
@@ -121,6 +123,7 @@ struct ReadingDetailView: View {
         .onDisappear { autoDismissTask?.cancel() }
         .sensoryFeedback(.success, trigger: successTrigger)
         .sensoryFeedback(.error, trigger: errorTrigger)
+        .onAppear { goal.recordReading() }
     }
 
     private func scheduleAutoDismiss() {

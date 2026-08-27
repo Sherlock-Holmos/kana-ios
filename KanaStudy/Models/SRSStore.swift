@@ -63,6 +63,10 @@ final class SRSStore: ObservableObject {
     private let storeKey = "kana-study.srs.cards.v2"
     private let defaults = UserDefaults.standard
 
+    /// Weak reference to DailyGoalStore so enrolling a card bumps the daily-learned counter.
+    /// Set by KanaStudyApp.attach() — keeps SRSStore decoupled from goal-store concrete type.
+    weak var goalStore: DailyGoalStore?
+
     init() {
         load()
     }
@@ -93,6 +97,7 @@ final class SRSStore: ObservableObject {
     func enroll(_ itemId: String) {
         guard cards[itemId] == nil else { return }
         cards[itemId] = .new(id: itemId)
+        goalStore?.recordLearned()
         save()
     }
 
