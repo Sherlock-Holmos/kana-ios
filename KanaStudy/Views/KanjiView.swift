@@ -30,7 +30,7 @@ struct KanjiListView: View {
     }
 
     private func load() async {
-        do { items = try ContentService.shared.loadKanji() }
+        do { items = try await ContentService.shared.loadKanji() }
         catch { self.error = "\(error)" }
     }
 }

@@ -35,7 +35,7 @@ struct GrammarListView: View {
     }
 
     private func load() async {
-        do { items = try ContentService.shared.loadGrammar() }
+        do { items = try await ContentService.shared.loadGrammar() }
         catch { self.error = "\(error)" }
     }
 }

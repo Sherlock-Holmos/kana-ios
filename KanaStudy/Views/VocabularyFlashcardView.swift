@@ -139,7 +139,7 @@ struct VocabularyFlashcardView: View {
 
     private func load() async {
         do {
-            items = try ContentService.shared.loadVocabulary()
+            items = try await ContentService.shared.loadVocabulary()
             error = nil
         } catch {
             self.error = "词汇加载失败：\(error)"

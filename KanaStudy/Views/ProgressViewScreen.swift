@@ -115,7 +115,7 @@ struct ProgressViewScreen: View {
     }
 
     private func load() async {
-        counts = try? ContentService.shared.counts()
+        counts = try? await ContentService.shared.counts()
     }
 }
 

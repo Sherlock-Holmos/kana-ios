@@ -7,7 +7,9 @@ enum ContentError: Error {
 
 // MARK: - Content Service
 
-final class ContentService {
+/// Actor-isolated content loader. All caches live inside actor state, so concurrent
+/// callers (background tasks, SwiftUI `.task`, sync engine, etc.) cannot race.
+actor ContentService {
     static let shared = ContentService()
 
     private var kanaCache: [KanaItem]?
@@ -81,7 +83,7 @@ final class ContentService {
 
     // MARK: - Convenience
 
-    struct Counts {
+    struct Counts: Sendable {
         let kana: Int
         let vocabulary: Int
         let grammar: Int

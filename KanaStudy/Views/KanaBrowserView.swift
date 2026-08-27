@@ -42,7 +42,7 @@ struct KanaBrowserView: View {
 
     private func load() async {
         do {
-            items = try ContentService.shared.loadKana()
+            items = try await ContentService.shared.loadKana()
             error = nil
         } catch {
             self.error = "假名加载失败：\(error)"

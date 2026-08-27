@@ -273,8 +273,8 @@ struct ReviewView: View {
 
     private func prepare() async {
         do {
-            kanaItems = try ContentService.shared.loadKana()
-            vocabItems = try ContentService.shared.loadVocabulary()
+            kanaItems = try await ContentService.shared.loadKana()
+            vocabItems = try await ContentService.shared.loadVocabulary()
             error = nil
             seedIfNeeded()
             advance()

@@ -190,8 +190,8 @@ struct HomeView: View {
 
     private func load() async {
         do {
-            let kana = try ContentService.shared.loadKana()
-            let vocab = try ContentService.shared.loadVocabulary()
+            let kana = try await ContentService.shared.loadKana()
+            let vocab = try await ContentService.shared.loadVocabulary()
             recommendations = Planner(srs: srs, bkt: bkt, goal: goal)
                 .recommend(limit: 6, kana: kana, vocab: vocab)
             loadError = nil

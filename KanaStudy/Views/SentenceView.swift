@@ -34,7 +34,7 @@ struct SentenceListView: View {
     }
 
     private func load() async {
-        do { items = try ContentService.shared.loadSentences() }
+        do { items = try await ContentService.shared.loadSentences() }
         catch { self.error = "\(error)" }
     }
 }

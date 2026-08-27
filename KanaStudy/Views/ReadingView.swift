@@ -33,7 +33,7 @@ struct ReadingListView: View {
     }
 
     private func load() async {
-        do { items = try ContentService.shared.loadReading() }
+        do { items = try await ContentService.shared.loadReading() }
         catch { self.error = "\(error)" }
     }
 }

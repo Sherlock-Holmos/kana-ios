@@ -206,7 +206,7 @@ struct SpeakingView: View {
 
     private func load() async {
         do {
-            let all = try ContentService.shared.loadSentences()
+            let all = try await ContentService.shared.loadSentences()
             // Prefer short sentences for shadowing
             sentences = all.filter { $0.jp.count <= 30 }
             error = nil

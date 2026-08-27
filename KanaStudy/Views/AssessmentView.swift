@@ -178,9 +178,9 @@ struct AssessmentView: View {
 
     private func prepare() async {
         do {
-            bank = try ContentService.shared.loadQuestionBank()
-            kana = try ContentService.shared.loadKana()
-            vocab = try ContentService.shared.loadVocabulary()
+            bank = try await ContentService.shared.loadQuestionBank()
+            kana = try await ContentService.shared.loadKana()
+            vocab = try await ContentService.shared.loadVocabulary()
             let session = ExerciseEngine.shared.sessionSample(bank: bank, count: 10)
             prompts = session.compactMap { variant in
                 ExerciseEngine.shared.makeExercise(for: variant, kana: kana, vocab: vocab)
