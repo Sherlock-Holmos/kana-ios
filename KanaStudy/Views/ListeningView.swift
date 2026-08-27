@@ -14,7 +14,7 @@ struct ListeningListView: View {
                         .font(.headline)
                     Text(item.transcript)
                         .font(.footnote)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Color.textSecondary)
                         .lineLimit(2)
                 }
                 .padding(.vertical, 4)
@@ -108,7 +108,7 @@ struct ListeningDetailView: View {
                     Divider()
                     Text(translation)
                         .font(.body)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Color.textSecondary)
                 }
 
                 if revealed {

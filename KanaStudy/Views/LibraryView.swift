@@ -38,7 +38,7 @@ struct LibraryView: View {
             Text(title)
             Spacer()
             Text(subtitle)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Color.textSecondary)
         }
     }
 

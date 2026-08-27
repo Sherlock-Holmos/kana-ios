@@ -21,7 +21,7 @@ struct SettingsView: View {
                         Text("已登录")
                         Spacer()
                         Text(user.email)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Color.textSecondary)
                     }
                     Button("登出", role: .destructive) {
                         sync.signOut()
@@ -57,7 +57,7 @@ struct SettingsView: View {
                 } else {
                     Text("后端未配置")
                         .font(.footnote)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Color.textSecondary)
                 }
             } header: {
                 Text("账号")
@@ -65,7 +65,7 @@ struct SettingsView: View {
                 if settings.isConfigured {
                     Text("后端：\(settings.supabaseURL)")
                         .font(.caption.monospaced())
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Color.textSecondary)
                 }
             }
 
@@ -127,10 +127,10 @@ struct SettingsView: View {
                         Text("上次同步")
                         Spacer()
                         Text(last.formatted(date: .abbreviated, time: .shortened))
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Color.textSecondary)
                     }
                 } else {
-                    Text("尚未同步").foregroundStyle(.secondary)
+                    Text("尚未同步").foregroundStyle(Color.textSecondary)
                 }
                 if let err = sync.lastError {
                     Text(err)

@@ -15,7 +15,7 @@ struct GrammarListView: View {
                     if !item.primaryMeaning.isEmpty {
                         Text(item.primaryMeaning)
                             .font(.footnote)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Color.textSecondary)
                             .lineLimit(2)
                     }
                 }
@@ -66,7 +66,7 @@ struct GrammarDetailView: View {
                 if let tags = item.tags, !tags.isEmpty {
                     Text(tags.map { "#\($0)" }.joined(separator: " "))
                         .font(.footnote)
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(Color.textTertiary)
                 }
             }
             .padding()

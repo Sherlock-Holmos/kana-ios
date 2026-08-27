@@ -45,7 +45,7 @@ private struct KanjiTile: View {
             if !item.primaryMeaning.isEmpty {
                 Text(item.primaryMeaning)
                     .font(.caption2)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Color.textSecondary)
                     .lineLimit(1)
             }
         }
@@ -103,7 +103,7 @@ struct KanjiDetailView: View {
             Spacer()
             Text(readings.joined(separator: " · "))
                 .font(.body.monospaced())
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Color.textSecondary)
         }
         .padding()
         .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 12))

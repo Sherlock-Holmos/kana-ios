@@ -51,7 +51,7 @@ struct ReviewView: View {
     private func stat(_ label: String, value: Int) -> some View {
         VStack(spacing: 4) {
             Text("\(value)").font(.title3.bold())
-            Text(label).font(.caption).foregroundStyle(.secondary)
+            Text(label).font(.caption).foregroundStyle(Color.textSecondary)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 10)
@@ -95,7 +95,7 @@ struct ReviewView: View {
                 .font(.system(size: 64, weight: .medium, design: .serif))
             Text(s.subtitle)
                 .font(.title3)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Color.textSecondary)
             if revealed {
                 Divider().padding(.vertical, 6)
                 Text(s.back)
@@ -158,7 +158,7 @@ struct ReviewView: View {
             Text("去「学习」里找新内容记一遍，下一次复习会自动排上。")
                 .font(.footnote)
                 .multilineTextAlignment(.center)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Color.textSecondary)
                 .padding(.horizontal)
         }
         .padding(.top, 32)

@@ -49,7 +49,7 @@ struct HomeView: View {
         VStack(alignment: .leading, spacing: 6) {
             Text("N5 自适应学习系统")
                 .font(.headline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Color.textSecondary)
             Text("开始今天的学习")
                 .font(.largeTitle.bold())
         }
@@ -63,7 +63,7 @@ struct HomeView: View {
                 Spacer()
                 Text("\(goal.reviewsToday) / \(goal.dailyGoal)")
                     .font(.caption.monospacedDigit())
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Color.textSecondary)
             }
             ProgressView(value: goal.goalProgress)
                 .tint(goal.goalHitToday ? .green : .accentColor)
@@ -82,7 +82,7 @@ struct HomeView: View {
                 Image(systemName: "flame.fill").foregroundStyle(.orange)
                 Text("\(value)").font(.headline.monospacedDigit())
             }
-            Text(label).font(.caption2).foregroundStyle(.secondary)
+            Text(label).font(.caption2).foregroundStyle(Color.textSecondary)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 6)
@@ -114,7 +114,7 @@ struct HomeView: View {
                 .font(.title2.bold())
             Text(label)
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Color.textSecondary)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 8)
@@ -147,7 +147,7 @@ struct HomeView: View {
             if recommendations.isEmpty {
                 Text("暂无推荐 — 去「学习」里走一遍即可生成。")
                     .font(.footnote)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Color.textSecondary)
             } else {
                 ForEach(recommendations) { rec in
                     HStack {
@@ -176,11 +176,11 @@ struct HomeView: View {
                 .frame(width: 32)
             VStack(alignment: .leading, spacing: 2) {
                 Text(title).font(.body.weight(.semibold))
-                Text(subtitle).font(.caption).foregroundStyle(.secondary)
+                Text(subtitle).font(.caption).foregroundStyle(Color.textSecondary)
             }
             Spacer()
             Image(systemName: "chevron.right")
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(Color.textTertiary)
         }
         .padding()
         .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 12))

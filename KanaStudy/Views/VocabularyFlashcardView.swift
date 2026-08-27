@@ -49,7 +49,7 @@ struct VocabularyFlashcardView: View {
                 .font(.system(size: 56, weight: .medium, design: .serif))
             Text(item.reading)
                 .font(.title3)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Color.textSecondary)
             HStack(spacing: 8) {
                 Button {
                     AudioService.shared.speak(text: item.expression, language: "ja-JP")
@@ -65,13 +65,13 @@ struct VocabularyFlashcardView: View {
                 if item.meanings.count > 1 {
                     Text(item.meanings.dropFirst().joined(separator: "；"))
                         .font(.footnote)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Color.textSecondary)
                         .multilineTextAlignment(.center)
                 }
                 if let pos = item.partOfSpeech {
                     Text(pos)
                         .font(.caption)
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(Color.textTertiary)
                         .padding(.top, 4)
                 }
             } else {
@@ -108,7 +108,7 @@ struct VocabularyFlashcardView: View {
 
             Text("\(index + 1) / \(items.count)")
                 .font(.caption.monospacedDigit())
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Color.textSecondary)
 
             Button {
                 next()

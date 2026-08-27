@@ -15,7 +15,7 @@ struct SentenceListView: View {
                     if let reading = item.reading {
                         Text(reading)
                             .font(.footnote)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Color.textSecondary)
                     }
                 }
                 .padding(.vertical, 4)
@@ -53,7 +53,7 @@ struct SentenceDetailView: View {
                 if let reading = item.reading {
                     Text(reading)
                         .font(.title3)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Color.textSecondary)
                 }
 
                 HStack(spacing: 12) {

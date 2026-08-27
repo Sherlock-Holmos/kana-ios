@@ -16,7 +16,7 @@ struct ProgressViewScreen: View {
                         Text("今日复习")
                         Spacer()
                         Text("\(goal.reviewsToday) / \(goal.dailyGoal)")
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Color.textSecondary)
                     }
                     HStack {
                         Text("连续天数")
@@ -34,7 +34,7 @@ struct ProgressViewScreen: View {
                         Text("累计复习")
                         Spacer()
                         Text("\(goal.totalReviews)")
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Color.textSecondary)
                     }
                 }
 
@@ -83,7 +83,7 @@ struct ProgressViewScreen: View {
                                     .tint(masteryColor(m.pMaster))
                                 Text("已答 \(m.opportunities) 次")
                                     .font(.caption2)
-                                    .foregroundStyle(.tertiary)
+                                    .foregroundStyle(Color.textTertiary)
                             }
                             .padding(.vertical, 2)
                         }
@@ -120,7 +120,7 @@ struct ProgressViewScreen: View {
         HStack {
             Text(title)
             Spacer()
-            Text("\(value)").foregroundStyle(.secondary)
+            Text("\(value)").foregroundStyle(Color.textSecondary)
         }
     }
 

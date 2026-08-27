@@ -14,7 +14,7 @@ struct ReadingListView: View {
                         .font(.headline)
                     Text(item.passage)
                         .font(.footnote)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Color.textSecondary)
                         .lineLimit(2)
                 }
                 .padding(.vertical, 4)
@@ -91,7 +91,7 @@ struct ReadingDetailView: View {
                     Divider()
                     Text(translation)
                         .font(.body)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Color.textSecondary)
                 }
 
                 if revealed {

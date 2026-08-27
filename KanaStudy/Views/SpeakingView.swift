@@ -57,12 +57,12 @@ struct SpeakingView: View {
             if let reading = s.reading {
                 Text(reading)
                     .font(.title3)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Color.textSecondary)
             }
             if let zh = s.zh {
                 Text(zh)
                     .font(.footnote)
-                    .foregroundStyle(.tertiary)
+                    .foregroundStyle(Color.textTertiary)
                     .multilineTextAlignment(.center)
             }
         }

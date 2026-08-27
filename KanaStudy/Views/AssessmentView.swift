@@ -66,7 +66,7 @@ struct AssessmentView: View {
                 .padding()
             Text("Skill: \(p.skill)")
                 .font(.caption2)
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(Color.textTertiary)
         }
         .frame(maxWidth: .infinity, minHeight: 120)
         .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 14))
