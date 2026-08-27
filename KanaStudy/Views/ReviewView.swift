@@ -11,6 +11,7 @@ struct ReviewView: View {
     @State private var currentId: String?
     @State private var revealed: Bool = false
     @State private var error: String?
+    @State private var dragOffset: CGSize = .zero
 
     var body: some View {
         NavigationStack {
@@ -102,6 +103,8 @@ struct ReviewView: View {
                     .font(.title3)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
+                swipeLegend
+                    .padding(.top, 6)
             } else {
                 Button("显示答案") { revealed = true }
                     .buttonStyle(.bordered)
@@ -111,32 +114,111 @@ struct ReviewView: View {
         .frame(maxWidth: .infinity, minHeight: 260)
         .padding(20)
         .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 18))
+        .overlay(swipeHint)
+        .offset(dragOffset)
+        .opacity(1 - min(1, Double(abs(dragOffset.width)) / 220.0))
+        .animation(.spring(response: 0.35, dampingFraction: 0.7), value: dragOffset)
+        .gesture(swipeGesture)
+    }
+
+    @ViewBuilder
+    private var swipeHint: some View {
+        if revealed {
+            let dx = Double(dragOffset.width)
+            let dy = Double(dragOffset.height)
+            HStack {
+                if dx < -40 { hintChip("重来", color: .red,   icon: "arrow.left") }
+                if dx > 40  { hintChip("记得", color: .blue,  icon: "arrow.right") }
+                Spacer()
+                if dy > 40  { hintChip("困难", color: .orange, icon: "arrow.down") }
+                if dy < -40 { hintChip("简单", color: .green, icon: "arrow.up") }
+            }
+            .font(.caption.bold())
+            .padding(.horizontal, 4)
+        }
+    }
+
+    private func hintChip(_ text: String, color: Color, icon: String) -> some View {
+        Label(text, systemImage: icon)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 6)
+            .background(color.opacity(0.18), in: Capsule())
+            .foregroundStyle(color)
+    }
+
+    private var swipeLegend: some View {
+        HStack(spacing: 6) {
+            miniArrow("←", "重来", .red)
+            miniArrow("↓", "困难", .orange)
+            miniArrow("↑", "简单", .green)
+            miniArrow("→", "记得", .blue)
+        }
+        .font(.caption2)
+    }
+
+    private func miniArrow(_ symbol: String, _ text: String, _ color: Color) -> some View {
+        HStack(spacing: 2) {
+            Text(symbol).bold().foregroundStyle(color)
+            Text(text).foregroundStyle(Color.textSecondary)
+        }
+    }
+
+    private var swipeGesture: some Gesture {
+        DragGesture()
+            .onChanged { v in dragOffset = v.translation }
+            .onEnded { v in
+                defer {
+                    withAnimation(.spring(response: 0.35, dampingFraction: 0.7)) {
+                        dragOffset = .zero
+                    }
+                }
+                guard revealed, let id = currentId else { return }
+                let dx = v.translation.width
+                let dy = v.translation.height
+                let threshold: CGFloat = 80
+                let action: SRSGrade?
+                if abs(dx) > abs(dy) {
+                    action = dx < -threshold ? .again : dx > threshold ? .good : nil
+                } else {
+                    action = dy < -threshold ? .easy : dy > threshold ? .hard : nil
+                }
+                if let g = action { grade(id, as: g) }
+            }
     }
 
     private func gradeButtons(id: String) -> some View {
         HStack(spacing: 8) {
             ForEach(SRSGrade.allCases) { grade in
                 Button {
-                    let success = grade != .again
-                    srsStore.grade(id, as: grade)
-                    if let snapshot = snapshot(for: id) {
-                        ability.recordOutcomes(snapshot.abilities, success: success)
-                        for ab in snapshot.abilities {
-                            bkt.update(abilityId: ab, correct: success)
-                        }
-                    }
-                    goal.recordReview()
-                    revealed = false
-                    advance()
+                    grade(id, as: grade)
                 } label: {
-                    Text(grade.label)
-                        .font(.subheadline.bold())
-                        .frame(maxWidth: .infinity, minHeight: 44)
+                    VStack(spacing: 2) {
+                        Image(systemName: directionSymbol(grade))
+                            .font(.caption2)
+                            .opacity(0.8)
+                        Text(grade.label)
+                            .font(.subheadline.bold())
+                    }
+                    .frame(maxWidth: .infinity, minHeight: 44)
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(color(for: grade))
             }
         }
+    }
+
+    private func grade(_ id: String, as grade: SRSGrade) {
+        let success = grade != .again
+        srsStore.grade(id, as: grade)
+        if let snapshot = snapshot(for: id) {
+            ability.recordOutcomes(snapshot.abilities, success: success)
+            for ab in snapshot.abilities {
+                bkt.update(abilityId: ab, correct: success)
+            }
+        }
+        goal.recordReview()
+        revealed = false
+        advance()
     }
 
     private func color(for grade: SRSGrade) -> Color {
@@ -145,6 +227,15 @@ struct ReviewView: View {
         case .hard:  return .orange
         case .good:  return .blue
         case .easy:  return .green
+        }
+    }
+
+    private func directionSymbol(_ grade: SRSGrade) -> String {
+        switch grade {
+        case .again: return "arrow.left"
+        case .good:  return "arrow.right"
+        case .easy:  return "arrow.up"
+        case .hard:  return "arrow.down"
         }
     }
 
