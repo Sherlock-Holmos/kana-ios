@@ -1,0 +1,3085 @@
+[
+  {
+    "id": "grammar:desu",
+    "type": "grammar",
+    "pattern": "～です",
+    "meanings": [
+      "是……/表示判断或礼貌陈述"
+    ],
+    "formation": [
+      "名词 + です",
+      "な形容词 + です"
+    ],
+    "level": "N5",
+    "explanation": "礼貌体最基础的判断句。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.particles"
+      ]
+    }
+  },
+  {
+    "id": "grammar:dewa_arimasen",
+    "type": "grammar",
+    "pattern": "～ではありません",
+    "meanings": [
+      "不是……"
+    ],
+    "formation": [
+      "名词 + ではありません",
+      "な形容词 + ではありません"
+    ],
+    "level": "N5",
+    "explanation": "です 的礼貌否定。口语常用 じゃありません。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.particles"
+      ]
+    }
+  },
+  {
+    "id": "grammar:ka",
+    "type": "grammar",
+    "pattern": "～か",
+    "meanings": [
+      "……吗？/疑问"
+    ],
+    "formation": [
+      "句子 + か"
+    ],
+    "level": "N5",
+    "explanation": "放在礼貌句末构成疑问。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:no_possessive",
+    "type": "grammar",
+    "pattern": "N1 の N2",
+    "meanings": [
+      "N1 的 N2/所属或修饰"
+    ],
+    "formation": [
+      "名词 + の + 名词"
+    ],
+    "level": "N5",
+    "explanation": "の 可以表示所属、类别、内容等关系。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:mo",
+    "type": "grammar",
+    "pattern": "～も",
+    "meanings": [
+      "也……"
+    ],
+    "formation": [
+      "名词 + も"
+    ],
+    "level": "N5",
+    "explanation": "替代 は/が 等位置时表示“也”。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.particles"
+      ]
+    }
+  },
+  {
+    "id": "grammar:to_noun",
+    "type": "grammar",
+    "pattern": "N1 と N2",
+    "meanings": [
+      "N1 和 N2"
+    ],
+    "formation": [
+      "名词 + と + 名词"
+    ],
+    "level": "N5",
+    "explanation": "列举全部项目时常用 と。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:wa_topic",
+    "type": "grammar",
+    "pattern": "～は",
+    "meanings": [
+      "提示主题：至于……"
+    ],
+    "formation": [
+      "名词 + は + 述语"
+    ],
+    "level": "N5",
+    "explanation": "は 写作 は，但作为助词读 wa。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.particles"
+      ]
+    }
+  },
+  {
+    "id": "grammar:ga_subject",
+    "type": "grammar",
+    "pattern": "～が",
+    "meanings": [
+      "标记主语/新信息"
+    ],
+    "formation": [
+      "名词 + が + 述语"
+    ],
+    "level": "N5",
+    "explanation": "存在句、能力、喜好等结构中很常见。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.particles"
+      ]
+    }
+  },
+  {
+    "id": "grammar:wo",
+    "type": "grammar",
+    "pattern": "～を",
+    "meanings": [
+      "标记动作对象"
+    ],
+    "formation": [
+      "名词 + を + 动词"
+    ],
+    "level": "N5",
+    "explanation": "を 作为助词通常读 o。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.particles"
+      ]
+    }
+  },
+  {
+    "id": "grammar:ni_time",
+    "type": "grammar",
+    "pattern": "时间 + に",
+    "meanings": [
+      "在……时间"
+    ],
+    "formation": [
+      "具体时间 + に + 动词"
+    ],
+    "level": "N5",
+    "explanation": "今日、明日等相对时间通常不用 に。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:ni_destination",
+    "type": "grammar",
+    "pattern": "地点 + に",
+    "meanings": [
+      "去/来到某地点"
+    ],
+    "formation": [
+      "地点 + に + 行く/来る/帰る"
+    ],
+    "level": "N5",
+    "explanation": "表示移动的目的地。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:de_place",
+    "type": "grammar",
+    "pattern": "地点 + で",
+    "meanings": [
+      "在某地进行动作"
+    ],
+    "formation": [
+      "地点 + で + 动作动词"
+    ],
+    "level": "N5",
+    "explanation": "和存在地点的 に 区分。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:e_direction",
+    "type": "grammar",
+    "pattern": "地点 + へ",
+    "meanings": [
+      "朝向……"
+    ],
+    "formation": [
+      "地点 + へ + 行く/来る/帰る"
+    ],
+    "level": "N5",
+    "explanation": "へ 作助词时读 e，强调方向。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:kara_made",
+    "type": "grammar",
+    "pattern": "～から ～まで",
+    "meanings": [
+      "从……到……"
+    ],
+    "formation": [
+      "起点 + から + 终点 + まで"
+    ],
+    "level": "N5",
+    "explanation": "可用于时间和地点范围。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:arimasu_imasu",
+    "type": "grammar",
+    "pattern": "～があります / います",
+    "meanings": [
+      "有……/存在……"
+    ],
+    "formation": [
+      "无生命 + があります",
+      "有生命 + がいます"
+    ],
+    "level": "N5",
+    "explanation": "ある 用于物，いる 用于人和动物。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.particles",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:location_ni",
+    "type": "grammar",
+    "pattern": "地点 + に N がある/いる",
+    "meanings": [
+      "某地有……"
+    ],
+    "formation": [
+      "地点 + に + 名词 + が + あります/います"
+    ],
+    "level": "N5",
+    "explanation": "表示存在地点。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:i_adjective",
+    "type": "grammar",
+    "pattern": "い形容词句",
+    "meanings": [
+      "……是……的"
+    ],
+    "formation": [
+      "い形容词 + です",
+      "い形容词くないです"
+    ],
+    "level": "N5",
+    "explanation": "礼貌表达中可以直接加 です。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:na_adjective",
+    "type": "grammar",
+    "pattern": "な形容词句",
+    "meanings": [
+      "……是……的"
+    ],
+    "formation": [
+      "な形容词 + です",
+      "な形容词 + ではありません"
+    ],
+    "level": "N5",
+    "explanation": "修饰名词时使用 ～な + 名词。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:past_polite",
+    "type": "grammar",
+    "pattern": "～ました / ～ませんでした",
+    "meanings": [
+      "做了……/没有做……"
+    ],
+    "formation": [
+      "动词ます形 → ました",
+      "动词ます形 → ませんでした"
+    ],
+    "level": "N5",
+    "explanation": "礼貌体过去肯定与过去否定。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:te_kudasai",
+    "type": "grammar",
+    "pattern": "～てください",
+    "meanings": [
+      "请……"
+    ],
+    "formation": [
+      "动词て形 + ください"
+    ],
+    "level": "N5",
+    "explanation": "礼貌请求对方做某事。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:temo_ii",
+    "type": "grammar",
+    "pattern": "～てもいいです",
+    "meanings": [
+      "可以……"
+    ],
+    "formation": [
+      "动词て形 + もいいです"
+    ],
+    "level": "N5",
+    "explanation": "表示许可。疑问形式可用于请求许可。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:tewa_ikenai",
+    "type": "grammar",
+    "pattern": "～てはいけません",
+    "meanings": [
+      "不可以……"
+    ],
+    "formation": [
+      "动词て形 + はいけません"
+    ],
+    "level": "N5",
+    "explanation": "表示禁止。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:teiru",
+    "type": "grammar",
+    "pattern": "～ています",
+    "meanings": [
+      "正在……/处于某状态"
+    ],
+    "formation": [
+      "动词て形 + います"
+    ],
+    "level": "N5",
+    "explanation": "可表示进行中，也可表示动作结果状态或习惯。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:tai",
+    "type": "grammar",
+    "pattern": "～たいです",
+    "meanings": [
+      "想做……"
+    ],
+    "formation": [
+      "动词ます形去ます + たいです"
+    ],
+    "level": "N5",
+    "explanation": "表达说话人自己的愿望。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:mashou",
+    "type": "grammar",
+    "pattern": "～ましょう",
+    "meanings": [
+      "一起……吧"
+    ],
+    "formation": [
+      "动词ます形去ます + ましょう"
+    ],
+    "level": "N5",
+    "explanation": "用于提议一起行动。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:masenka",
+    "type": "grammar",
+    "pattern": "～ませんか",
+    "meanings": [
+      "要不要一起……？"
+    ],
+    "formation": [
+      "动词ます形去ます + ませんか"
+    ],
+    "level": "N5",
+    "explanation": "比直接命令更柔和的邀请。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:ga_suki",
+    "type": "grammar",
+    "pattern": "N が好きです",
+    "meanings": [
+      "喜欢……"
+    ],
+    "formation": [
+      "名词 + が + 好きです"
+    ],
+    "level": "N5",
+    "explanation": "好き 是な形容词，喜欢对象通常用 が。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:ga_wakaru",
+    "type": "grammar",
+    "pattern": "N が分かります",
+    "meanings": [
+      "懂/明白……"
+    ],
+    "formation": [
+      "名词 + が + 分かります"
+    ],
+    "level": "N5",
+    "explanation": "能力或理解对象常用 が。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:ga_dekiru",
+    "type": "grammar",
+    "pattern": "N ができます",
+    "meanings": [
+      "会……/能够……"
+    ],
+    "formation": [
+      "名词 + が + できます",
+      "动词辞书形 + ことができます"
+    ],
+    "level": "N5",
+    "explanation": "表示能力或可能。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:hoshii",
+    "type": "grammar",
+    "pattern": "N がほしいです",
+    "meanings": [
+      "想要……"
+    ],
+    "formation": [
+      "名词 + が + ほしいです"
+    ],
+    "level": "N5",
+    "explanation": "表达想要某个东西。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:reason_kara",
+    "type": "grammar",
+    "pattern": "～から",
+    "meanings": [
+      "因为……"
+    ],
+    "formation": [
+      "普通句/礼貌句 + から"
+    ],
+    "level": "N5",
+    "explanation": "说明原因，常接在原因句后。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:comparison_yori",
+    "type": "grammar",
+    "pattern": "A は B より～",
+    "meanings": [
+      "A 比 B 更……"
+    ],
+    "formation": [
+      "A は B より + 形容词"
+    ],
+    "level": "N5",
+    "explanation": "基础比较句。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:ichiban",
+    "type": "grammar",
+    "pattern": "～の中で A が一番～",
+    "meanings": [
+      "在……中 A 最……"
+    ],
+    "formation": [
+      "范围 + の中で + A + が一番 + 形容词"
+    ],
+    "level": "N5",
+    "explanation": "表示最高级。",
+    "tags": [
+      "N5",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:tari_tari",
+    "type": "grammar",
+    "pattern": "～たり～たりします",
+    "meanings": [
+      "做做……、做做……"
+    ],
+    "formation": [
+      "动词た形 + り、动词た形 + りします"
+    ],
+    "level": "N4",
+    "explanation": "列举代表性的多个动作。",
+    "tags": [
+      "N4",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:to_omou",
+    "type": "grammar",
+    "pattern": "～と思います",
+    "meanings": [
+      "我认为……/我想……"
+    ],
+    "formation": [
+      "普通形 + と思います"
+    ],
+    "level": "N4",
+    "explanation": "表达判断、意见或推测。",
+    "tags": [
+      "N4",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.particles",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:nagara",
+    "type": "grammar",
+    "pattern": "～ながら",
+    "meanings": [
+      "一边……一边……"
+    ],
+    "formation": [
+      "动词ます形去ます + ながら"
+    ],
+    "level": "N4",
+    "explanation": "两个动作由同一主体同时进行。",
+    "tags": [
+      "N4",
+      "基础语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:noun_past",
+    "type": "grammar",
+    "pattern": "N でした",
+    "meanings": [
+      "曾经是……/过去是……"
+    ],
+    "formation": [
+      "名词 + でした"
+    ],
+    "level": "N5",
+    "explanation": "です 的过去式。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:noun_past_negative",
+    "type": "grammar",
+    "pattern": "N ではありませんでした",
+    "meanings": [
+      "过去不是……"
+    ],
+    "formation": [
+      "名词 + ではありませんでした"
+    ],
+    "level": "N5",
+    "explanation": "名词判断句的礼貌过去否定。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:masu_negative",
+    "type": "grammar",
+    "pattern": "～ません",
+    "meanings": [
+      "不……/不做……"
+    ],
+    "formation": [
+      "动词ます形词干 + ません"
+    ],
+    "level": "N5",
+    "explanation": "礼貌体现在/将来否定。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:te_form",
+    "type": "grammar",
+    "pattern": "动词て形",
+    "meanings": [
+      "连接动作/构成多种句型"
+    ],
+    "formation": [
+      "动词 → て形"
+    ],
+    "level": "N5",
+    "explanation": "て形是初级日语非常重要的活用形式。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:nai_form",
+    "type": "grammar",
+    "pattern": "动词ない形",
+    "meanings": [
+      "普通体否定"
+    ],
+    "formation": [
+      "动词 → ない形"
+    ],
+    "level": "N5",
+    "explanation": "表示“不做……”，也是多个句型的基础。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:dictionary_form",
+    "type": "grammar",
+    "pattern": "动词辞书形",
+    "meanings": [
+      "动词普通体基本形"
+    ],
+    "formation": [
+      "动词原形"
+    ],
+    "level": "N5",
+    "explanation": "用于普通体、修饰名词和多种语法。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:masu_stem",
+    "type": "grammar",
+    "pattern": "动词ます形词干",
+    "meanings": [
+      "连接部分助动表达"
+    ],
+    "formation": [
+      "ます 去掉 ます"
+    ],
+    "level": "N5",
+    "explanation": "例如 食べます → 食べ。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:i_adj_negative",
+    "type": "grammar",
+    "pattern": "い形容词 ～くないです",
+    "meanings": [
+      "不……"
+    ],
+    "formation": [
+      "い形容词去い + くないです"
+    ],
+    "level": "N5",
+    "explanation": "い形容词的礼貌否定。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:i_adj_past",
+    "type": "grammar",
+    "pattern": "い形容词 ～かったです",
+    "meanings": [
+      "过去很……"
+    ],
+    "formation": [
+      "い形容词去い + かったです"
+    ],
+    "level": "N5",
+    "explanation": "い形容词过去式。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:i_adj_past_negative",
+    "type": "grammar",
+    "pattern": "い形容词 ～くなかったです",
+    "meanings": [
+      "过去不……"
+    ],
+    "formation": [
+      "い形容词去い + くなかったです"
+    ],
+    "level": "N5",
+    "explanation": "い形容词过去否定。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:na_adj_negative",
+    "type": "grammar",
+    "pattern": "な形容词 ～ではありません",
+    "meanings": [
+      "不……"
+    ],
+    "formation": [
+      "な形容词 + ではありません"
+    ],
+    "level": "N5",
+    "explanation": "な形容词的礼貌否定。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.particles"
+      ]
+    }
+  },
+  {
+    "id": "grammar:na_adj_past",
+    "type": "grammar",
+    "pattern": "な形容词 ～でした",
+    "meanings": [
+      "过去很……"
+    ],
+    "formation": [
+      "な形容词 + でした"
+    ],
+    "level": "N5",
+    "explanation": "な形容词的礼貌过去式。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.particles"
+      ]
+    }
+  },
+  {
+    "id": "grammar:na_adj_past_negative",
+    "type": "grammar",
+    "pattern": "な形容词 ～ではありませんでした",
+    "meanings": [
+      "过去不……"
+    ],
+    "formation": [
+      "な形容词 + ではありませんでした"
+    ],
+    "level": "N5",
+    "explanation": "な形容词的礼貌过去否定。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.particles"
+      ]
+    }
+  },
+  {
+    "id": "grammar:kore_sore_are",
+    "type": "grammar",
+    "pattern": "これ / それ / あれ",
+    "meanings": [
+      "这个/那个/那个"
+    ],
+    "formation": [
+      "これ・それ・あれ + は…"
+    ],
+    "level": "N5",
+    "explanation": "独立指示代词，不能直接修饰名词。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:kono_sono_ano",
+    "type": "grammar",
+    "pattern": "この / その / あの + N",
+    "meanings": [
+      "这个/那个……"
+    ],
+    "formation": [
+      "この・その・あの + 名词"
+    ],
+    "level": "N5",
+    "explanation": "连体词，必须接名词。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:koko_soko_asoko",
+    "type": "grammar",
+    "pattern": "ここ / そこ / あそこ",
+    "meanings": [
+      "这里/那里/那边"
+    ],
+    "formation": [
+      "ここ・そこ・あそこ"
+    ],
+    "level": "N5",
+    "explanation": "地点指示词。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:dochira",
+    "type": "grammar",
+    "pattern": "どちら",
+    "meanings": [
+      "哪一边/哪一位（礼貌）"
+    ],
+    "formation": [
+      "どちら + ですか"
+    ],
+    "level": "N5",
+    "explanation": "既可问方向，也可礼貌询问人或选择。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:ne",
+    "type": "grammar",
+    "pattern": "～ね",
+    "meanings": [
+      "……吧/呢（确认、共鸣）"
+    ],
+    "formation": [
+      "句末 + ね"
+    ],
+    "level": "N5",
+    "explanation": "用于寻求共鸣或确认。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:yo",
+    "type": "grammar",
+    "pattern": "～よ",
+    "meanings": [
+      "……哦（告知、强调）"
+    ],
+    "formation": [
+      "句末 + よ"
+    ],
+    "level": "N5",
+    "explanation": "用于向对方提供新信息或强调。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:ya_nado",
+    "type": "grammar",
+    "pattern": "N や N など",
+    "meanings": [
+      "……和……等等"
+    ],
+    "formation": [
+      "名词 + や + 名词 + など"
+    ],
+    "level": "N5",
+    "explanation": "列举部分代表例。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:dake",
+    "type": "grammar",
+    "pattern": "～だけ",
+    "meanings": [
+      "只/仅仅"
+    ],
+    "formation": [
+      "名词/数量 + だけ"
+    ],
+    "level": "N5",
+    "explanation": "限定范围。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:gurai",
+    "type": "grammar",
+    "pattern": "～ぐらい / くらい",
+    "meanings": [
+      "大约/左右"
+    ],
+    "formation": [
+      "数量 + ぐらい"
+    ],
+    "level": "N5",
+    "explanation": "表示大致数量或程度。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:mou",
+    "type": "grammar",
+    "pattern": "もう～ました",
+    "meanings": [
+      "已经……了"
+    ],
+    "formation": [
+      "もう + 动词过去式"
+    ],
+    "level": "N5",
+    "explanation": "表示动作已经完成。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:mada",
+    "type": "grammar",
+    "pattern": "まだ～ていません",
+    "meanings": [
+      "还没有……"
+    ],
+    "formation": [
+      "まだ + ～ていません"
+    ],
+    "level": "N5",
+    "explanation": "表示动作尚未完成。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:mae_ni",
+    "type": "grammar",
+    "pattern": "～前に",
+    "meanings": [
+      "在……之前"
+    ],
+    "formation": [
+      "动词辞书形 + 前に",
+      "名词 + の + 前に"
+    ],
+    "level": "N5",
+    "explanation": "表示某动作/时间之前。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:ato_de",
+    "type": "grammar",
+    "pattern": "～あとで",
+    "meanings": [
+      "在……之后"
+    ],
+    "formation": [
+      "动词た形 + あとで",
+      "名词 + の + あとで"
+    ],
+    "level": "N5",
+    "explanation": "表示某动作之后。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:te_kara",
+    "type": "grammar",
+    "pattern": "～てから",
+    "meanings": [
+      "做完……之后再……"
+    ],
+    "formation": [
+      "动词て形 + から"
+    ],
+    "level": "N5",
+    "explanation": "强调动作先后顺序。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:ni_iku",
+    "type": "grammar",
+    "pattern": "动词ます形词干 + に行く",
+    "meanings": [
+      "去做……"
+    ],
+    "formation": [
+      "动词ます形词干 + に + 行く/来る"
+    ],
+    "level": "N5",
+    "explanation": "表示移动的目的。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:mashouka",
+    "type": "grammar",
+    "pattern": "～ましょうか",
+    "meanings": [
+      "要不要我……？/一起……吗？"
+    ],
+    "formation": [
+      "动词ます形词干 + ましょうか"
+    ],
+    "level": "N5",
+    "explanation": "可用于提议或主动提供帮助。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:nakute_mo_ii",
+    "type": "grammar",
+    "pattern": "～なくてもいいです",
+    "meanings": [
+      "不……也可以"
+    ],
+    "formation": [
+      "动词ない形去い + くてもいいです"
+    ],
+    "level": "N5",
+    "explanation": "表示没有必要做某事。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:nakereba_naranai",
+    "type": "grammar",
+    "pattern": "～なければなりません",
+    "meanings": [
+      "必须……"
+    ],
+    "formation": [
+      "动词ない形去い + ければなりません"
+    ],
+    "level": "N5",
+    "explanation": "表示义务，初级常见。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:naide_kudasai",
+    "type": "grammar",
+    "pattern": "～ないでください",
+    "meanings": [
+      "请不要……"
+    ],
+    "formation": [
+      "动词ない形 + でください"
+    ],
+    "level": "N5",
+    "explanation": "礼貌请求对方不要做某事。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:koto_ga_dekiru",
+    "type": "grammar",
+    "pattern": "～ことができます",
+    "meanings": [
+      "能够做……"
+    ],
+    "formation": [
+      "动词辞书形 + ことができます"
+    ],
+    "level": "N5",
+    "explanation": "表示能力或可能。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:suki_na_noun",
+    "type": "grammar",
+    "pattern": "好きな N",
+    "meanings": [
+      "喜欢的……"
+    ],
+    "formation": [
+      "好き + な + 名词"
+    ],
+    "level": "N5",
+    "explanation": "な形容词修饰名词。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:i_adj_noun",
+    "type": "grammar",
+    "pattern": "い形容词 + N",
+    "meanings": [
+      "……的名词"
+    ],
+    "formation": [
+      "い形容词 + 名词"
+    ],
+    "level": "N5",
+    "explanation": "い形容词可以直接修饰名词。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:na_adj_noun",
+    "type": "grammar",
+    "pattern": "な形容词 + な + N",
+    "meanings": [
+      "……的名词"
+    ],
+    "formation": [
+      "な形容词 + な + 名词"
+    ],
+    "level": "N5",
+    "explanation": "な形容词修饰名词时需要 な。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:relative_clause",
+    "type": "grammar",
+    "pattern": "普通形 + 名词",
+    "meanings": [
+      "……的名词/定语从句"
+    ],
+    "formation": [
+      "动词普通形 + 名词"
+    ],
+    "level": "N5",
+    "explanation": "日语中从句直接放在名词前。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:deshou",
+    "type": "grammar",
+    "pattern": "～でしょう",
+    "meanings": [
+      "大概……吧/……对吧"
+    ],
+    "formation": [
+      "普通形 + でしょう"
+    ],
+    "level": "N5",
+    "explanation": "表示推测，也可寻求确认。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.particles"
+      ]
+    }
+  },
+  {
+    "id": "grammar:kara_reason_polite",
+    "type": "grammar",
+    "pattern": "～ですから",
+    "meanings": [
+      "因为……所以……"
+    ],
+    "formation": [
+      "句子 + ですから"
+    ],
+    "level": "N5",
+    "explanation": "礼貌地说明理由。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.particles"
+      ]
+    }
+  },
+  {
+    "id": "grammar:demo",
+    "type": "grammar",
+    "pattern": "でも",
+    "meanings": [
+      "但是/不过"
+    ],
+    "formation": [
+      "句子。+ でも、句子。"
+    ],
+    "level": "N5",
+    "explanation": "简单连接转折。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:soshite",
+    "type": "grammar",
+    "pattern": "そして",
+    "meanings": [
+      "然后/而且"
+    ],
+    "formation": [
+      "句子。そして、句子。"
+    ],
+    "level": "N5",
+    "explanation": "连接顺承或并列内容。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application",
+        "grammar.verb-forms"
+      ]
+    }
+  },
+  {
+    "id": "grammar:sorekara",
+    "type": "grammar",
+    "pattern": "それから",
+    "meanings": [
+      "然后/之后"
+    ],
+    "formation": [
+      "句子。それから、句子。"
+    ],
+    "level": "N5",
+    "explanation": "表示时间上的继续。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:dono",
+    "type": "grammar",
+    "pattern": "どの + N",
+    "meanings": [
+      "哪个……"
+    ],
+    "formation": [
+      "どの + 名词"
+    ],
+    "level": "N5",
+    "explanation": "对应 この/その/あの 的疑问形式。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:donna",
+    "type": "grammar",
+    "pattern": "どんな + N",
+    "meanings": [
+      "什么样的……"
+    ],
+    "formation": [
+      "どんな + 名词"
+    ],
+    "level": "N5",
+    "explanation": "询问性质或种类。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:ikutsu",
+    "type": "grammar",
+    "pattern": "いくつ",
+    "meanings": [
+      "几个/几岁"
+    ],
+    "formation": [
+      "いくつ + ですか"
+    ],
+    "level": "N5",
+    "explanation": "询问数量，口语也可问年龄。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:nanmai",
+    "type": "grammar",
+    "pattern": "何枚",
+    "meanings": [
+      "几张/几枚"
+    ],
+    "formation": [
+      "何枚 + ですか"
+    ],
+    "level": "N5",
+    "explanation": "询问扁平物品数量。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:nannin",
+    "type": "grammar",
+    "pattern": "何人",
+    "meanings": [
+      "几个人"
+    ],
+    "formation": [
+      "何人 + ですか"
+    ],
+    "level": "N5",
+    "explanation": "询问人数。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:nanji",
+    "type": "grammar",
+    "pattern": "何時",
+    "meanings": [
+      "几点"
+    ],
+    "formation": [
+      "何時 + ですか"
+    ],
+    "level": "N5",
+    "explanation": "询问时间点。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:nanpun",
+    "type": "grammar",
+    "pattern": "何分",
+    "meanings": [
+      "几分"
+    ],
+    "formation": [
+      "何分 + ですか"
+    ],
+    "level": "N5",
+    "explanation": "询问分钟。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:counter_mai",
+    "type": "grammar",
+    "pattern": "～枚",
+    "meanings": [
+      "张/枚（扁平物）"
+    ],
+    "formation": [
+      "数字 + 枚"
+    ],
+    "level": "N5",
+    "explanation": "纸、票、衬衫等常用计数词。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:counter_hon",
+    "type": "grammar",
+    "pattern": "～本",
+    "meanings": [
+      "根/瓶/条（细长物）"
+    ],
+    "formation": [
+      "数字 + 本"
+    ],
+    "level": "N5",
+    "explanation": "瓶子、铅笔、伞等常用。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:counter_dai",
+    "type": "grammar",
+    "pattern": "～台",
+    "meanings": [
+      "台（机器/车辆）"
+    ],
+    "formation": [
+      "数字 + 台"
+    ],
+    "level": "N5",
+    "explanation": "汽车、电脑等的计数词。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:counter_satsu",
+    "type": "grammar",
+    "pattern": "～冊",
+    "meanings": [
+      "册（书本）"
+    ],
+    "formation": [
+      "数字 + 冊"
+    ],
+    "level": "N5",
+    "explanation": "书籍、杂志的计数词。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:counter_hiki",
+    "type": "grammar",
+    "pattern": "～匹",
+    "meanings": [
+      "只（小动物）"
+    ],
+    "formation": [
+      "数字 + 匹"
+    ],
+    "level": "N5",
+    "explanation": "猫、狗、鱼等的计数词。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:counter_ko",
+    "type": "grammar",
+    "pattern": "～個",
+    "meanings": [
+      "个（小物品）"
+    ],
+    "formation": [
+      "数字 + 個"
+    ],
+    "level": "N5",
+    "explanation": "较通用的小物计数词。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:frequency_ni_kai",
+    "type": "grammar",
+    "pattern": "一週間に～回",
+    "meanings": [
+      "每周……次"
+    ],
+    "formation": [
+      "时间范围 + に + 次数"
+    ],
+    "level": "N5",
+    "explanation": "表示频率。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:made_ni",
+    "type": "grammar",
+    "pattern": "～までに",
+    "meanings": [
+      "在……之前（截止）"
+    ],
+    "formation": [
+      "时间 + までに"
+    ],
+    "level": "N5",
+    "explanation": "表示动作完成的截止点。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:kara_time",
+    "type": "grammar",
+    "pattern": "～から",
+    "meanings": [
+      "从……开始"
+    ],
+    "formation": [
+      "时间/地点 + から"
+    ],
+    "level": "N5",
+    "explanation": "表示起点。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  },
+  {
+    "id": "grammar:made_time",
+    "type": "grammar",
+    "pattern": "～まで",
+    "meanings": [
+      "到……为止"
+    ],
+    "formation": [
+      "时间/地点 + まで"
+    ],
+    "level": "N5",
+    "explanation": "表示终点。",
+    "tags": [
+      "N5",
+      "扩展语法"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "grammar.meaning",
+        "grammar.application"
+      ]
+    }
+  }
+]

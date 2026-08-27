@@ -1,0 +1,64 @@
+{
+  "release": "n5-2026.08-v16",
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-18T09:25:53.631Z",
+  "totals": {
+    "kana": 208,
+    "vocabulary": 487,
+    "grammar": 95,
+    "kanji": 118,
+    "sentence": 111,
+    "reading": 24,
+    "listening": 24
+  },
+  "questionBank": {
+    "total": 2351
+  },
+  "audio": {
+    "total": 622,
+    "withAudio": 0,
+    "percent": 0
+  },
+  "files": {
+    "kana": {
+      "file": "content/generated/kana.json",
+      "sha256": "728bb2bc07bea021f7c8997d62675df326851af3c2e3704a3e33d72fb0e93f8e",
+      "bytes": 152182
+    },
+    "vocabulary": {
+      "file": "content/generated/vocabulary.json",
+      "sha256": "64e2b6869ef2a69571eec789ea37c6dbe2ec7c320e24fc7e8bfa948adecc701f",
+      "bytes": 315800
+    },
+    "grammar": {
+      "file": "content/generated/grammar.json",
+      "sha256": "4caa16982469018f32efcb1c44069f50d860d313d98c6264b58641458306de7d",
+      "bytes": 67309
+    },
+    "kanji": {
+      "file": "content/generated/kanji.json",
+      "sha256": "82cc16d0a52a4d5da3898b733fd0d650a2078c693e5b6d835ea85c2171d5457c",
+      "bytes": 78206
+    },
+    "sentence": {
+      "file": "content/generated/sentence.json",
+      "sha256": "029fb6c54461c804033c0b1af4c3e738ad60a06eeb0a2a22b2b457b681ed9f9b",
+      "bytes": 68565
+    },
+    "reading": {
+      "file": "content/generated/reading.json",
+      "sha256": "f3570c168d4e41290d7b2bece9bc53040fd89f10763c532d484f1f459717189a",
+      "bytes": 21867
+    },
+    "listening": {
+      "file": "content/generated/listening.json",
+      "sha256": "5919c01a7d7eda7753fbdf1f297f9e5842a659dae54efb39689d67a371bd98e4",
+      "bytes": 20386
+    },
+    "questions": {
+      "file": "content/generated/question-bank.json",
+      "sha256": "a825f0fbc8e626df938363a0f260d5783539a5211deb964893b5fdc04fa3daa8",
+      "bytes": 864237
+    }
+  }
+}

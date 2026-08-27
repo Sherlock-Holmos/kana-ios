@@ -1,0 +1,71 @@
+name: iOS Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build (Simulator)
+    runs-on: macos-14
+
+    env:
+      SCHEME: KanaStudy
+      DESTINATION: 'generic/platform=iOS Simulator'
+      DERIVED_DATA: build/DerivedData
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_15.4.app/Contents/Developer
+        # If 15.4 is unavailable in your runner image, switch to /Applications/Xcode.app.
+
+      - name: Show toolchain
+        run: |
+          xcodebuild -version
+          swift --version
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate Xcode project
+        run: xcodegen generate
+
+      - name: Build for iOS Simulator
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -project KanaStudy.xcodeproj \
+            -scheme "$SCHEME" \
+            -configuration Debug \
+            -destination "$DESTINATION" \
+            -derivedDataPath "$DERIVED_DATA" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            build | xcpretty || (exit 1)
+
+      - name: Verify .app artifact
+        run: |
+          APP_PATH="$DERIVED_DATA/Build/Products/Debug-iphonesimulator/$SCHEME.app"
+          if [ ! -d "$APP_PATH" ]; then
+            echo "::error::App bundle not found at $APP_PATH"
+            exit 1
+          fi
+          echo "Built app at: $APP_PATH"
+          ls -la "$APP_PATH"
+
+      - name: Upload .app artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: KanaStudy-simulator-app
+          path: build/DerivedData/Build/Products/Debug-iphonesimulator/KanaStudy.app
+          if-no-files-found: error
+          retention-days: 7

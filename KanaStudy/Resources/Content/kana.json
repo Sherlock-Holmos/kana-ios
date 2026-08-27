@@ -1,0 +1,7532 @@
+[
+  {
+    "id": "hiragana:あ",
+    "script": "hiragana",
+    "kana": "あ",
+    "roman": "a",
+    "row": "a",
+    "category": "basic",
+    "memory": "安 → あ → a",
+    "aliases": [
+      "a"
+    ],
+    "type": "kana",
+    "title": "あ",
+    "subtitle": "a",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "a"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ア",
+    "script": "katakana",
+    "kana": "ア",
+    "roman": "a",
+    "row": "a",
+    "category": "basic",
+    "memory": "ア → a；像张开的角度",
+    "aliases": [
+      "a"
+    ],
+    "type": "kana",
+    "title": "ア",
+    "subtitle": "a",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "a"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:い",
+    "script": "hiragana",
+    "kana": "い",
+    "roman": "i",
+    "row": "a",
+    "category": "basic",
+    "memory": "以 → い → i",
+    "aliases": [
+      "i"
+    ],
+    "type": "kana",
+    "title": "い",
+    "subtitle": "i",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "a"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:イ",
+    "script": "katakana",
+    "kana": "イ",
+    "roman": "i",
+    "row": "a",
+    "category": "basic",
+    "memory": "イ → i；两笔向下",
+    "aliases": [
+      "i"
+    ],
+    "type": "kana",
+    "title": "イ",
+    "subtitle": "i",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "a"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:う",
+    "script": "hiragana",
+    "kana": "う",
+    "roman": "u",
+    "row": "a",
+    "category": "basic",
+    "memory": "宇 → う → u",
+    "aliases": [
+      "u"
+    ],
+    "type": "kana",
+    "title": "う",
+    "subtitle": "u",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "a"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ウ",
+    "script": "katakana",
+    "kana": "ウ",
+    "roman": "u",
+    "row": "a",
+    "category": "basic",
+    "memory": "ウ → u；上方一点、下方弯折",
+    "aliases": [
+      "u"
+    ],
+    "type": "kana",
+    "title": "ウ",
+    "subtitle": "u",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "a"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:え",
+    "script": "hiragana",
+    "kana": "え",
+    "roman": "e",
+    "row": "a",
+    "category": "basic",
+    "memory": "衣 → え → e",
+    "aliases": [
+      "e"
+    ],
+    "type": "kana",
+    "title": "え",
+    "subtitle": "e",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "a"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:エ",
+    "script": "katakana",
+    "kana": "エ",
+    "roman": "e",
+    "row": "a",
+    "category": "basic",
+    "memory": "エ → e；像汉字「工」",
+    "aliases": [
+      "e"
+    ],
+    "type": "kana",
+    "title": "エ",
+    "subtitle": "e",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "a"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:お",
+    "script": "hiragana",
+    "kana": "お",
+    "roman": "o",
+    "row": "a",
+    "category": "basic",
+    "memory": "於 → お → o；右上还有一点",
+    "aliases": [
+      "o"
+    ],
+    "type": "kana",
+    "title": "お",
+    "subtitle": "o",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "a"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:オ",
+    "script": "katakana",
+    "kana": "オ",
+    "roman": "o",
+    "row": "a",
+    "category": "basic",
+    "memory": "オ → o；注意与 ホ 区分",
+    "aliases": [
+      "o"
+    ],
+    "type": "kana",
+    "title": "オ",
+    "subtitle": "o",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "a"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:か",
+    "script": "hiragana",
+    "kana": "か",
+    "roman": "ka",
+    "row": "ka",
+    "category": "basic",
+    "memory": "加 → か → ka",
+    "aliases": [
+      "ka"
+    ],
+    "type": "kana",
+    "title": "か",
+    "subtitle": "ka",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ka"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:カ",
+    "script": "katakana",
+    "kana": "カ",
+    "roman": "ka",
+    "row": "ka",
+    "category": "basic",
+    "memory": "カ → ka；与汉字「力」接近",
+    "aliases": [
+      "ka"
+    ],
+    "type": "kana",
+    "title": "カ",
+    "subtitle": "ka",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ka"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:き",
+    "script": "hiragana",
+    "kana": "き",
+    "roman": "ki",
+    "row": "ka",
+    "category": "basic",
+    "memory": "幾 → き → ki；横线比较多",
+    "aliases": [
+      "ki"
+    ],
+    "type": "kana",
+    "title": "き",
+    "subtitle": "ki",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ka"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:キ",
+    "script": "katakana",
+    "kana": "キ",
+    "roman": "ki",
+    "row": "ka",
+    "category": "basic",
+    "memory": "キ → ki；三横一斜",
+    "aliases": [
+      "ki"
+    ],
+    "type": "kana",
+    "title": "キ",
+    "subtitle": "ki",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ka"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:く",
+    "script": "hiragana",
+    "kana": "く",
+    "roman": "ku",
+    "row": "ka",
+    "category": "basic",
+    "memory": "久 → く → ku；也可以联想「哭 ku」",
+    "aliases": [
+      "ku"
+    ],
+    "type": "kana",
+    "title": "く",
+    "subtitle": "ku",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ka"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ク",
+    "script": "katakana",
+    "kana": "ク",
+    "roman": "ku",
+    "row": "ka",
+    "category": "basic",
+    "memory": "ク → ku；像尖角",
+    "aliases": [
+      "ku"
+    ],
+    "type": "kana",
+    "title": "ク",
+    "subtitle": "ku",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ka"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:け",
+    "script": "hiragana",
+    "kana": "け",
+    "roman": "ke",
+    "row": "ka",
+    "category": "basic",
+    "memory": "計 → け → ke",
+    "aliases": [
+      "ke"
+    ],
+    "type": "kana",
+    "title": "け",
+    "subtitle": "ke",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ka"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ケ",
+    "script": "katakana",
+    "kana": "ケ",
+    "roman": "ke",
+    "row": "ka",
+    "category": "basic",
+    "memory": "ケ → ke；注意与 ク 区分",
+    "aliases": [
+      "ke"
+    ],
+    "type": "kana",
+    "title": "ケ",
+    "subtitle": "ke",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ka"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:こ",
+    "script": "hiragana",
+    "kana": "こ",
+    "roman": "ko",
+    "row": "ka",
+    "category": "basic",
+    "memory": "己 → こ → ko；两条横线",
+    "aliases": [
+      "ko"
+    ],
+    "type": "kana",
+    "title": "こ",
+    "subtitle": "ko",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ka"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:コ",
+    "script": "katakana",
+    "kana": "コ",
+    "roman": "ko",
+    "row": "ka",
+    "category": "basic",
+    "memory": "コ → ko；两条横折",
+    "aliases": [
+      "ko"
+    ],
+    "type": "kana",
+    "title": "コ",
+    "subtitle": "ko",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ka"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:さ",
+    "script": "hiragana",
+    "kana": "さ",
+    "roman": "sa",
+    "row": "sa",
+    "category": "basic",
+    "memory": "左 → さ → sa；也可联想「伞 sa」",
+    "aliases": [
+      "sa"
+    ],
+    "type": "kana",
+    "title": "さ",
+    "subtitle": "sa",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "sa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:サ",
+    "script": "katakana",
+    "kana": "サ",
+    "roman": "sa",
+    "row": "sa",
+    "category": "basic",
+    "memory": "サ → sa；片假名写法",
+    "aliases": [
+      "sa"
+    ],
+    "type": "kana",
+    "title": "サ",
+    "subtitle": "sa",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "sa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:し",
+    "script": "hiragana",
+    "kana": "し",
+    "roman": "shi",
+    "row": "sa",
+    "category": "basic",
+    "memory": "之 → し → shi",
+    "aliases": [
+      "shi",
+      "si"
+    ],
+    "type": "kana",
+    "title": "し",
+    "subtitle": "shi",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "sa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:シ",
+    "script": "katakana",
+    "kana": "シ",
+    "roman": "shi",
+    "row": "sa",
+    "category": "basic",
+    "memory": "シ → shi；三个笔画向右上，注意与 ツ",
+    "aliases": [
+      "shi",
+      "si"
+    ],
+    "type": "kana",
+    "title": "シ",
+    "subtitle": "shi",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "sa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:す",
+    "script": "hiragana",
+    "kana": "す",
+    "roman": "su",
+    "row": "sa",
+    "category": "basic",
+    "memory": "寸 → す → su；像丝线绕了一圈",
+    "aliases": [
+      "su"
+    ],
+    "type": "kana",
+    "title": "す",
+    "subtitle": "su",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "sa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ス",
+    "script": "katakana",
+    "kana": "ス",
+    "roman": "su",
+    "row": "sa",
+    "category": "basic",
+    "memory": "ス → su；片假名写法",
+    "aliases": [
+      "su"
+    ],
+    "type": "kana",
+    "title": "ス",
+    "subtitle": "su",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "sa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:せ",
+    "script": "hiragana",
+    "kana": "せ",
+    "roman": "se",
+    "row": "sa",
+    "category": "basic",
+    "memory": "世 → せ → se",
+    "aliases": [
+      "se"
+    ],
+    "type": "kana",
+    "title": "せ",
+    "subtitle": "se",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "sa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:セ",
+    "script": "katakana",
+    "kana": "セ",
+    "roman": "se",
+    "row": "sa",
+    "category": "basic",
+    "memory": "セ → se；片假名写法",
+    "aliases": [
+      "se"
+    ],
+    "type": "kana",
+    "title": "セ",
+    "subtitle": "se",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "sa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:そ",
+    "script": "hiragana",
+    "kana": "そ",
+    "roman": "so",
+    "row": "sa",
+    "category": "basic",
+    "memory": "曽 → そ → so；字形可以联想 S",
+    "aliases": [
+      "so"
+    ],
+    "type": "kana",
+    "title": "そ",
+    "subtitle": "so",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "sa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ソ",
+    "script": "katakana",
+    "kana": "ソ",
+    "roman": "so",
+    "row": "sa",
+    "category": "basic",
+    "memory": "ソ → so；注意与 ン",
+    "aliases": [
+      "so"
+    ],
+    "type": "kana",
+    "title": "ソ",
+    "subtitle": "so",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "sa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:た",
+    "script": "hiragana",
+    "kana": "た",
+    "roman": "ta",
+    "row": "ta",
+    "category": "basic",
+    "memory": "太 → た → ta",
+    "aliases": [
+      "ta"
+    ],
+    "type": "kana",
+    "title": "た",
+    "subtitle": "ta",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ta"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:タ",
+    "script": "katakana",
+    "kana": "タ",
+    "roman": "ta",
+    "row": "ta",
+    "category": "basic",
+    "memory": "タ → ta；片假名写法",
+    "aliases": [
+      "ta"
+    ],
+    "type": "kana",
+    "title": "タ",
+    "subtitle": "ta",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ta"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ち",
+    "script": "hiragana",
+    "kana": "ち",
+    "roman": "chi",
+    "row": "ta",
+    "category": "basic",
+    "memory": "知 → ち → chi；注意不是 ti",
+    "aliases": [
+      "chi",
+      "ti"
+    ],
+    "type": "kana",
+    "title": "ち",
+    "subtitle": "chi",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ta"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:チ",
+    "script": "katakana",
+    "kana": "チ",
+    "roman": "chi",
+    "row": "ta",
+    "category": "basic",
+    "memory": "チ → chi；片假名写法",
+    "aliases": [
+      "chi",
+      "ti"
+    ],
+    "type": "kana",
+    "title": "チ",
+    "subtitle": "chi",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ta"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:つ",
+    "script": "hiragana",
+    "kana": "つ",
+    "roman": "tsu",
+    "row": "ta",
+    "category": "basic",
+    "memory": "川 → つ → tsu；像一个大弯钩",
+    "aliases": [
+      "tsu",
+      "tu"
+    ],
+    "type": "kana",
+    "title": "つ",
+    "subtitle": "tsu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ta"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ツ",
+    "script": "katakana",
+    "kana": "ツ",
+    "roman": "tsu",
+    "row": "ta",
+    "category": "basic",
+    "memory": "ツ → tsu；两个点更偏竖向，注意与 シ",
+    "aliases": [
+      "tsu",
+      "tu"
+    ],
+    "type": "kana",
+    "title": "ツ",
+    "subtitle": "tsu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ta"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:て",
+    "script": "hiragana",
+    "kana": "て",
+    "roman": "te",
+    "row": "ta",
+    "category": "basic",
+    "memory": "天 → て → te",
+    "aliases": [
+      "te"
+    ],
+    "type": "kana",
+    "title": "て",
+    "subtitle": "te",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ta"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:テ",
+    "script": "katakana",
+    "kana": "テ",
+    "roman": "te",
+    "row": "ta",
+    "category": "basic",
+    "memory": "テ → te；片假名写法",
+    "aliases": [
+      "te"
+    ],
+    "type": "kana",
+    "title": "テ",
+    "subtitle": "te",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ta"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:と",
+    "script": "hiragana",
+    "kana": "と",
+    "roman": "to",
+    "row": "ta",
+    "category": "basic",
+    "memory": "止 → と → to",
+    "aliases": [
+      "to"
+    ],
+    "type": "kana",
+    "title": "と",
+    "subtitle": "to",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ta"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ト",
+    "script": "katakana",
+    "kana": "ト",
+    "roman": "to",
+    "row": "ta",
+    "category": "basic",
+    "memory": "ト → to；片假名写法",
+    "aliases": [
+      "to"
+    ],
+    "type": "kana",
+    "title": "ト",
+    "subtitle": "to",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ta"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:な",
+    "script": "hiragana",
+    "kana": "な",
+    "roman": "na",
+    "row": "na",
+    "category": "basic",
+    "memory": "奈 → な → na",
+    "aliases": [
+      "na"
+    ],
+    "type": "kana",
+    "title": "な",
+    "subtitle": "na",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "na"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ナ",
+    "script": "katakana",
+    "kana": "ナ",
+    "roman": "na",
+    "row": "na",
+    "category": "basic",
+    "memory": "ナ → na；片假名写法",
+    "aliases": [
+      "na"
+    ],
+    "type": "kana",
+    "title": "ナ",
+    "subtitle": "na",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "na"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:に",
+    "script": "hiragana",
+    "kana": "に",
+    "roman": "ni",
+    "row": "na",
+    "category": "basic",
+    "memory": "仁 → に → ni；两条横线很明显",
+    "aliases": [
+      "ni"
+    ],
+    "type": "kana",
+    "title": "に",
+    "subtitle": "ni",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "na"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ニ",
+    "script": "katakana",
+    "kana": "ニ",
+    "roman": "ni",
+    "row": "na",
+    "category": "basic",
+    "memory": "ニ → ni；片假名写法",
+    "aliases": [
+      "ni"
+    ],
+    "type": "kana",
+    "title": "ニ",
+    "subtitle": "ni",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "na"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぬ",
+    "script": "hiragana",
+    "kana": "ぬ",
+    "roman": "nu",
+    "row": "na",
+    "category": "basic",
+    "memory": "奴 → ぬ → nu；有圈并拖着尾巴",
+    "aliases": [
+      "nu"
+    ],
+    "type": "kana",
+    "title": "ぬ",
+    "subtitle": "nu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "na"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ヌ",
+    "script": "katakana",
+    "kana": "ヌ",
+    "roman": "nu",
+    "row": "na",
+    "category": "basic",
+    "memory": "ヌ → nu；交叉后带一点回转",
+    "aliases": [
+      "nu"
+    ],
+    "type": "kana",
+    "title": "ヌ",
+    "subtitle": "nu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "na"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ね",
+    "script": "hiragana",
+    "kana": "ね",
+    "roman": "ne",
+    "row": "na",
+    "category": "basic",
+    "memory": "祢 → ね → ne；右侧绕一个圈",
+    "aliases": [
+      "ne"
+    ],
+    "type": "kana",
+    "title": "ね",
+    "subtitle": "ne",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "na"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ネ",
+    "script": "katakana",
+    "kana": "ネ",
+    "roman": "ne",
+    "row": "na",
+    "category": "basic",
+    "memory": "ネ → ne；片假名写法",
+    "aliases": [
+      "ne"
+    ],
+    "type": "kana",
+    "title": "ネ",
+    "subtitle": "ne",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "na"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:の",
+    "script": "hiragana",
+    "kana": "の",
+    "roman": "no",
+    "row": "na",
+    "category": "basic",
+    "memory": "乃 → の → no；像一笔画出的圆圈",
+    "aliases": [
+      "no"
+    ],
+    "type": "kana",
+    "title": "の",
+    "subtitle": "no",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "na"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ノ",
+    "script": "katakana",
+    "kana": "ノ",
+    "roman": "no",
+    "row": "na",
+    "category": "basic",
+    "memory": "ノ → no；片假名写法",
+    "aliases": [
+      "no"
+    ],
+    "type": "kana",
+    "title": "ノ",
+    "subtitle": "no",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "na"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:は",
+    "script": "hiragana",
+    "kana": "は",
+    "roman": "ha",
+    "row": "ha",
+    "category": "basic",
+    "memory": "波 → は → ha；注意和 ほ 区分",
+    "aliases": [
+      "ha"
+    ],
+    "type": "kana",
+    "title": "は",
+    "subtitle": "ha",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ha"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ハ",
+    "script": "katakana",
+    "kana": "ハ",
+    "roman": "ha",
+    "row": "ha",
+    "category": "basic",
+    "memory": "ハ → ha；片假名写法",
+    "aliases": [
+      "ha"
+    ],
+    "type": "kana",
+    "title": "ハ",
+    "subtitle": "ha",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ha"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ひ",
+    "script": "hiragana",
+    "kana": "ひ",
+    "roman": "hi",
+    "row": "ha",
+    "category": "basic",
+    "memory": "比 → ひ → hi",
+    "aliases": [
+      "hi"
+    ],
+    "type": "kana",
+    "title": "ひ",
+    "subtitle": "hi",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ha"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ヒ",
+    "script": "katakana",
+    "kana": "ヒ",
+    "roman": "hi",
+    "row": "ha",
+    "category": "basic",
+    "memory": "ヒ → hi；片假名写法",
+    "aliases": [
+      "hi"
+    ],
+    "type": "kana",
+    "title": "ヒ",
+    "subtitle": "hi",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ha"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ふ",
+    "script": "hiragana",
+    "kana": "ふ",
+    "roman": "fu",
+    "row": "ha",
+    "category": "basic",
+    "memory": "不 → ふ → fu；像呼出一口气",
+    "aliases": [
+      "fu",
+      "hu"
+    ],
+    "type": "kana",
+    "title": "ふ",
+    "subtitle": "fu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ha"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:フ",
+    "script": "katakana",
+    "kana": "フ",
+    "roman": "fu",
+    "row": "ha",
+    "category": "basic",
+    "memory": "フ → fu；片假名写法",
+    "aliases": [
+      "fu",
+      "hu"
+    ],
+    "type": "kana",
+    "title": "フ",
+    "subtitle": "fu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ha"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:へ",
+    "script": "hiragana",
+    "kana": "へ",
+    "roman": "he",
+    "row": "ha",
+    "category": "basic",
+    "memory": "部 → へ → he；字形像 ^",
+    "aliases": [
+      "he"
+    ],
+    "type": "kana",
+    "title": "へ",
+    "subtitle": "he",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ha"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ヘ",
+    "script": "katakana",
+    "kana": "ヘ",
+    "roman": "he",
+    "row": "ha",
+    "category": "basic",
+    "memory": "ヘ → he；片假名写法",
+    "aliases": [
+      "he"
+    ],
+    "type": "kana",
+    "title": "ヘ",
+    "subtitle": "he",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ha"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ほ",
+    "script": "hiragana",
+    "kana": "ほ",
+    "roman": "ho",
+    "row": "ha",
+    "category": "basic",
+    "memory": "保 → ほ → ho；比 は 多一横",
+    "aliases": [
+      "ho"
+    ],
+    "type": "kana",
+    "title": "ほ",
+    "subtitle": "ho",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ha"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ホ",
+    "script": "katakana",
+    "kana": "ホ",
+    "roman": "ho",
+    "row": "ha",
+    "category": "basic",
+    "memory": "ホ → ho；片假名写法",
+    "aliases": [
+      "ho"
+    ],
+    "type": "kana",
+    "title": "ホ",
+    "subtitle": "ho",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ha"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ま",
+    "script": "hiragana",
+    "kana": "ま",
+    "roman": "ma",
+    "row": "ma",
+    "category": "basic",
+    "memory": "末 → ま → ma",
+    "aliases": [
+      "ma"
+    ],
+    "type": "kana",
+    "title": "ま",
+    "subtitle": "ma",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ma"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:マ",
+    "script": "katakana",
+    "kana": "マ",
+    "roman": "ma",
+    "row": "ma",
+    "category": "basic",
+    "memory": "マ → ma；片假名写法",
+    "aliases": [
+      "ma"
+    ],
+    "type": "kana",
+    "title": "マ",
+    "subtitle": "ma",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ma"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:み",
+    "script": "hiragana",
+    "kana": "み",
+    "roman": "mi",
+    "row": "ma",
+    "category": "basic",
+    "memory": "美 → み → mi",
+    "aliases": [
+      "mi"
+    ],
+    "type": "kana",
+    "title": "み",
+    "subtitle": "mi",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ma"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ミ",
+    "script": "katakana",
+    "kana": "ミ",
+    "roman": "mi",
+    "row": "ma",
+    "category": "basic",
+    "memory": "ミ → mi；片假名写法",
+    "aliases": [
+      "mi"
+    ],
+    "type": "kana",
+    "title": "ミ",
+    "subtitle": "mi",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ma"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:む",
+    "script": "hiragana",
+    "kana": "む",
+    "roman": "mu",
+    "row": "ma",
+    "category": "basic",
+    "memory": "武 → む → mu；下面卷起来",
+    "aliases": [
+      "mu"
+    ],
+    "type": "kana",
+    "title": "む",
+    "subtitle": "mu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ma"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ム",
+    "script": "katakana",
+    "kana": "ム",
+    "roman": "mu",
+    "row": "ma",
+    "category": "basic",
+    "memory": "ム → mu；片假名写法",
+    "aliases": [
+      "mu"
+    ],
+    "type": "kana",
+    "title": "ム",
+    "subtitle": "mu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ma"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:め",
+    "script": "hiragana",
+    "kana": "め",
+    "roman": "me",
+    "row": "ma",
+    "category": "basic",
+    "memory": "女 → め → me；注意和 ぬ 区分",
+    "aliases": [
+      "me"
+    ],
+    "type": "kana",
+    "title": "め",
+    "subtitle": "me",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ma"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:メ",
+    "script": "katakana",
+    "kana": "メ",
+    "roman": "me",
+    "row": "ma",
+    "category": "basic",
+    "memory": "メ → me；明显交叉",
+    "aliases": [
+      "me"
+    ],
+    "type": "kana",
+    "title": "メ",
+    "subtitle": "me",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ma"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:も",
+    "script": "hiragana",
+    "kana": "も",
+    "roman": "mo",
+    "row": "ma",
+    "category": "basic",
+    "memory": "毛 → も → mo",
+    "aliases": [
+      "mo"
+    ],
+    "type": "kana",
+    "title": "も",
+    "subtitle": "mo",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ma"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:モ",
+    "script": "katakana",
+    "kana": "モ",
+    "roman": "mo",
+    "row": "ma",
+    "category": "basic",
+    "memory": "モ → mo；片假名写法",
+    "aliases": [
+      "mo"
+    ],
+    "type": "kana",
+    "title": "モ",
+    "subtitle": "mo",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ma"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:や",
+    "script": "hiragana",
+    "kana": "や",
+    "roman": "ya",
+    "row": "ya",
+    "category": "basic",
+    "memory": "也 → や → ya",
+    "aliases": [
+      "ya"
+    ],
+    "type": "kana",
+    "title": "や",
+    "subtitle": "ya",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ya"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ヤ",
+    "script": "katakana",
+    "kana": "ヤ",
+    "roman": "ya",
+    "row": "ya",
+    "category": "basic",
+    "memory": "ヤ → ya；片假名写法",
+    "aliases": [
+      "ya"
+    ],
+    "type": "kana",
+    "title": "ヤ",
+    "subtitle": "ya",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ya"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ゆ",
+    "script": "hiragana",
+    "kana": "ゆ",
+    "roman": "yu",
+    "row": "ya",
+    "category": "basic",
+    "memory": "由 → ゆ → yu",
+    "aliases": [
+      "yu"
+    ],
+    "type": "kana",
+    "title": "ゆ",
+    "subtitle": "yu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ya"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ユ",
+    "script": "katakana",
+    "kana": "ユ",
+    "roman": "yu",
+    "row": "ya",
+    "category": "basic",
+    "memory": "ユ → yu；片假名写法",
+    "aliases": [
+      "yu"
+    ],
+    "type": "kana",
+    "title": "ユ",
+    "subtitle": "yu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ya"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:よ",
+    "script": "hiragana",
+    "kana": "よ",
+    "roman": "yo",
+    "row": "ya",
+    "category": "basic",
+    "memory": "与 → よ → yo",
+    "aliases": [
+      "yo"
+    ],
+    "type": "kana",
+    "title": "よ",
+    "subtitle": "yo",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ya"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ヨ",
+    "script": "katakana",
+    "kana": "ヨ",
+    "roman": "yo",
+    "row": "ya",
+    "category": "basic",
+    "memory": "ヨ → yo；片假名写法",
+    "aliases": [
+      "yo"
+    ],
+    "type": "kana",
+    "title": "ヨ",
+    "subtitle": "yo",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ya"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ら",
+    "script": "hiragana",
+    "kana": "ら",
+    "roman": "ra",
+    "row": "ra",
+    "category": "basic",
+    "memory": "良 → ら → ra",
+    "aliases": [
+      "ra"
+    ],
+    "type": "kana",
+    "title": "ら",
+    "subtitle": "ra",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ra"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ラ",
+    "script": "katakana",
+    "kana": "ラ",
+    "roman": "ra",
+    "row": "ra",
+    "category": "basic",
+    "memory": "ラ → ra；片假名写法",
+    "aliases": [
+      "ra"
+    ],
+    "type": "kana",
+    "title": "ラ",
+    "subtitle": "ra",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ra"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:り",
+    "script": "hiragana",
+    "kana": "り",
+    "roman": "ri",
+    "row": "ra",
+    "category": "basic",
+    "memory": "利 → り → ri；通常写成两笔",
+    "aliases": [
+      "ri"
+    ],
+    "type": "kana",
+    "title": "り",
+    "subtitle": "ri",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ra"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:リ",
+    "script": "katakana",
+    "kana": "リ",
+    "roman": "ri",
+    "row": "ra",
+    "category": "basic",
+    "memory": "リ → ri；片假名写法",
+    "aliases": [
+      "ri"
+    ],
+    "type": "kana",
+    "title": "リ",
+    "subtitle": "ri",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ra"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:る",
+    "script": "hiragana",
+    "kana": "る",
+    "roman": "ru",
+    "row": "ra",
+    "category": "basic",
+    "memory": "留 → る → ru；下面有小圈和尾巴",
+    "aliases": [
+      "ru"
+    ],
+    "type": "kana",
+    "title": "る",
+    "subtitle": "ru",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ra"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ル",
+    "script": "katakana",
+    "kana": "ル",
+    "roman": "ru",
+    "row": "ra",
+    "category": "basic",
+    "memory": "ル → ru；右侧有弯钩",
+    "aliases": [
+      "ru"
+    ],
+    "type": "kana",
+    "title": "ル",
+    "subtitle": "ru",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ra"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:れ",
+    "script": "hiragana",
+    "kana": "れ",
+    "roman": "re",
+    "row": "ra",
+    "category": "basic",
+    "memory": "礼 → れ → re；右边直接甩出去",
+    "aliases": [
+      "re"
+    ],
+    "type": "kana",
+    "title": "れ",
+    "subtitle": "re",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ra"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:レ",
+    "script": "katakana",
+    "kana": "レ",
+    "roman": "re",
+    "row": "ra",
+    "category": "basic",
+    "memory": "レ → re；一折向上",
+    "aliases": [
+      "re"
+    ],
+    "type": "kana",
+    "title": "レ",
+    "subtitle": "re",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ra"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ろ",
+    "script": "hiragana",
+    "kana": "ろ",
+    "roman": "ro",
+    "row": "ra",
+    "category": "basic",
+    "memory": "呂 → ろ → ro；比 る 更简单",
+    "aliases": [
+      "ro"
+    ],
+    "type": "kana",
+    "title": "ろ",
+    "subtitle": "ro",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "ra"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ロ",
+    "script": "katakana",
+    "kana": "ロ",
+    "roman": "ro",
+    "row": "ra",
+    "category": "basic",
+    "memory": "ロ → ro；像方框",
+    "aliases": [
+      "ro"
+    ],
+    "type": "kana",
+    "title": "ロ",
+    "subtitle": "ro",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "ra"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:わ",
+    "script": "hiragana",
+    "kana": "わ",
+    "roman": "wa",
+    "row": "wa",
+    "category": "basic",
+    "memory": "和 → わ → wa",
+    "aliases": [
+      "wa"
+    ],
+    "type": "kana",
+    "title": "わ",
+    "subtitle": "wa",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "wa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ワ",
+    "script": "katakana",
+    "kana": "ワ",
+    "roman": "wa",
+    "row": "wa",
+    "category": "basic",
+    "memory": "ワ → wa；片假名写法",
+    "aliases": [
+      "wa"
+    ],
+    "type": "kana",
+    "title": "ワ",
+    "subtitle": "wa",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "wa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:を",
+    "script": "hiragana",
+    "kana": "を",
+    "roman": "o",
+    "row": "wa",
+    "category": "basic",
+    "memory": "遠 → を；现代日语通常读 o，也常写作 wo",
+    "aliases": [
+      "o",
+      "wo"
+    ],
+    "type": "kana",
+    "title": "を",
+    "subtitle": "o",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "wa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ヲ",
+    "script": "katakana",
+    "kana": "ヲ",
+    "roman": "o",
+    "row": "wa",
+    "category": "basic",
+    "memory": "ヲ → o；片假名写法",
+    "aliases": [
+      "o",
+      "wo"
+    ],
+    "type": "kana",
+    "title": "ヲ",
+    "subtitle": "o",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "wa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ん",
+    "script": "hiragana",
+    "kana": "ん",
+    "roman": "n",
+    "row": "wa",
+    "category": "basic",
+    "memory": "ん → n；鼻音，类似「嗯」的尾音",
+    "aliases": [
+      "n"
+    ],
+    "type": "kana",
+    "title": "ん",
+    "subtitle": "n",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "basic",
+      "wa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ン",
+    "script": "katakana",
+    "kana": "ン",
+    "roman": "n",
+    "row": "wa",
+    "category": "basic",
+    "memory": "ン → n；短笔更偏横向，注意与 ソ",
+    "aliases": [
+      "n"
+    ],
+    "type": "kana",
+    "title": "ン",
+    "subtitle": "n",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "basic",
+      "wa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:が",
+    "script": "hiragana",
+    "kana": "が",
+    "roman": "ga",
+    "row": "ga",
+    "category": "voiced",
+    "memory": "が → ga；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "ga"
+    ],
+    "type": "kana",
+    "title": "が",
+    "subtitle": "ga",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "ga"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ガ",
+    "script": "katakana",
+    "kana": "ガ",
+    "roman": "ga",
+    "row": "ga",
+    "category": "voiced",
+    "memory": "ガ → ga；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "ga"
+    ],
+    "type": "kana",
+    "title": "ガ",
+    "subtitle": "ga",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "ga"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぎ",
+    "script": "hiragana",
+    "kana": "ぎ",
+    "roman": "gi",
+    "row": "ga",
+    "category": "voiced",
+    "memory": "ぎ → gi；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "gi"
+    ],
+    "type": "kana",
+    "title": "ぎ",
+    "subtitle": "gi",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "ga"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ギ",
+    "script": "katakana",
+    "kana": "ギ",
+    "roman": "gi",
+    "row": "ga",
+    "category": "voiced",
+    "memory": "ギ → gi；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "gi"
+    ],
+    "type": "kana",
+    "title": "ギ",
+    "subtitle": "gi",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "ga"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぐ",
+    "script": "hiragana",
+    "kana": "ぐ",
+    "roman": "gu",
+    "row": "ga",
+    "category": "voiced",
+    "memory": "ぐ → gu；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "gu"
+    ],
+    "type": "kana",
+    "title": "ぐ",
+    "subtitle": "gu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "ga"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:グ",
+    "script": "katakana",
+    "kana": "グ",
+    "roman": "gu",
+    "row": "ga",
+    "category": "voiced",
+    "memory": "グ → gu；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "gu"
+    ],
+    "type": "kana",
+    "title": "グ",
+    "subtitle": "gu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "ga"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:げ",
+    "script": "hiragana",
+    "kana": "げ",
+    "roman": "ge",
+    "row": "ga",
+    "category": "voiced",
+    "memory": "げ → ge；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "ge"
+    ],
+    "type": "kana",
+    "title": "げ",
+    "subtitle": "ge",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "ga"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ゲ",
+    "script": "katakana",
+    "kana": "ゲ",
+    "roman": "ge",
+    "row": "ga",
+    "category": "voiced",
+    "memory": "ゲ → ge；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "ge"
+    ],
+    "type": "kana",
+    "title": "ゲ",
+    "subtitle": "ge",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "ga"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ご",
+    "script": "hiragana",
+    "kana": "ご",
+    "roman": "go",
+    "row": "ga",
+    "category": "voiced",
+    "memory": "ご → go；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "go"
+    ],
+    "type": "kana",
+    "title": "ご",
+    "subtitle": "go",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "ga"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ゴ",
+    "script": "katakana",
+    "kana": "ゴ",
+    "roman": "go",
+    "row": "ga",
+    "category": "voiced",
+    "memory": "ゴ → go；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "go"
+    ],
+    "type": "kana",
+    "title": "ゴ",
+    "subtitle": "go",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "ga"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ざ",
+    "script": "hiragana",
+    "kana": "ざ",
+    "roman": "za",
+    "row": "za",
+    "category": "voiced",
+    "memory": "ざ → za；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "za"
+    ],
+    "type": "kana",
+    "title": "ざ",
+    "subtitle": "za",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "za"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ザ",
+    "script": "katakana",
+    "kana": "ザ",
+    "roman": "za",
+    "row": "za",
+    "category": "voiced",
+    "memory": "ザ → za；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "za"
+    ],
+    "type": "kana",
+    "title": "ザ",
+    "subtitle": "za",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "za"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:じ",
+    "script": "hiragana",
+    "kana": "じ",
+    "roman": "ji",
+    "row": "za",
+    "category": "voiced",
+    "memory": "じ → ji；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "ji",
+      "zi"
+    ],
+    "type": "kana",
+    "title": "じ",
+    "subtitle": "ji",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "za"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ジ",
+    "script": "katakana",
+    "kana": "ジ",
+    "roman": "ji",
+    "row": "za",
+    "category": "voiced",
+    "memory": "ジ → ji；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "ji",
+      "zi"
+    ],
+    "type": "kana",
+    "title": "ジ",
+    "subtitle": "ji",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "za"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ず",
+    "script": "hiragana",
+    "kana": "ず",
+    "roman": "zu",
+    "row": "za",
+    "category": "voiced",
+    "memory": "ず → zu；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "zu"
+    ],
+    "type": "kana",
+    "title": "ず",
+    "subtitle": "zu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "za"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ズ",
+    "script": "katakana",
+    "kana": "ズ",
+    "roman": "zu",
+    "row": "za",
+    "category": "voiced",
+    "memory": "ズ → zu；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "zu"
+    ],
+    "type": "kana",
+    "title": "ズ",
+    "subtitle": "zu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "za"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぜ",
+    "script": "hiragana",
+    "kana": "ぜ",
+    "roman": "ze",
+    "row": "za",
+    "category": "voiced",
+    "memory": "ぜ → ze；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "ze"
+    ],
+    "type": "kana",
+    "title": "ぜ",
+    "subtitle": "ze",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "za"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ゼ",
+    "script": "katakana",
+    "kana": "ゼ",
+    "roman": "ze",
+    "row": "za",
+    "category": "voiced",
+    "memory": "ゼ → ze；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "ze"
+    ],
+    "type": "kana",
+    "title": "ゼ",
+    "subtitle": "ze",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "za"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぞ",
+    "script": "hiragana",
+    "kana": "ぞ",
+    "roman": "zo",
+    "row": "za",
+    "category": "voiced",
+    "memory": "ぞ → zo；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "zo"
+    ],
+    "type": "kana",
+    "title": "ぞ",
+    "subtitle": "zo",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "za"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ゾ",
+    "script": "katakana",
+    "kana": "ゾ",
+    "roman": "zo",
+    "row": "za",
+    "category": "voiced",
+    "memory": "ゾ → zo；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "zo"
+    ],
+    "type": "kana",
+    "title": "ゾ",
+    "subtitle": "zo",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "za"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:だ",
+    "script": "hiragana",
+    "kana": "だ",
+    "roman": "da",
+    "row": "da",
+    "category": "voiced",
+    "memory": "だ → da；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "da"
+    ],
+    "type": "kana",
+    "title": "だ",
+    "subtitle": "da",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "da"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ダ",
+    "script": "katakana",
+    "kana": "ダ",
+    "roman": "da",
+    "row": "da",
+    "category": "voiced",
+    "memory": "ダ → da；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "da"
+    ],
+    "type": "kana",
+    "title": "ダ",
+    "subtitle": "da",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "da"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぢ",
+    "script": "hiragana",
+    "kana": "ぢ",
+    "roman": "ji",
+    "row": "da",
+    "category": "voiced",
+    "memory": "ぢ → ji；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "ji",
+      "di"
+    ],
+    "type": "kana",
+    "title": "ぢ",
+    "subtitle": "ji",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "da"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ヂ",
+    "script": "katakana",
+    "kana": "ヂ",
+    "roman": "ji",
+    "row": "da",
+    "category": "voiced",
+    "memory": "ヂ → ji；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "ji",
+      "di"
+    ],
+    "type": "kana",
+    "title": "ヂ",
+    "subtitle": "ji",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "da"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:づ",
+    "script": "hiragana",
+    "kana": "づ",
+    "roman": "zu",
+    "row": "da",
+    "category": "voiced",
+    "memory": "づ → zu；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "zu",
+      "du",
+      "dzu"
+    ],
+    "type": "kana",
+    "title": "づ",
+    "subtitle": "zu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "da"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ヅ",
+    "script": "katakana",
+    "kana": "ヅ",
+    "roman": "zu",
+    "row": "da",
+    "category": "voiced",
+    "memory": "ヅ → zu；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "zu",
+      "du",
+      "dzu"
+    ],
+    "type": "kana",
+    "title": "ヅ",
+    "subtitle": "zu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "da"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:で",
+    "script": "hiragana",
+    "kana": "で",
+    "roman": "de",
+    "row": "da",
+    "category": "voiced",
+    "memory": "で → de；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "de"
+    ],
+    "type": "kana",
+    "title": "で",
+    "subtitle": "de",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "da"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:デ",
+    "script": "katakana",
+    "kana": "デ",
+    "roman": "de",
+    "row": "da",
+    "category": "voiced",
+    "memory": "デ → de；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "de"
+    ],
+    "type": "kana",
+    "title": "デ",
+    "subtitle": "de",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "da"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ど",
+    "script": "hiragana",
+    "kana": "ど",
+    "roman": "do",
+    "row": "da",
+    "category": "voiced",
+    "memory": "ど → do；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "do"
+    ],
+    "type": "kana",
+    "title": "ど",
+    "subtitle": "do",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "da"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ド",
+    "script": "katakana",
+    "kana": "ド",
+    "roman": "do",
+    "row": "da",
+    "category": "voiced",
+    "memory": "ド → do；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "do"
+    ],
+    "type": "kana",
+    "title": "ド",
+    "subtitle": "do",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "da"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ば",
+    "script": "hiragana",
+    "kana": "ば",
+    "roman": "ba",
+    "row": "ba",
+    "category": "voiced",
+    "memory": "ば → ba；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "ba"
+    ],
+    "type": "kana",
+    "title": "ば",
+    "subtitle": "ba",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "ba"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:バ",
+    "script": "katakana",
+    "kana": "バ",
+    "roman": "ba",
+    "row": "ba",
+    "category": "voiced",
+    "memory": "バ → ba；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "ba"
+    ],
+    "type": "kana",
+    "title": "バ",
+    "subtitle": "ba",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "ba"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:び",
+    "script": "hiragana",
+    "kana": "び",
+    "roman": "bi",
+    "row": "ba",
+    "category": "voiced",
+    "memory": "び → bi；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "bi"
+    ],
+    "type": "kana",
+    "title": "び",
+    "subtitle": "bi",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "ba"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ビ",
+    "script": "katakana",
+    "kana": "ビ",
+    "roman": "bi",
+    "row": "ba",
+    "category": "voiced",
+    "memory": "ビ → bi；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "bi"
+    ],
+    "type": "kana",
+    "title": "ビ",
+    "subtitle": "bi",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "ba"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぶ",
+    "script": "hiragana",
+    "kana": "ぶ",
+    "roman": "bu",
+    "row": "ba",
+    "category": "voiced",
+    "memory": "ぶ → bu；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "bu"
+    ],
+    "type": "kana",
+    "title": "ぶ",
+    "subtitle": "bu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "ba"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ブ",
+    "script": "katakana",
+    "kana": "ブ",
+    "roman": "bu",
+    "row": "ba",
+    "category": "voiced",
+    "memory": "ブ → bu；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "bu"
+    ],
+    "type": "kana",
+    "title": "ブ",
+    "subtitle": "bu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "ba"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:べ",
+    "script": "hiragana",
+    "kana": "べ",
+    "roman": "be",
+    "row": "ba",
+    "category": "voiced",
+    "memory": "べ → be；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "be"
+    ],
+    "type": "kana",
+    "title": "べ",
+    "subtitle": "be",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "ba"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ベ",
+    "script": "katakana",
+    "kana": "ベ",
+    "roman": "be",
+    "row": "ba",
+    "category": "voiced",
+    "memory": "ベ → be；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "be"
+    ],
+    "type": "kana",
+    "title": "ベ",
+    "subtitle": "be",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "ba"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぼ",
+    "script": "hiragana",
+    "kana": "ぼ",
+    "roman": "bo",
+    "row": "ba",
+    "category": "voiced",
+    "memory": "ぼ → bo；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "bo"
+    ],
+    "type": "kana",
+    "title": "ぼ",
+    "subtitle": "bo",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "ba"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ボ",
+    "script": "katakana",
+    "kana": "ボ",
+    "roman": "bo",
+    "row": "ba",
+    "category": "voiced",
+    "memory": "ボ → bo；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "bo"
+    ],
+    "type": "kana",
+    "title": "ボ",
+    "subtitle": "bo",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "ba"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぱ",
+    "script": "hiragana",
+    "kana": "ぱ",
+    "roman": "pa",
+    "row": "pa",
+    "category": "voiced",
+    "memory": "ぱ → pa；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "pa"
+    ],
+    "type": "kana",
+    "title": "ぱ",
+    "subtitle": "pa",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "pa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:パ",
+    "script": "katakana",
+    "kana": "パ",
+    "roman": "pa",
+    "row": "pa",
+    "category": "voiced",
+    "memory": "パ → pa；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "pa"
+    ],
+    "type": "kana",
+    "title": "パ",
+    "subtitle": "pa",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "pa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぴ",
+    "script": "hiragana",
+    "kana": "ぴ",
+    "roman": "pi",
+    "row": "pa",
+    "category": "voiced",
+    "memory": "ぴ → pi；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "pi"
+    ],
+    "type": "kana",
+    "title": "ぴ",
+    "subtitle": "pi",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "pa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ピ",
+    "script": "katakana",
+    "kana": "ピ",
+    "roman": "pi",
+    "row": "pa",
+    "category": "voiced",
+    "memory": "ピ → pi；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "pi"
+    ],
+    "type": "kana",
+    "title": "ピ",
+    "subtitle": "pi",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "pa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぷ",
+    "script": "hiragana",
+    "kana": "ぷ",
+    "roman": "pu",
+    "row": "pa",
+    "category": "voiced",
+    "memory": "ぷ → pu；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "pu"
+    ],
+    "type": "kana",
+    "title": "ぷ",
+    "subtitle": "pu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "pa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:プ",
+    "script": "katakana",
+    "kana": "プ",
+    "roman": "pu",
+    "row": "pa",
+    "category": "voiced",
+    "memory": "プ → pu；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "pu"
+    ],
+    "type": "kana",
+    "title": "プ",
+    "subtitle": "pu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "pa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぺ",
+    "script": "hiragana",
+    "kana": "ぺ",
+    "roman": "pe",
+    "row": "pa",
+    "category": "voiced",
+    "memory": "ぺ → pe；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "pe"
+    ],
+    "type": "kana",
+    "title": "ぺ",
+    "subtitle": "pe",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "pa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ペ",
+    "script": "katakana",
+    "kana": "ペ",
+    "roman": "pe",
+    "row": "pa",
+    "category": "voiced",
+    "memory": "ペ → pe；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "pe"
+    ],
+    "type": "kana",
+    "title": "ペ",
+    "subtitle": "pe",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "pa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぽ",
+    "script": "hiragana",
+    "kana": "ぽ",
+    "roman": "po",
+    "row": "pa",
+    "category": "voiced",
+    "memory": "ぽ → po；在基础假名上添加浊音/半浊音符号",
+    "aliases": [
+      "po"
+    ],
+    "type": "kana",
+    "title": "ぽ",
+    "subtitle": "po",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "voiced",
+      "pa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ポ",
+    "script": "katakana",
+    "kana": "ポ",
+    "roman": "po",
+    "row": "pa",
+    "category": "voiced",
+    "memory": "ポ → po；在基础片假名上添加浊音/半浊音符号",
+    "aliases": [
+      "po"
+    ],
+    "type": "kana",
+    "title": "ポ",
+    "subtitle": "po",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "voiced",
+      "pa"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:きゃ",
+    "script": "hiragana",
+    "kana": "きゃ",
+    "roman": "kya",
+    "row": "ky",
+    "category": "yoon",
+    "memory": "き + 小ゃ → きゃ → kya",
+    "aliases": [
+      "kya"
+    ],
+    "type": "kana",
+    "title": "きゃ",
+    "subtitle": "kya",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "ky"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:キャ",
+    "script": "katakana",
+    "kana": "キャ",
+    "roman": "kya",
+    "row": "ky",
+    "category": "yoon",
+    "memory": "キ + 小ャ → キャ → kya",
+    "aliases": [
+      "kya"
+    ],
+    "type": "kana",
+    "title": "キャ",
+    "subtitle": "kya",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "ky"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:きゅ",
+    "script": "hiragana",
+    "kana": "きゅ",
+    "roman": "kyu",
+    "row": "ky",
+    "category": "yoon",
+    "memory": "き + 小ゅ → きゅ → kyu",
+    "aliases": [
+      "kyu"
+    ],
+    "type": "kana",
+    "title": "きゅ",
+    "subtitle": "kyu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "ky"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:キュ",
+    "script": "katakana",
+    "kana": "キュ",
+    "roman": "kyu",
+    "row": "ky",
+    "category": "yoon",
+    "memory": "キ + 小ュ → キュ → kyu",
+    "aliases": [
+      "kyu"
+    ],
+    "type": "kana",
+    "title": "キュ",
+    "subtitle": "kyu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "ky"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:きょ",
+    "script": "hiragana",
+    "kana": "きょ",
+    "roman": "kyo",
+    "row": "ky",
+    "category": "yoon",
+    "memory": "き + 小ょ → きょ → kyo",
+    "aliases": [
+      "kyo"
+    ],
+    "type": "kana",
+    "title": "きょ",
+    "subtitle": "kyo",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "ky"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:キョ",
+    "script": "katakana",
+    "kana": "キョ",
+    "roman": "kyo",
+    "row": "ky",
+    "category": "yoon",
+    "memory": "キ + 小ョ → キョ → kyo",
+    "aliases": [
+      "kyo"
+    ],
+    "type": "kana",
+    "title": "キョ",
+    "subtitle": "kyo",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "ky"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぎゃ",
+    "script": "hiragana",
+    "kana": "ぎゃ",
+    "roman": "gya",
+    "row": "gy",
+    "category": "yoon",
+    "memory": "ぎ + 小ゃ → ぎゃ → gya",
+    "aliases": [
+      "gya"
+    ],
+    "type": "kana",
+    "title": "ぎゃ",
+    "subtitle": "gya",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "gy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ギャ",
+    "script": "katakana",
+    "kana": "ギャ",
+    "roman": "gya",
+    "row": "gy",
+    "category": "yoon",
+    "memory": "ギ + 小ャ → ギャ → gya",
+    "aliases": [
+      "gya"
+    ],
+    "type": "kana",
+    "title": "ギャ",
+    "subtitle": "gya",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "gy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぎゅ",
+    "script": "hiragana",
+    "kana": "ぎゅ",
+    "roman": "gyu",
+    "row": "gy",
+    "category": "yoon",
+    "memory": "ぎ + 小ゅ → ぎゅ → gyu",
+    "aliases": [
+      "gyu"
+    ],
+    "type": "kana",
+    "title": "ぎゅ",
+    "subtitle": "gyu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "gy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ギュ",
+    "script": "katakana",
+    "kana": "ギュ",
+    "roman": "gyu",
+    "row": "gy",
+    "category": "yoon",
+    "memory": "ギ + 小ュ → ギュ → gyu",
+    "aliases": [
+      "gyu"
+    ],
+    "type": "kana",
+    "title": "ギュ",
+    "subtitle": "gyu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "gy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぎょ",
+    "script": "hiragana",
+    "kana": "ぎょ",
+    "roman": "gyo",
+    "row": "gy",
+    "category": "yoon",
+    "memory": "ぎ + 小ょ → ぎょ → gyo",
+    "aliases": [
+      "gyo"
+    ],
+    "type": "kana",
+    "title": "ぎょ",
+    "subtitle": "gyo",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "gy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ギョ",
+    "script": "katakana",
+    "kana": "ギョ",
+    "roman": "gyo",
+    "row": "gy",
+    "category": "yoon",
+    "memory": "ギ + 小ョ → ギョ → gyo",
+    "aliases": [
+      "gyo"
+    ],
+    "type": "kana",
+    "title": "ギョ",
+    "subtitle": "gyo",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "gy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:しゃ",
+    "script": "hiragana",
+    "kana": "しゃ",
+    "roman": "sha",
+    "row": "shy",
+    "category": "yoon",
+    "memory": "し + 小ゃ → しゃ → sha",
+    "aliases": [
+      "sha",
+      "sya"
+    ],
+    "type": "kana",
+    "title": "しゃ",
+    "subtitle": "sha",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "shy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:シャ",
+    "script": "katakana",
+    "kana": "シャ",
+    "roman": "sha",
+    "row": "shy",
+    "category": "yoon",
+    "memory": "シ + 小ャ → シャ → sha",
+    "aliases": [
+      "sha",
+      "sya"
+    ],
+    "type": "kana",
+    "title": "シャ",
+    "subtitle": "sha",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "shy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:しゅ",
+    "script": "hiragana",
+    "kana": "しゅ",
+    "roman": "shu",
+    "row": "shy",
+    "category": "yoon",
+    "memory": "し + 小ゅ → しゅ → shu",
+    "aliases": [
+      "shu",
+      "syu"
+    ],
+    "type": "kana",
+    "title": "しゅ",
+    "subtitle": "shu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "shy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:シュ",
+    "script": "katakana",
+    "kana": "シュ",
+    "roman": "shu",
+    "row": "shy",
+    "category": "yoon",
+    "memory": "シ + 小ュ → シュ → shu",
+    "aliases": [
+      "shu",
+      "syu"
+    ],
+    "type": "kana",
+    "title": "シュ",
+    "subtitle": "shu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "shy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:しょ",
+    "script": "hiragana",
+    "kana": "しょ",
+    "roman": "sho",
+    "row": "shy",
+    "category": "yoon",
+    "memory": "し + 小ょ → しょ → sho",
+    "aliases": [
+      "sho",
+      "syo"
+    ],
+    "type": "kana",
+    "title": "しょ",
+    "subtitle": "sho",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "shy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ショ",
+    "script": "katakana",
+    "kana": "ショ",
+    "roman": "sho",
+    "row": "shy",
+    "category": "yoon",
+    "memory": "シ + 小ョ → ショ → sho",
+    "aliases": [
+      "sho",
+      "syo"
+    ],
+    "type": "kana",
+    "title": "ショ",
+    "subtitle": "sho",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "shy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:じゃ",
+    "script": "hiragana",
+    "kana": "じゃ",
+    "roman": "ja",
+    "row": "jy",
+    "category": "yoon",
+    "memory": "じ + 小ゃ → じゃ → ja",
+    "aliases": [
+      "ja",
+      "zya"
+    ],
+    "type": "kana",
+    "title": "じゃ",
+    "subtitle": "ja",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "jy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ジャ",
+    "script": "katakana",
+    "kana": "ジャ",
+    "roman": "ja",
+    "row": "jy",
+    "category": "yoon",
+    "memory": "ジ + 小ャ → ジャ → ja",
+    "aliases": [
+      "ja",
+      "zya"
+    ],
+    "type": "kana",
+    "title": "ジャ",
+    "subtitle": "ja",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "jy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:じゅ",
+    "script": "hiragana",
+    "kana": "じゅ",
+    "roman": "ju",
+    "row": "jy",
+    "category": "yoon",
+    "memory": "じ + 小ゅ → じゅ → ju",
+    "aliases": [
+      "ju",
+      "zyu"
+    ],
+    "type": "kana",
+    "title": "じゅ",
+    "subtitle": "ju",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "jy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ジュ",
+    "script": "katakana",
+    "kana": "ジュ",
+    "roman": "ju",
+    "row": "jy",
+    "category": "yoon",
+    "memory": "ジ + 小ュ → ジュ → ju",
+    "aliases": [
+      "ju",
+      "zyu"
+    ],
+    "type": "kana",
+    "title": "ジュ",
+    "subtitle": "ju",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "jy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:じょ",
+    "script": "hiragana",
+    "kana": "じょ",
+    "roman": "jo",
+    "row": "jy",
+    "category": "yoon",
+    "memory": "じ + 小ょ → じょ → jo",
+    "aliases": [
+      "jo",
+      "zyo"
+    ],
+    "type": "kana",
+    "title": "じょ",
+    "subtitle": "jo",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "jy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ジョ",
+    "script": "katakana",
+    "kana": "ジョ",
+    "roman": "jo",
+    "row": "jy",
+    "category": "yoon",
+    "memory": "ジ + 小ョ → ジョ → jo",
+    "aliases": [
+      "jo",
+      "zyo"
+    ],
+    "type": "kana",
+    "title": "ジョ",
+    "subtitle": "jo",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "jy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ちゃ",
+    "script": "hiragana",
+    "kana": "ちゃ",
+    "roman": "cha",
+    "row": "chy",
+    "category": "yoon",
+    "memory": "ち + 小ゃ → ちゃ → cha",
+    "aliases": [
+      "cha",
+      "tya",
+      "cya"
+    ],
+    "type": "kana",
+    "title": "ちゃ",
+    "subtitle": "cha",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "chy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:チャ",
+    "script": "katakana",
+    "kana": "チャ",
+    "roman": "cha",
+    "row": "chy",
+    "category": "yoon",
+    "memory": "チ + 小ャ → チャ → cha",
+    "aliases": [
+      "cha",
+      "tya",
+      "cya"
+    ],
+    "type": "kana",
+    "title": "チャ",
+    "subtitle": "cha",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "chy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ちゅ",
+    "script": "hiragana",
+    "kana": "ちゅ",
+    "roman": "chu",
+    "row": "chy",
+    "category": "yoon",
+    "memory": "ち + 小ゅ → ちゅ → chu",
+    "aliases": [
+      "chu",
+      "tyu",
+      "cyu"
+    ],
+    "type": "kana",
+    "title": "ちゅ",
+    "subtitle": "chu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "chy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:チュ",
+    "script": "katakana",
+    "kana": "チュ",
+    "roman": "chu",
+    "row": "chy",
+    "category": "yoon",
+    "memory": "チ + 小ュ → チュ → chu",
+    "aliases": [
+      "chu",
+      "tyu",
+      "cyu"
+    ],
+    "type": "kana",
+    "title": "チュ",
+    "subtitle": "chu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "chy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ちょ",
+    "script": "hiragana",
+    "kana": "ちょ",
+    "roman": "cho",
+    "row": "chy",
+    "category": "yoon",
+    "memory": "ち + 小ょ → ちょ → cho",
+    "aliases": [
+      "cho",
+      "tyo",
+      "cyo"
+    ],
+    "type": "kana",
+    "title": "ちょ",
+    "subtitle": "cho",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "chy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:チョ",
+    "script": "katakana",
+    "kana": "チョ",
+    "roman": "cho",
+    "row": "chy",
+    "category": "yoon",
+    "memory": "チ + 小ョ → チョ → cho",
+    "aliases": [
+      "cho",
+      "tyo",
+      "cyo"
+    ],
+    "type": "kana",
+    "title": "チョ",
+    "subtitle": "cho",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "chy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:にゃ",
+    "script": "hiragana",
+    "kana": "にゃ",
+    "roman": "nya",
+    "row": "ny",
+    "category": "yoon",
+    "memory": "に + 小ゃ → にゃ → nya",
+    "aliases": [
+      "nya"
+    ],
+    "type": "kana",
+    "title": "にゃ",
+    "subtitle": "nya",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "ny"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ニャ",
+    "script": "katakana",
+    "kana": "ニャ",
+    "roman": "nya",
+    "row": "ny",
+    "category": "yoon",
+    "memory": "ニ + 小ャ → ニャ → nya",
+    "aliases": [
+      "nya"
+    ],
+    "type": "kana",
+    "title": "ニャ",
+    "subtitle": "nya",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "ny"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:にゅ",
+    "script": "hiragana",
+    "kana": "にゅ",
+    "roman": "nyu",
+    "row": "ny",
+    "category": "yoon",
+    "memory": "に + 小ゅ → にゅ → nyu",
+    "aliases": [
+      "nyu"
+    ],
+    "type": "kana",
+    "title": "にゅ",
+    "subtitle": "nyu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "ny"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ニュ",
+    "script": "katakana",
+    "kana": "ニュ",
+    "roman": "nyu",
+    "row": "ny",
+    "category": "yoon",
+    "memory": "ニ + 小ュ → ニュ → nyu",
+    "aliases": [
+      "nyu"
+    ],
+    "type": "kana",
+    "title": "ニュ",
+    "subtitle": "nyu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "ny"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:にょ",
+    "script": "hiragana",
+    "kana": "にょ",
+    "roman": "nyo",
+    "row": "ny",
+    "category": "yoon",
+    "memory": "に + 小ょ → にょ → nyo",
+    "aliases": [
+      "nyo"
+    ],
+    "type": "kana",
+    "title": "にょ",
+    "subtitle": "nyo",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "ny"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ニョ",
+    "script": "katakana",
+    "kana": "ニョ",
+    "roman": "nyo",
+    "row": "ny",
+    "category": "yoon",
+    "memory": "ニ + 小ョ → ニョ → nyo",
+    "aliases": [
+      "nyo"
+    ],
+    "type": "kana",
+    "title": "ニョ",
+    "subtitle": "nyo",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "ny"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ひゃ",
+    "script": "hiragana",
+    "kana": "ひゃ",
+    "roman": "hya",
+    "row": "hy",
+    "category": "yoon",
+    "memory": "ひ + 小ゃ → ひゃ → hya",
+    "aliases": [
+      "hya"
+    ],
+    "type": "kana",
+    "title": "ひゃ",
+    "subtitle": "hya",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "hy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ヒャ",
+    "script": "katakana",
+    "kana": "ヒャ",
+    "roman": "hya",
+    "row": "hy",
+    "category": "yoon",
+    "memory": "ヒ + 小ャ → ヒャ → hya",
+    "aliases": [
+      "hya"
+    ],
+    "type": "kana",
+    "title": "ヒャ",
+    "subtitle": "hya",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "hy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ひゅ",
+    "script": "hiragana",
+    "kana": "ひゅ",
+    "roman": "hyu",
+    "row": "hy",
+    "category": "yoon",
+    "memory": "ひ + 小ゅ → ひゅ → hyu",
+    "aliases": [
+      "hyu"
+    ],
+    "type": "kana",
+    "title": "ひゅ",
+    "subtitle": "hyu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "hy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ヒュ",
+    "script": "katakana",
+    "kana": "ヒュ",
+    "roman": "hyu",
+    "row": "hy",
+    "category": "yoon",
+    "memory": "ヒ + 小ュ → ヒュ → hyu",
+    "aliases": [
+      "hyu"
+    ],
+    "type": "kana",
+    "title": "ヒュ",
+    "subtitle": "hyu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "hy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ひょ",
+    "script": "hiragana",
+    "kana": "ひょ",
+    "roman": "hyo",
+    "row": "hy",
+    "category": "yoon",
+    "memory": "ひ + 小ょ → ひょ → hyo",
+    "aliases": [
+      "hyo"
+    ],
+    "type": "kana",
+    "title": "ひょ",
+    "subtitle": "hyo",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "hy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ヒョ",
+    "script": "katakana",
+    "kana": "ヒョ",
+    "roman": "hyo",
+    "row": "hy",
+    "category": "yoon",
+    "memory": "ヒ + 小ョ → ヒョ → hyo",
+    "aliases": [
+      "hyo"
+    ],
+    "type": "kana",
+    "title": "ヒョ",
+    "subtitle": "hyo",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "hy"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:びゃ",
+    "script": "hiragana",
+    "kana": "びゃ",
+    "roman": "bya",
+    "row": "by",
+    "category": "yoon",
+    "memory": "び + 小ゃ → びゃ → bya",
+    "aliases": [
+      "bya"
+    ],
+    "type": "kana",
+    "title": "びゃ",
+    "subtitle": "bya",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "by"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ビャ",
+    "script": "katakana",
+    "kana": "ビャ",
+    "roman": "bya",
+    "row": "by",
+    "category": "yoon",
+    "memory": "ビ + 小ャ → ビャ → bya",
+    "aliases": [
+      "bya"
+    ],
+    "type": "kana",
+    "title": "ビャ",
+    "subtitle": "bya",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "by"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:びゅ",
+    "script": "hiragana",
+    "kana": "びゅ",
+    "roman": "byu",
+    "row": "by",
+    "category": "yoon",
+    "memory": "び + 小ゅ → びゅ → byu",
+    "aliases": [
+      "byu"
+    ],
+    "type": "kana",
+    "title": "びゅ",
+    "subtitle": "byu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "by"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ビュ",
+    "script": "katakana",
+    "kana": "ビュ",
+    "roman": "byu",
+    "row": "by",
+    "category": "yoon",
+    "memory": "ビ + 小ュ → ビュ → byu",
+    "aliases": [
+      "byu"
+    ],
+    "type": "kana",
+    "title": "ビュ",
+    "subtitle": "byu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "by"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:びょ",
+    "script": "hiragana",
+    "kana": "びょ",
+    "roman": "byo",
+    "row": "by",
+    "category": "yoon",
+    "memory": "び + 小ょ → びょ → byo",
+    "aliases": [
+      "byo"
+    ],
+    "type": "kana",
+    "title": "びょ",
+    "subtitle": "byo",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "by"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ビョ",
+    "script": "katakana",
+    "kana": "ビョ",
+    "roman": "byo",
+    "row": "by",
+    "category": "yoon",
+    "memory": "ビ + 小ョ → ビョ → byo",
+    "aliases": [
+      "byo"
+    ],
+    "type": "kana",
+    "title": "ビョ",
+    "subtitle": "byo",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "by"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぴゃ",
+    "script": "hiragana",
+    "kana": "ぴゃ",
+    "roman": "pya",
+    "row": "py",
+    "category": "yoon",
+    "memory": "ぴ + 小ゃ → ぴゃ → pya",
+    "aliases": [
+      "pya"
+    ],
+    "type": "kana",
+    "title": "ぴゃ",
+    "subtitle": "pya",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "py"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ピャ",
+    "script": "katakana",
+    "kana": "ピャ",
+    "roman": "pya",
+    "row": "py",
+    "category": "yoon",
+    "memory": "ピ + 小ャ → ピャ → pya",
+    "aliases": [
+      "pya"
+    ],
+    "type": "kana",
+    "title": "ピャ",
+    "subtitle": "pya",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "py"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぴゅ",
+    "script": "hiragana",
+    "kana": "ぴゅ",
+    "roman": "pyu",
+    "row": "py",
+    "category": "yoon",
+    "memory": "ぴ + 小ゅ → ぴゅ → pyu",
+    "aliases": [
+      "pyu"
+    ],
+    "type": "kana",
+    "title": "ぴゅ",
+    "subtitle": "pyu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "py"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ピュ",
+    "script": "katakana",
+    "kana": "ピュ",
+    "roman": "pyu",
+    "row": "py",
+    "category": "yoon",
+    "memory": "ピ + 小ュ → ピュ → pyu",
+    "aliases": [
+      "pyu"
+    ],
+    "type": "kana",
+    "title": "ピュ",
+    "subtitle": "pyu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "py"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:ぴょ",
+    "script": "hiragana",
+    "kana": "ぴょ",
+    "roman": "pyo",
+    "row": "py",
+    "category": "yoon",
+    "memory": "ぴ + 小ょ → ぴょ → pyo",
+    "aliases": [
+      "pyo"
+    ],
+    "type": "kana",
+    "title": "ぴょ",
+    "subtitle": "pyo",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "py"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ピョ",
+    "script": "katakana",
+    "kana": "ピョ",
+    "roman": "pyo",
+    "row": "py",
+    "category": "yoon",
+    "memory": "ピ + 小ョ → ピョ → pyo",
+    "aliases": [
+      "pyo"
+    ],
+    "type": "kana",
+    "title": "ピョ",
+    "subtitle": "pyo",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "py"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:みゃ",
+    "script": "hiragana",
+    "kana": "みゃ",
+    "roman": "mya",
+    "row": "my",
+    "category": "yoon",
+    "memory": "み + 小ゃ → みゃ → mya",
+    "aliases": [
+      "mya"
+    ],
+    "type": "kana",
+    "title": "みゃ",
+    "subtitle": "mya",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "my"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ミャ",
+    "script": "katakana",
+    "kana": "ミャ",
+    "roman": "mya",
+    "row": "my",
+    "category": "yoon",
+    "memory": "ミ + 小ャ → ミャ → mya",
+    "aliases": [
+      "mya"
+    ],
+    "type": "kana",
+    "title": "ミャ",
+    "subtitle": "mya",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "my"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:みゅ",
+    "script": "hiragana",
+    "kana": "みゅ",
+    "roman": "myu",
+    "row": "my",
+    "category": "yoon",
+    "memory": "み + 小ゅ → みゅ → myu",
+    "aliases": [
+      "myu"
+    ],
+    "type": "kana",
+    "title": "みゅ",
+    "subtitle": "myu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "my"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ミュ",
+    "script": "katakana",
+    "kana": "ミュ",
+    "roman": "myu",
+    "row": "my",
+    "category": "yoon",
+    "memory": "ミ + 小ュ → ミュ → myu",
+    "aliases": [
+      "myu"
+    ],
+    "type": "kana",
+    "title": "ミュ",
+    "subtitle": "myu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "my"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:みょ",
+    "script": "hiragana",
+    "kana": "みょ",
+    "roman": "myo",
+    "row": "my",
+    "category": "yoon",
+    "memory": "み + 小ょ → みょ → myo",
+    "aliases": [
+      "myo"
+    ],
+    "type": "kana",
+    "title": "みょ",
+    "subtitle": "myo",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "my"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:ミョ",
+    "script": "katakana",
+    "kana": "ミョ",
+    "roman": "myo",
+    "row": "my",
+    "category": "yoon",
+    "memory": "ミ + 小ョ → ミョ → myo",
+    "aliases": [
+      "myo"
+    ],
+    "type": "kana",
+    "title": "ミョ",
+    "subtitle": "myo",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "my"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:りゃ",
+    "script": "hiragana",
+    "kana": "りゃ",
+    "roman": "rya",
+    "row": "ry",
+    "category": "yoon",
+    "memory": "り + 小ゃ → りゃ → rya",
+    "aliases": [
+      "rya"
+    ],
+    "type": "kana",
+    "title": "りゃ",
+    "subtitle": "rya",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "ry"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:リャ",
+    "script": "katakana",
+    "kana": "リャ",
+    "roman": "rya",
+    "row": "ry",
+    "category": "yoon",
+    "memory": "リ + 小ャ → リャ → rya",
+    "aliases": [
+      "rya"
+    ],
+    "type": "kana",
+    "title": "リャ",
+    "subtitle": "rya",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "ry"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:りゅ",
+    "script": "hiragana",
+    "kana": "りゅ",
+    "roman": "ryu",
+    "row": "ry",
+    "category": "yoon",
+    "memory": "り + 小ゅ → りゅ → ryu",
+    "aliases": [
+      "ryu"
+    ],
+    "type": "kana",
+    "title": "りゅ",
+    "subtitle": "ryu",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "ry"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:リュ",
+    "script": "katakana",
+    "kana": "リュ",
+    "roman": "ryu",
+    "row": "ry",
+    "category": "yoon",
+    "memory": "リ + 小ュ → リュ → ryu",
+    "aliases": [
+      "ryu"
+    ],
+    "type": "kana",
+    "title": "リュ",
+    "subtitle": "ryu",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "ry"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "hiragana:りょ",
+    "script": "hiragana",
+    "kana": "りょ",
+    "roman": "ryo",
+    "row": "ry",
+    "category": "yoon",
+    "memory": "り + 小ょ → りょ → ryo",
+    "aliases": [
+      "ryo"
+    ],
+    "type": "kana",
+    "title": "りょ",
+    "subtitle": "ryo",
+    "level": "kana",
+    "tags": [
+      "hiragana",
+      "yoon",
+      "ry"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  },
+  {
+    "id": "katakana:リョ",
+    "script": "katakana",
+    "kana": "リョ",
+    "roman": "ryo",
+    "row": "ry",
+    "category": "yoon",
+    "memory": "リ + 小ョ → リョ → ryo",
+    "aliases": [
+      "ryo"
+    ],
+    "type": "kana",
+    "title": "リョ",
+    "subtitle": "ryo",
+    "level": "kana",
+    "tags": [
+      "katakana",
+      "yoon",
+      "ry"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.98,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kana.recognition",
+        "kana.recall"
+      ]
+    }
+  }
+]

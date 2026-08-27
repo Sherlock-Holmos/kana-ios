@@ -1,0 +1,4408 @@
+[
+  {
+    "id": "kanji:一",
+    "type": "kanji",
+    "character": "一",
+    "onReadings": [
+      "いち",
+      "いつ"
+    ],
+    "kunReadings": [
+      "ひと",
+      "ひとつ"
+    ],
+    "meanings": [
+      "一/一个"
+    ],
+    "examples": [
+      "一",
+      "一つ"
+    ],
+    "level": "N5",
+    "tags": [
+      "数字"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:二",
+    "type": "kanji",
+    "character": "二",
+    "onReadings": [
+      "に",
+      "じ"
+    ],
+    "kunReadings": [
+      "ふた",
+      "ふたつ"
+    ],
+    "meanings": [
+      "二/两个"
+    ],
+    "examples": [
+      "二",
+      "二つ"
+    ],
+    "level": "N5",
+    "tags": [
+      "数字"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:三",
+    "type": "kanji",
+    "character": "三",
+    "onReadings": [
+      "さん"
+    ],
+    "kunReadings": [
+      "み",
+      "みつ",
+      "みっつ"
+    ],
+    "meanings": [
+      "三/三个"
+    ],
+    "examples": [
+      "三",
+      "三つ"
+    ],
+    "level": "N5",
+    "tags": [
+      "数字"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:四",
+    "type": "kanji",
+    "character": "四",
+    "onReadings": [
+      "し"
+    ],
+    "kunReadings": [
+      "よん",
+      "よ",
+      "よつ",
+      "よっつ"
+    ],
+    "meanings": [
+      "四/四个"
+    ],
+    "examples": [
+      "四",
+      "四つ"
+    ],
+    "level": "N5",
+    "tags": [
+      "数字"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:五",
+    "type": "kanji",
+    "character": "五",
+    "onReadings": [
+      "ご"
+    ],
+    "kunReadings": [
+      "いつ",
+      "いつつ"
+    ],
+    "meanings": [
+      "五/五个"
+    ],
+    "examples": [
+      "五",
+      "五つ"
+    ],
+    "level": "N5",
+    "tags": [
+      "数字"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:六",
+    "type": "kanji",
+    "character": "六",
+    "onReadings": [
+      "ろく"
+    ],
+    "kunReadings": [
+      "む",
+      "むつ",
+      "むっつ"
+    ],
+    "meanings": [
+      "六/六个"
+    ],
+    "examples": [
+      "六",
+      "六つ"
+    ],
+    "level": "N5",
+    "tags": [
+      "数字"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:七",
+    "type": "kanji",
+    "character": "七",
+    "onReadings": [
+      "しち"
+    ],
+    "kunReadings": [
+      "なな",
+      "ななつ"
+    ],
+    "meanings": [
+      "七/七个"
+    ],
+    "examples": [
+      "七",
+      "七つ"
+    ],
+    "level": "N5",
+    "tags": [
+      "数字"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:八",
+    "type": "kanji",
+    "character": "八",
+    "onReadings": [
+      "はち"
+    ],
+    "kunReadings": [
+      "や",
+      "やつ",
+      "やっつ"
+    ],
+    "meanings": [
+      "八/八个"
+    ],
+    "examples": [
+      "八",
+      "八つ"
+    ],
+    "level": "N5",
+    "tags": [
+      "数字"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:九",
+    "type": "kanji",
+    "character": "九",
+    "onReadings": [
+      "きゅう",
+      "く"
+    ],
+    "kunReadings": [
+      "ここの",
+      "ここのつ"
+    ],
+    "meanings": [
+      "九/九个"
+    ],
+    "examples": [
+      "九",
+      "九つ"
+    ],
+    "level": "N5",
+    "tags": [
+      "数字"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:十",
+    "type": "kanji",
+    "character": "十",
+    "onReadings": [
+      "じゅう",
+      "じっ"
+    ],
+    "kunReadings": [
+      "とお"
+    ],
+    "meanings": [
+      "十"
+    ],
+    "examples": [
+      "十",
+      "十日"
+    ],
+    "level": "N5",
+    "tags": [
+      "数字"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:百",
+    "type": "kanji",
+    "character": "百",
+    "onReadings": [
+      "ひゃく"
+    ],
+    "kunReadings": [
+      "もも"
+    ],
+    "meanings": [
+      "百"
+    ],
+    "examples": [
+      "百",
+      "三百"
+    ],
+    "level": "N5",
+    "tags": [
+      "数字"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:千",
+    "type": "kanji",
+    "character": "千",
+    "onReadings": [
+      "せん"
+    ],
+    "kunReadings": [
+      "ち"
+    ],
+    "meanings": [
+      "千"
+    ],
+    "examples": [
+      "千",
+      "三千"
+    ],
+    "level": "N5",
+    "tags": [
+      "数字"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:万",
+    "type": "kanji",
+    "character": "万",
+    "onReadings": [
+      "まん",
+      "ばん"
+    ],
+    "kunReadings": [
+      "よろず"
+    ],
+    "meanings": [
+      "万"
+    ],
+    "examples": [
+      "一万"
+    ],
+    "level": "N5",
+    "tags": [
+      "数字"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:円",
+    "type": "kanji",
+    "character": "円",
+    "onReadings": [
+      "えん"
+    ],
+    "kunReadings": [
+      "まる"
+    ],
+    "meanings": [
+      "日元/圆"
+    ],
+    "examples": [
+      "百円"
+    ],
+    "level": "N5",
+    "tags": [
+      "金钱"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:日",
+    "type": "kanji",
+    "character": "日",
+    "onReadings": [
+      "にち",
+      "じつ"
+    ],
+    "kunReadings": [
+      "ひ",
+      "か"
+    ],
+    "meanings": [
+      "日/太阳/天"
+    ],
+    "examples": [
+      "日本",
+      "日曜日"
+    ],
+    "level": "N5",
+    "tags": [
+      "时间"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:月",
+    "type": "kanji",
+    "character": "月",
+    "onReadings": [
+      "げつ",
+      "がつ"
+    ],
+    "kunReadings": [
+      "つき"
+    ],
+    "meanings": [
+      "月/月亮"
+    ],
+    "examples": [
+      "月曜日",
+      "一月"
+    ],
+    "level": "N5",
+    "tags": [
+      "时间"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:火",
+    "type": "kanji",
+    "character": "火",
+    "onReadings": [
+      "か"
+    ],
+    "kunReadings": [
+      "ひ",
+      "ほ"
+    ],
+    "meanings": [
+      "火"
+    ],
+    "examples": [
+      "火曜日",
+      "火"
+    ],
+    "level": "N5",
+    "tags": [
+      "时间"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:水",
+    "type": "kanji",
+    "character": "水",
+    "onReadings": [
+      "すい"
+    ],
+    "kunReadings": [
+      "みず"
+    ],
+    "meanings": [
+      "水"
+    ],
+    "examples": [
+      "水曜日",
+      "水"
+    ],
+    "level": "N5",
+    "tags": [
+      "自然"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:木",
+    "type": "kanji",
+    "character": "木",
+    "onReadings": [
+      "もく",
+      "ぼく"
+    ],
+    "kunReadings": [
+      "き",
+      "こ"
+    ],
+    "meanings": [
+      "树木"
+    ],
+    "examples": [
+      "木曜日",
+      "木"
+    ],
+    "level": "N5",
+    "tags": [
+      "自然"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:金",
+    "type": "kanji",
+    "character": "金",
+    "onReadings": [
+      "きん",
+      "こん"
+    ],
+    "kunReadings": [
+      "かね",
+      "かな"
+    ],
+    "meanings": [
+      "金/钱"
+    ],
+    "examples": [
+      "金曜日",
+      "お金"
+    ],
+    "level": "N5",
+    "tags": [
+      "金钱"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:土",
+    "type": "kanji",
+    "character": "土",
+    "onReadings": [
+      "ど",
+      "と"
+    ],
+    "kunReadings": [
+      "つち"
+    ],
+    "meanings": [
+      "土"
+    ],
+    "examples": [
+      "土曜日",
+      "土"
+    ],
+    "level": "N5",
+    "tags": [
+      "自然"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:曜",
+    "type": "kanji",
+    "character": "曜",
+    "onReadings": [
+      "よう"
+    ],
+    "kunReadings": [],
+    "meanings": [
+      "星期"
+    ],
+    "examples": [
+      "曜日"
+    ],
+    "level": "N5",
+    "tags": [
+      "时间"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:年",
+    "type": "kanji",
+    "character": "年",
+    "onReadings": [
+      "ねん"
+    ],
+    "kunReadings": [
+      "とし"
+    ],
+    "meanings": [
+      "年"
+    ],
+    "examples": [
+      "今年",
+      "来年"
+    ],
+    "level": "N5",
+    "tags": [
+      "时间"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:時",
+    "type": "kanji",
+    "character": "時",
+    "onReadings": [
+      "じ"
+    ],
+    "kunReadings": [
+      "とき"
+    ],
+    "meanings": [
+      "时间/点钟"
+    ],
+    "examples": [
+      "時間",
+      "七時"
+    ],
+    "level": "N5",
+    "tags": [
+      "时间"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:分",
+    "type": "kanji",
+    "character": "分",
+    "onReadings": [
+      "ぶん",
+      "ふん",
+      "ぷん"
+    ],
+    "kunReadings": [
+      "わ",
+      "わけ"
+    ],
+    "meanings": [
+      "分/分钟"
+    ],
+    "examples": [
+      "五分",
+      "分かる"
+    ],
+    "level": "N5",
+    "tags": [
+      "时间"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:半",
+    "type": "kanji",
+    "character": "半",
+    "onReadings": [
+      "はん"
+    ],
+    "kunReadings": [
+      "なか"
+    ],
+    "meanings": [
+      "一半"
+    ],
+    "examples": [
+      "七時半"
+    ],
+    "level": "N5",
+    "tags": [
+      "时间"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:午",
+    "type": "kanji",
+    "character": "午",
+    "onReadings": [
+      "ご"
+    ],
+    "kunReadings": [],
+    "meanings": [
+      "午"
+    ],
+    "examples": [
+      "午前",
+      "午後"
+    ],
+    "level": "N5",
+    "tags": [
+      "时间"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:前",
+    "type": "kanji",
+    "character": "前",
+    "onReadings": [
+      "ぜん"
+    ],
+    "kunReadings": [
+      "まえ"
+    ],
+    "meanings": [
+      "前面/之前"
+    ],
+    "examples": [
+      "午前",
+      "名前"
+    ],
+    "level": "N5",
+    "tags": [
+      "位置"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:後",
+    "type": "kanji",
+    "character": "後",
+    "onReadings": [
+      "ご",
+      "こう"
+    ],
+    "kunReadings": [
+      "あと",
+      "うしろ"
+    ],
+    "meanings": [
+      "后面/之后"
+    ],
+    "examples": [
+      "午後",
+      "後ろ"
+    ],
+    "level": "N5",
+    "tags": [
+      "位置"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:今",
+    "type": "kanji",
+    "character": "今",
+    "onReadings": [
+      "こん",
+      "きん"
+    ],
+    "kunReadings": [
+      "いま"
+    ],
+    "meanings": [
+      "现在"
+    ],
+    "examples": [
+      "今日",
+      "今"
+    ],
+    "level": "N5",
+    "tags": [
+      "时间"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:毎",
+    "type": "kanji",
+    "character": "毎",
+    "onReadings": [
+      "まい"
+    ],
+    "kunReadings": [
+      "ごと"
+    ],
+    "meanings": [
+      "每"
+    ],
+    "examples": [
+      "毎日",
+      "毎週"
+    ],
+    "level": "N5",
+    "tags": [
+      "时间"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:週",
+    "type": "kanji",
+    "character": "週",
+    "onReadings": [
+      "しゅう"
+    ],
+    "kunReadings": [],
+    "meanings": [
+      "周"
+    ],
+    "examples": [
+      "今週",
+      "毎週"
+    ],
+    "level": "N5",
+    "tags": [
+      "时间"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:間",
+    "type": "kanji",
+    "character": "間",
+    "onReadings": [
+      "かん",
+      "けん"
+    ],
+    "kunReadings": [
+      "あいだ",
+      "ま"
+    ],
+    "meanings": [
+      "间/期间"
+    ],
+    "examples": [
+      "時間",
+      "間"
+    ],
+    "level": "N5",
+    "tags": [
+      "时间"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:何",
+    "type": "kanji",
+    "character": "何",
+    "onReadings": [
+      "か"
+    ],
+    "kunReadings": [
+      "なに",
+      "なん"
+    ],
+    "meanings": [
+      "什么"
+    ],
+    "examples": [
+      "何",
+      "何時"
+    ],
+    "level": "N5",
+    "tags": [
+      "疑问"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:人",
+    "type": "kanji",
+    "character": "人",
+    "onReadings": [
+      "じん",
+      "にん"
+    ],
+    "kunReadings": [
+      "ひと"
+    ],
+    "meanings": [
+      "人"
+    ],
+    "examples": [
+      "日本人",
+      "人"
+    ],
+    "level": "N5",
+    "tags": [
+      "人物"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:男",
+    "type": "kanji",
+    "character": "男",
+    "onReadings": [
+      "だん",
+      "なん"
+    ],
+    "kunReadings": [
+      "おとこ"
+    ],
+    "meanings": [
+      "男性"
+    ],
+    "examples": [
+      "男の人"
+    ],
+    "level": "N5",
+    "tags": [
+      "人物"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:女",
+    "type": "kanji",
+    "character": "女",
+    "onReadings": [
+      "じょ",
+      "にょ"
+    ],
+    "kunReadings": [
+      "おんな"
+    ],
+    "meanings": [
+      "女性"
+    ],
+    "examples": [
+      "女の人"
+    ],
+    "level": "N5",
+    "tags": [
+      "人物"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:子",
+    "type": "kanji",
+    "character": "子",
+    "onReadings": [
+      "し",
+      "す"
+    ],
+    "kunReadings": [
+      "こ"
+    ],
+    "meanings": [
+      "孩子"
+    ],
+    "examples": [
+      "子ども",
+      "女子"
+    ],
+    "level": "N5",
+    "tags": [
+      "人物"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:父",
+    "type": "kanji",
+    "character": "父",
+    "onReadings": [
+      "ふ"
+    ],
+    "kunReadings": [
+      "ちち"
+    ],
+    "meanings": [
+      "父亲"
+    ],
+    "examples": [
+      "父",
+      "お父さん"
+    ],
+    "level": "N5",
+    "tags": [
+      "家庭"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "daily-life"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:母",
+    "type": "kanji",
+    "character": "母",
+    "onReadings": [
+      "ぼ"
+    ],
+    "kunReadings": [
+      "はは"
+    ],
+    "meanings": [
+      "母亲"
+    ],
+    "examples": [
+      "母",
+      "お母さん"
+    ],
+    "level": "N5",
+    "tags": [
+      "家庭"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "daily-life"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:兄",
+    "type": "kanji",
+    "character": "兄",
+    "onReadings": [
+      "けい",
+      "きょう"
+    ],
+    "kunReadings": [
+      "あに"
+    ],
+    "meanings": [
+      "哥哥"
+    ],
+    "examples": [
+      "兄",
+      "お兄さん"
+    ],
+    "level": "N5",
+    "tags": [
+      "家庭"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "daily-life"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:姉",
+    "type": "kanji",
+    "character": "姉",
+    "onReadings": [
+      "し"
+    ],
+    "kunReadings": [
+      "あね"
+    ],
+    "meanings": [
+      "姐姐"
+    ],
+    "examples": [
+      "姉",
+      "お姉さん"
+    ],
+    "level": "N5",
+    "tags": [
+      "家庭"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "daily-life"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:弟",
+    "type": "kanji",
+    "character": "弟",
+    "onReadings": [
+      "てい",
+      "だい"
+    ],
+    "kunReadings": [
+      "おとうと"
+    ],
+    "meanings": [
+      "弟弟"
+    ],
+    "examples": [
+      "弟"
+    ],
+    "level": "N5",
+    "tags": [
+      "家庭"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "daily-life"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:妹",
+    "type": "kanji",
+    "character": "妹",
+    "onReadings": [
+      "まい"
+    ],
+    "kunReadings": [
+      "いもうと"
+    ],
+    "meanings": [
+      "妹妹"
+    ],
+    "examples": [
+      "妹"
+    ],
+    "level": "N5",
+    "tags": [
+      "家庭"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "daily-life"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:友",
+    "type": "kanji",
+    "character": "友",
+    "onReadings": [
+      "ゆう"
+    ],
+    "kunReadings": [
+      "とも"
+    ],
+    "meanings": [
+      "朋友"
+    ],
+    "examples": [
+      "友達",
+      "友人"
+    ],
+    "level": "N5",
+    "tags": [
+      "人物"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:先",
+    "type": "kanji",
+    "character": "先",
+    "onReadings": [
+      "せん"
+    ],
+    "kunReadings": [
+      "さき"
+    ],
+    "meanings": [
+      "先/前"
+    ],
+    "examples": [
+      "先生",
+      "先"
+    ],
+    "level": "N5",
+    "tags": [
+      "学校"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "school"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:生",
+    "type": "kanji",
+    "character": "生",
+    "onReadings": [
+      "せい",
+      "しょう"
+    ],
+    "kunReadings": [
+      "い",
+      "う",
+      "なま"
+    ],
+    "meanings": [
+      "生/生活"
+    ],
+    "examples": [
+      "学生",
+      "先生",
+      "生まれる"
+    ],
+    "level": "N5",
+    "tags": [
+      "学校"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "school"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:学",
+    "type": "kanji",
+    "character": "学",
+    "onReadings": [
+      "がく"
+    ],
+    "kunReadings": [
+      "まな"
+    ],
+    "meanings": [
+      "学习"
+    ],
+    "examples": [
+      "学校",
+      "学生"
+    ],
+    "level": "N5",
+    "tags": [
+      "学校"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "school"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:校",
+    "type": "kanji",
+    "character": "校",
+    "onReadings": [
+      "こう"
+    ],
+    "kunReadings": [],
+    "meanings": [
+      "学校"
+    ],
+    "examples": [
+      "学校"
+    ],
+    "level": "N5",
+    "tags": [
+      "学校"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "school"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:大",
+    "type": "kanji",
+    "character": "大",
+    "onReadings": [
+      "だい",
+      "たい"
+    ],
+    "kunReadings": [
+      "おお"
+    ],
+    "meanings": [
+      "大"
+    ],
+    "examples": [
+      "大学",
+      "大きい"
+    ],
+    "level": "N5",
+    "tags": [
+      "形容"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:中",
+    "type": "kanji",
+    "character": "中",
+    "onReadings": [
+      "ちゅう",
+      "じゅう"
+    ],
+    "kunReadings": [
+      "なか"
+    ],
+    "meanings": [
+      "中/里面"
+    ],
+    "examples": [
+      "中国",
+      "中"
+    ],
+    "level": "N5",
+    "tags": [
+      "位置"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:小",
+    "type": "kanji",
+    "character": "小",
+    "onReadings": [
+      "しょう"
+    ],
+    "kunReadings": [
+      "ちい",
+      "こ"
+    ],
+    "meanings": [
+      "小"
+    ],
+    "examples": [
+      "小さい",
+      "小学校"
+    ],
+    "level": "N5",
+    "tags": [
+      "形容"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:上",
+    "type": "kanji",
+    "character": "上",
+    "onReadings": [
+      "じょう"
+    ],
+    "kunReadings": [
+      "うえ",
+      "あ",
+      "のぼ"
+    ],
+    "meanings": [
+      "上"
+    ],
+    "examples": [
+      "上",
+      "上げる"
+    ],
+    "level": "N5",
+    "tags": [
+      "位置"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:下",
+    "type": "kanji",
+    "character": "下",
+    "onReadings": [
+      "か",
+      "げ"
+    ],
+    "kunReadings": [
+      "した",
+      "さ",
+      "くだ"
+    ],
+    "meanings": [
+      "下"
+    ],
+    "examples": [
+      "下",
+      "地下"
+    ],
+    "level": "N5",
+    "tags": [
+      "位置"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:左",
+    "type": "kanji",
+    "character": "左",
+    "onReadings": [
+      "さ"
+    ],
+    "kunReadings": [
+      "ひだり"
+    ],
+    "meanings": [
+      "左"
+    ],
+    "examples": [
+      "左"
+    ],
+    "level": "N5",
+    "tags": [
+      "位置"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:右",
+    "type": "kanji",
+    "character": "右",
+    "onReadings": [
+      "う",
+      "ゆう"
+    ],
+    "kunReadings": [
+      "みぎ"
+    ],
+    "meanings": [
+      "右"
+    ],
+    "examples": [
+      "右"
+    ],
+    "level": "N5",
+    "tags": [
+      "位置"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:東",
+    "type": "kanji",
+    "character": "東",
+    "onReadings": [
+      "とう"
+    ],
+    "kunReadings": [
+      "ひがし"
+    ],
+    "meanings": [
+      "东"
+    ],
+    "examples": [
+      "東京",
+      "東"
+    ],
+    "level": "N5",
+    "tags": [
+      "方位"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:西",
+    "type": "kanji",
+    "character": "西",
+    "onReadings": [
+      "せい",
+      "さい"
+    ],
+    "kunReadings": [
+      "にし"
+    ],
+    "meanings": [
+      "西"
+    ],
+    "examples": [
+      "西"
+    ],
+    "level": "N5",
+    "tags": [
+      "方位"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:南",
+    "type": "kanji",
+    "character": "南",
+    "onReadings": [
+      "なん"
+    ],
+    "kunReadings": [
+      "みなみ"
+    ],
+    "meanings": [
+      "南"
+    ],
+    "examples": [
+      "南"
+    ],
+    "level": "N5",
+    "tags": [
+      "方位"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:北",
+    "type": "kanji",
+    "character": "北",
+    "onReadings": [
+      "ほく"
+    ],
+    "kunReadings": [
+      "きた"
+    ],
+    "meanings": [
+      "北"
+    ],
+    "examples": [
+      "北海道",
+      "北"
+    ],
+    "level": "N5",
+    "tags": [
+      "方位"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:外",
+    "type": "kanji",
+    "character": "外",
+    "onReadings": [
+      "がい",
+      "げ"
+    ],
+    "kunReadings": [
+      "そと",
+      "ほか"
+    ],
+    "meanings": [
+      "外面"
+    ],
+    "examples": [
+      "外国",
+      "外"
+    ],
+    "level": "N5",
+    "tags": [
+      "位置"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:国",
+    "type": "kanji",
+    "character": "国",
+    "onReadings": [
+      "こく"
+    ],
+    "kunReadings": [
+      "くに"
+    ],
+    "meanings": [
+      "国家"
+    ],
+    "examples": [
+      "日本国",
+      "外国"
+    ],
+    "level": "N5",
+    "tags": [
+      "国家"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "daily-life"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:語",
+    "type": "kanji",
+    "character": "語",
+    "onReadings": [
+      "ご"
+    ],
+    "kunReadings": [
+      "かた"
+    ],
+    "meanings": [
+      "语言"
+    ],
+    "examples": [
+      "日本語",
+      "英語"
+    ],
+    "level": "N5",
+    "tags": [
+      "语言"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:名",
+    "type": "kanji",
+    "character": "名",
+    "onReadings": [
+      "めい",
+      "みょう"
+    ],
+    "kunReadings": [
+      "な"
+    ],
+    "meanings": [
+      "名字"
+    ],
+    "examples": [
+      "名前",
+      "有名"
+    ],
+    "level": "N5",
+    "tags": [
+      "基础"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:本",
+    "type": "kanji",
+    "character": "本",
+    "onReadings": [
+      "ほん"
+    ],
+    "kunReadings": [
+      "もと"
+    ],
+    "meanings": [
+      "书/本/根本"
+    ],
+    "examples": [
+      "本",
+      "日本"
+    ],
+    "level": "N5",
+    "tags": [
+      "基础"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:書",
+    "type": "kanji",
+    "character": "書",
+    "onReadings": [
+      "しょ"
+    ],
+    "kunReadings": [
+      "か"
+    ],
+    "meanings": [
+      "书写/书"
+    ],
+    "examples": [
+      "書く",
+      "図書館"
+    ],
+    "level": "N5",
+    "tags": [
+      "学习"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:読",
+    "type": "kanji",
+    "character": "読",
+    "onReadings": [
+      "どく"
+    ],
+    "kunReadings": [
+      "よ"
+    ],
+    "meanings": [
+      "读"
+    ],
+    "examples": [
+      "読む",
+      "読書"
+    ],
+    "level": "N5",
+    "tags": [
+      "学习"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:聞",
+    "type": "kanji",
+    "character": "聞",
+    "onReadings": [
+      "ぶん",
+      "もん"
+    ],
+    "kunReadings": [
+      "き"
+    ],
+    "meanings": [
+      "听/问"
+    ],
+    "examples": [
+      "聞く",
+      "新聞"
+    ],
+    "level": "N5",
+    "tags": [
+      "学习"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:話",
+    "type": "kanji",
+    "character": "話",
+    "onReadings": [
+      "わ"
+    ],
+    "kunReadings": [
+      "はな",
+      "はなし"
+    ],
+    "meanings": [
+      "说话/话"
+    ],
+    "examples": [
+      "話す",
+      "電話"
+    ],
+    "level": "N5",
+    "tags": [
+      "交流"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:食",
+    "type": "kanji",
+    "character": "食",
+    "onReadings": [
+      "しょく"
+    ],
+    "kunReadings": [
+      "た",
+      "く"
+    ],
+    "meanings": [
+      "吃/食物"
+    ],
+    "examples": [
+      "食べる",
+      "食事"
+    ],
+    "level": "N5",
+    "tags": [
+      "饮食"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "food"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:飲",
+    "type": "kanji",
+    "character": "飲",
+    "onReadings": [
+      "いん"
+    ],
+    "kunReadings": [
+      "の"
+    ],
+    "meanings": [
+      "喝"
+    ],
+    "examples": [
+      "飲む",
+      "飲み物"
+    ],
+    "level": "N5",
+    "tags": [
+      "饮食"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "food"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:見",
+    "type": "kanji",
+    "character": "見",
+    "onReadings": [
+      "けん"
+    ],
+    "kunReadings": [
+      "み"
+    ],
+    "meanings": [
+      "看"
+    ],
+    "examples": [
+      "見る",
+      "見せる"
+    ],
+    "level": "N5",
+    "tags": [
+      "动作"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:行",
+    "type": "kanji",
+    "character": "行",
+    "onReadings": [
+      "こう",
+      "ぎょう"
+    ],
+    "kunReadings": [
+      "い",
+      "ゆ",
+      "おこな"
+    ],
+    "meanings": [
+      "去/行"
+    ],
+    "examples": [
+      "行く",
+      "旅行"
+    ],
+    "level": "N5",
+    "tags": [
+      "移动"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:来",
+    "type": "kanji",
+    "character": "来",
+    "onReadings": [
+      "らい"
+    ],
+    "kunReadings": [
+      "く",
+      "き"
+    ],
+    "meanings": [
+      "来"
+    ],
+    "examples": [
+      "来る",
+      "来年"
+    ],
+    "level": "N5",
+    "tags": [
+      "移动"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:帰",
+    "type": "kanji",
+    "character": "帰",
+    "onReadings": [
+      "き"
+    ],
+    "kunReadings": [
+      "かえ"
+    ],
+    "meanings": [
+      "回去"
+    ],
+    "examples": [
+      "帰る"
+    ],
+    "level": "N5",
+    "tags": [
+      "移动"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:入",
+    "type": "kanji",
+    "character": "入",
+    "onReadings": [
+      "にゅう"
+    ],
+    "kunReadings": [
+      "はい",
+      "い"
+    ],
+    "meanings": [
+      "进入"
+    ],
+    "examples": [
+      "入る",
+      "入口"
+    ],
+    "level": "N5",
+    "tags": [
+      "动作"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:出",
+    "type": "kanji",
+    "character": "出",
+    "onReadings": [
+      "しゅつ"
+    ],
+    "kunReadings": [
+      "で",
+      "だ"
+    ],
+    "meanings": [
+      "出去"
+    ],
+    "examples": [
+      "出る",
+      "出口"
+    ],
+    "level": "N5",
+    "tags": [
+      "动作"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:休",
+    "type": "kanji",
+    "character": "休",
+    "onReadings": [
+      "きゅう"
+    ],
+    "kunReadings": [
+      "やす"
+    ],
+    "meanings": [
+      "休息"
+    ],
+    "examples": [
+      "休む",
+      "休日"
+    ],
+    "level": "N5",
+    "tags": [
+      "动作"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:会",
+    "type": "kanji",
+    "character": "会",
+    "onReadings": [
+      "かい",
+      "え"
+    ],
+    "kunReadings": [
+      "あ"
+    ],
+    "meanings": [
+      "会见/会"
+    ],
+    "examples": [
+      "会う",
+      "会社"
+    ],
+    "level": "N5",
+    "tags": [
+      "人物"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:社",
+    "type": "kanji",
+    "character": "社",
+    "onReadings": [
+      "しゃ"
+    ],
+    "kunReadings": [
+      "やしろ"
+    ],
+    "meanings": [
+      "公司/社"
+    ],
+    "examples": [
+      "会社"
+    ],
+    "level": "N5",
+    "tags": [
+      "工作"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:店",
+    "type": "kanji",
+    "character": "店",
+    "onReadings": [
+      "てん"
+    ],
+    "kunReadings": [
+      "みせ"
+    ],
+    "meanings": [
+      "店"
+    ],
+    "examples": [
+      "店",
+      "書店"
+    ],
+    "level": "N5",
+    "tags": [
+      "地点"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:駅",
+    "type": "kanji",
+    "character": "駅",
+    "onReadings": [
+      "えき"
+    ],
+    "kunReadings": [],
+    "meanings": [
+      "车站"
+    ],
+    "examples": [
+      "駅"
+    ],
+    "level": "N5",
+    "tags": [
+      "交通"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "travel"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:電",
+    "type": "kanji",
+    "character": "電",
+    "onReadings": [
+      "でん"
+    ],
+    "kunReadings": [],
+    "meanings": [
+      "电"
+    ],
+    "examples": [
+      "電車",
+      "電話"
+    ],
+    "level": "N5",
+    "tags": [
+      "交通"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "travel"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:車",
+    "type": "kanji",
+    "character": "車",
+    "onReadings": [
+      "しゃ"
+    ],
+    "kunReadings": [
+      "くるま"
+    ],
+    "meanings": [
+      "车"
+    ],
+    "examples": [
+      "電車",
+      "車"
+    ],
+    "level": "N5",
+    "tags": [
+      "交通"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "travel"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:自",
+    "type": "kanji",
+    "character": "自",
+    "onReadings": [
+      "じ",
+      "し"
+    ],
+    "kunReadings": [
+      "みずか"
+    ],
+    "meanings": [
+      "自己"
+    ],
+    "examples": [
+      "自分",
+      "自転車"
+    ],
+    "level": "N5",
+    "tags": [
+      "基础"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:転",
+    "type": "kanji",
+    "character": "転",
+    "onReadings": [
+      "てん"
+    ],
+    "kunReadings": [
+      "ころ"
+    ],
+    "meanings": [
+      "转"
+    ],
+    "examples": [
+      "自転車"
+    ],
+    "level": "N5",
+    "tags": [
+      "交通"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "travel"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:気",
+    "type": "kanji",
+    "character": "気",
+    "onReadings": [
+      "き",
+      "け"
+    ],
+    "kunReadings": [
+      "いき"
+    ],
+    "meanings": [
+      "气/心情"
+    ],
+    "examples": [
+      "元気",
+      "天気"
+    ],
+    "level": "N5",
+    "tags": [
+      "基础"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:天",
+    "type": "kanji",
+    "character": "天",
+    "onReadings": [
+      "てん"
+    ],
+    "kunReadings": [
+      "あめ",
+      "あま"
+    ],
+    "meanings": [
+      "天"
+    ],
+    "examples": [
+      "天気"
+    ],
+    "level": "N5",
+    "tags": [
+      "自然"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:雨",
+    "type": "kanji",
+    "character": "雨",
+    "onReadings": [
+      "う"
+    ],
+    "kunReadings": [
+      "あめ",
+      "あま"
+    ],
+    "meanings": [
+      "雨"
+    ],
+    "examples": [
+      "雨",
+      "大雨"
+    ],
+    "level": "N5",
+    "tags": [
+      "天气"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:雪",
+    "type": "kanji",
+    "character": "雪",
+    "onReadings": [
+      "せつ"
+    ],
+    "kunReadings": [
+      "ゆき"
+    ],
+    "meanings": [
+      "雪"
+    ],
+    "examples": [
+      "雪"
+    ],
+    "level": "N5",
+    "tags": [
+      "天气"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:山",
+    "type": "kanji",
+    "character": "山",
+    "onReadings": [
+      "さん"
+    ],
+    "kunReadings": [
+      "やま"
+    ],
+    "meanings": [
+      "山"
+    ],
+    "examples": [
+      "山",
+      "富士山"
+    ],
+    "level": "N5",
+    "tags": [
+      "自然"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:川",
+    "type": "kanji",
+    "character": "川",
+    "onReadings": [
+      "せん"
+    ],
+    "kunReadings": [
+      "かわ"
+    ],
+    "meanings": [
+      "河"
+    ],
+    "examples": [
+      "川"
+    ],
+    "level": "N5",
+    "tags": [
+      "自然"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:田",
+    "type": "kanji",
+    "character": "田",
+    "onReadings": [
+      "でん"
+    ],
+    "kunReadings": [
+      "た"
+    ],
+    "meanings": [
+      "田"
+    ],
+    "examples": [
+      "田んぼ",
+      "山田"
+    ],
+    "level": "N5",
+    "tags": [
+      "自然"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:空",
+    "type": "kanji",
+    "character": "空",
+    "onReadings": [
+      "くう"
+    ],
+    "kunReadings": [
+      "そら",
+      "あ"
+    ],
+    "meanings": [
+      "天空/空"
+    ],
+    "examples": [
+      "空",
+      "空港"
+    ],
+    "level": "N5",
+    "tags": [
+      "自然"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:花",
+    "type": "kanji",
+    "character": "花",
+    "onReadings": [
+      "か"
+    ],
+    "kunReadings": [
+      "はな"
+    ],
+    "meanings": [
+      "花"
+    ],
+    "examples": [
+      "花",
+      "花見"
+    ],
+    "level": "N5",
+    "tags": [
+      "自然"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:魚",
+    "type": "kanji",
+    "character": "魚",
+    "onReadings": [
+      "ぎょ"
+    ],
+    "kunReadings": [
+      "さかな"
+    ],
+    "meanings": [
+      "鱼"
+    ],
+    "examples": [
+      "魚"
+    ],
+    "level": "N5",
+    "tags": [
+      "饮食"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "food"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:肉",
+    "type": "kanji",
+    "character": "肉",
+    "onReadings": [
+      "にく"
+    ],
+    "kunReadings": [],
+    "meanings": [
+      "肉"
+    ],
+    "examples": [
+      "肉"
+    ],
+    "level": "N5",
+    "tags": [
+      "饮食"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "food"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:犬",
+    "type": "kanji",
+    "character": "犬",
+    "onReadings": [
+      "けん"
+    ],
+    "kunReadings": [
+      "いぬ"
+    ],
+    "meanings": [
+      "狗"
+    ],
+    "examples": [
+      "犬"
+    ],
+    "level": "N5",
+    "tags": [
+      "动物"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:猫",
+    "type": "kanji",
+    "character": "猫",
+    "onReadings": [
+      "びょう"
+    ],
+    "kunReadings": [
+      "ねこ"
+    ],
+    "meanings": [
+      "猫"
+    ],
+    "examples": [
+      "猫"
+    ],
+    "level": "N5",
+    "tags": [
+      "动物"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:目",
+    "type": "kanji",
+    "character": "目",
+    "onReadings": [
+      "もく",
+      "ぼく"
+    ],
+    "kunReadings": [
+      "め"
+    ],
+    "meanings": [
+      "眼睛"
+    ],
+    "examples": [
+      "目",
+      "目的"
+    ],
+    "level": "N5",
+    "tags": [
+      "身体"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "health"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:耳",
+    "type": "kanji",
+    "character": "耳",
+    "onReadings": [
+      "じ"
+    ],
+    "kunReadings": [
+      "みみ"
+    ],
+    "meanings": [
+      "耳朵"
+    ],
+    "examples": [
+      "耳"
+    ],
+    "level": "N5",
+    "tags": [
+      "身体"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "health"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:口",
+    "type": "kanji",
+    "character": "口",
+    "onReadings": [
+      "こう",
+      "く"
+    ],
+    "kunReadings": [
+      "くち"
+    ],
+    "meanings": [
+      "嘴/入口"
+    ],
+    "examples": [
+      "口",
+      "入口"
+    ],
+    "level": "N5",
+    "tags": [
+      "身体"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "health"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:手",
+    "type": "kanji",
+    "character": "手",
+    "onReadings": [
+      "しゅ"
+    ],
+    "kunReadings": [
+      "て"
+    ],
+    "meanings": [
+      "手"
+    ],
+    "examples": [
+      "手",
+      "上手"
+    ],
+    "level": "N5",
+    "tags": [
+      "身体"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "health"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:足",
+    "type": "kanji",
+    "character": "足",
+    "onReadings": [
+      "そく"
+    ],
+    "kunReadings": [
+      "あし",
+      "た"
+    ],
+    "meanings": [
+      "脚/足够"
+    ],
+    "examples": [
+      "足",
+      "足りる"
+    ],
+    "level": "N5",
+    "tags": [
+      "身体"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "health"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:力",
+    "type": "kanji",
+    "character": "力",
+    "onReadings": [
+      "りょく",
+      "りき"
+    ],
+    "kunReadings": [
+      "ちから"
+    ],
+    "meanings": [
+      "力量"
+    ],
+    "examples": [
+      "力",
+      "能力"
+    ],
+    "level": "N5",
+    "tags": [
+      "基础"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:高",
+    "type": "kanji",
+    "character": "高",
+    "onReadings": [
+      "こう"
+    ],
+    "kunReadings": [
+      "たか"
+    ],
+    "meanings": [
+      "高/贵"
+    ],
+    "examples": [
+      "高い",
+      "高校"
+    ],
+    "level": "N5",
+    "tags": [
+      "形容"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:安",
+    "type": "kanji",
+    "character": "安",
+    "onReadings": [
+      "あん"
+    ],
+    "kunReadings": [
+      "やす"
+    ],
+    "meanings": [
+      "便宜/安"
+    ],
+    "examples": [
+      "安い",
+      "安心"
+    ],
+    "level": "N5",
+    "tags": [
+      "形容"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:新",
+    "type": "kanji",
+    "character": "新",
+    "onReadings": [
+      "しん"
+    ],
+    "kunReadings": [
+      "あたら"
+    ],
+    "meanings": [
+      "新"
+    ],
+    "examples": [
+      "新しい",
+      "新聞"
+    ],
+    "level": "N5",
+    "tags": [
+      "形容"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:古",
+    "type": "kanji",
+    "character": "古",
+    "onReadings": [
+      "こ"
+    ],
+    "kunReadings": [
+      "ふる"
+    ],
+    "meanings": [
+      "旧/古"
+    ],
+    "examples": [
+      "古い"
+    ],
+    "level": "N5",
+    "tags": [
+      "形容"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:長",
+    "type": "kanji",
+    "character": "長",
+    "onReadings": [
+      "ちょう"
+    ],
+    "kunReadings": [
+      "なが"
+    ],
+    "meanings": [
+      "长"
+    ],
+    "examples": [
+      "長い",
+      "校長"
+    ],
+    "level": "N5",
+    "tags": [
+      "形容"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:多",
+    "type": "kanji",
+    "character": "多",
+    "onReadings": [
+      "た"
+    ],
+    "kunReadings": [
+      "おお"
+    ],
+    "meanings": [
+      "多"
+    ],
+    "examples": [
+      "多い"
+    ],
+    "level": "N5",
+    "tags": [
+      "形容"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:少",
+    "type": "kanji",
+    "character": "少",
+    "onReadings": [
+      "しょう"
+    ],
+    "kunReadings": [
+      "すく",
+      "すこ"
+    ],
+    "meanings": [
+      "少"
+    ],
+    "examples": [
+      "少ない",
+      "少し"
+    ],
+    "level": "N5",
+    "tags": [
+      "形容"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:早",
+    "type": "kanji",
+    "character": "早",
+    "onReadings": [
+      "そう",
+      "さっ"
+    ],
+    "kunReadings": [
+      "はや"
+    ],
+    "meanings": [
+      "早"
+    ],
+    "examples": [
+      "早い",
+      "早く"
+    ],
+    "level": "N5",
+    "tags": [
+      "时间"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:白",
+    "type": "kanji",
+    "character": "白",
+    "onReadings": [
+      "はく",
+      "びゃく"
+    ],
+    "kunReadings": [
+      "しろ",
+      "しら"
+    ],
+    "meanings": [
+      "白"
+    ],
+    "examples": [
+      "白い"
+    ],
+    "level": "N5",
+    "tags": [
+      "颜色"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:黒",
+    "type": "kanji",
+    "character": "黒",
+    "onReadings": [
+      "こく"
+    ],
+    "kunReadings": [
+      "くろ"
+    ],
+    "meanings": [
+      "黑"
+    ],
+    "examples": [
+      "黒い"
+    ],
+    "level": "N5",
+    "tags": [
+      "颜色"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:赤",
+    "type": "kanji",
+    "character": "赤",
+    "onReadings": [
+      "せき",
+      "しゃく"
+    ],
+    "kunReadings": [
+      "あか"
+    ],
+    "meanings": [
+      "红"
+    ],
+    "examples": [
+      "赤い"
+    ],
+    "level": "N5",
+    "tags": [
+      "颜色"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:青",
+    "type": "kanji",
+    "character": "青",
+    "onReadings": [
+      "せい",
+      "しょう"
+    ],
+    "kunReadings": [
+      "あお"
+    ],
+    "meanings": [
+      "蓝/青"
+    ],
+    "examples": [
+      "青い"
+    ],
+    "level": "N5",
+    "tags": [
+      "颜色"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  },
+  {
+    "id": "kanji:問",
+    "type": "kanji",
+    "character": "問",
+    "onReadings": [
+      "もん"
+    ],
+    "kunReadings": [
+      "と"
+    ],
+    "meanings": [
+      "问/问题"
+    ],
+    "examples": [
+      "問題",
+      "質問"
+    ],
+    "level": "N5",
+    "tags": [
+      "学习"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "kanji.meaning",
+        "kanji.reading"
+      ]
+    }
+  }
+]
