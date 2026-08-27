@@ -21,23 +21,37 @@ struct KanaStrokeTemplate {
     let minPathCoverage: Double
 
     /// Score a user's drawing against this template. Returns the verdict and a
-    /// human-readable reason on failure. 0.0 means pass.
+    /// human-readable reason on failure. The checks are intentionally permissive:
+    /// finger-drawn strokes on iPhone naturally drift ±1 in count and aspect,
+    // and we don't want to reject legitimate attempts. KanjiVG + DTW replaces
+    /// this with real character recognition next week.
     static func evaluate(
         _ template: KanaStrokeTemplate,
         strokeCount: Int,
         aspect: Double,
         pathCoverage: Double
     ) -> Verdict {
-        if strokeCount != template.strokeCount {
+        // Allow ±1 stroke tolerance for finger drawings (decorative dots, hooks,
+        // double-lifts that the stroke counter treats as separate strokes).
+        if abs(strokeCount - template.strokeCount) > 1 {
             return .fail("笔数不对：\(template.character) 是 \(template.strokeCount) 画，你画了 \(strokeCount) 画")
         }
-        if aspect < template.minAspect {
+        // Aspect range widened by 0.15 on each side compared to the data table
+        // so tall-narrow characters (し, に, り) and wide characters (あ, か)
+        // don't trip the gate when drawn naturally.
+        let aspectMin = max(0.05, template.minAspect - 0.15)
+        let aspectMax = template.maxAspect + 0.15
+        if aspect < aspectMin {
             return .fail("形状不对：\(template.character) 偏瘦")
         }
-        if aspect > template.maxAspect {
+        if aspect > aspectMax {
             return .fail("形状不对：\(template.character) 偏扁")
         }
-        if pathCoverage < template.minPathCoverage {
+        // Path coverage is a coarse "did the user fill the canvas at all" check.
+        // Tall-narrow characters naturally cover less than wide ones, so the
+        // global threshold is low (0.12). Real per-character thresholds would
+        // come from KanjiVG.
+        if pathCoverage < 0.12 {
             return .fail("画得太少，请重画")
         }
         return .pass
