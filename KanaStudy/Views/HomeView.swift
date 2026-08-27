@@ -200,13 +200,21 @@ struct HomeView: View {
                     HStack {
                         Image(systemName: "sparkles")
                             .foregroundStyle(.tint)
-                        Text(rec.id)
-                            .font(.body.monospaced())
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(rec.id.abilityDisplayName)
+                                .font(.body.weight(.medium))
+                            if rec.id != rec.id.abilityDisplayName {
+                                Text(rec.id)
+                                    .font(.caption2.monospaced())
+                                    .foregroundStyle(Color.textTertiary)
+                            }
+                        }
                         Spacer()
                         Text(rec.reason)
                             .font(.caption)
                             .padding(.horizontal, 8).padding(.vertical, 4)
                             .background(Color.accentColor.opacity(0.15), in: Capsule())
+                            .foregroundStyle(Color.accentColor)
                     }
                 }
             }

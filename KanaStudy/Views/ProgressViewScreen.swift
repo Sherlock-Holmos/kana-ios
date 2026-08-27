@@ -72,8 +72,8 @@ struct ProgressViewScreen: View {
                         ForEach(Array(top), id: \.abilityId) { m in
                             VStack(alignment: .leading, spacing: 4) {
                                 HStack {
-                                    Text(m.abilityId)
-                                        .font(.caption.monospaced())
+                                    Text(m.abilityId.abilityDisplayName)
+                                        .font(.callout.weight(.medium))
                                     Spacer()
                                     Text(String(format: "%.0f%%", m.pMaster * 100))
                                         .font(.caption.monospacedDigit())
@@ -81,9 +81,15 @@ struct ProgressViewScreen: View {
                                 }
                                 ProgressView(value: m.pMaster)
                                     .tint(masteryColor(m.pMaster))
-                                Text("已答 \(m.opportunities) 次")
-                                    .font(.caption2)
-                                    .foregroundStyle(Color.textTertiary)
+                                HStack {
+                                    Text(m.abilityId)
+                                        .font(.caption2.monospaced())
+                                        .foregroundStyle(Color.textTertiary)
+                                    Spacer()
+                                    Text("已答 \(m.opportunities) 次")
+                                        .font(.caption2)
+                                        .foregroundStyle(Color.textTertiary)
+                                }
                             }
                             .padding(.vertical, 2)
                         }
