@@ -11,9 +11,6 @@ struct KanaBrowserView: View {
 
     var body: some View {
         List {
-            if let error {
-                Text(error).foregroundStyle(.red)
-            }
             Section("平假名 · \(hiragana.count)") {
                 LazyVGrid(columns: columns, spacing: 10) {
                     ForEach(hiragana) { item in
@@ -33,7 +30,13 @@ struct KanaBrowserView: View {
         }
         .navigationTitle("假名")
         .navigationBarTitleDisplayMode(.inline)
-        .overlay { if items.isEmpty && error == nil { ProgressView() } }
+        .overlay {
+            if let error {
+                ErrorView(error, retry: { Task { await load() } })
+            } else if items.isEmpty {
+                ProgressView()
+            }
+        }
         .task { await load() }
     }
 

@@ -21,7 +21,8 @@ struct ReviewView: View {
                 summary
 
                 if let error {
-                    Text(error).foregroundStyle(.red)
+                    ErrorView(error, retry: { Task { await prepare() } })
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
                 }
 
                 if let id = currentId, let snapshot = snapshot(for: id) {

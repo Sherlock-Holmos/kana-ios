@@ -17,7 +17,8 @@ struct VocabularyFlashcardView: View {
     var body: some View {
         VStack(spacing: 16) {
             if let error {
-                Text(error).foregroundStyle(.red).padding()
+                ErrorView(error, retry: { Task { await load() } })
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
 
             if let current {

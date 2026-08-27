@@ -19,7 +19,8 @@ struct SpeakingView: View {
     var body: some View {
         VStack(spacing: 16) {
             if let error {
-                Text(error).foregroundStyle(.red)
+                ErrorView(error, retry: { Task { await load() } })
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
             if permissionDenied {
                 Text("麦克风权限被拒绝。请到 设置 → 日语学习 → 麦克风 开启。")

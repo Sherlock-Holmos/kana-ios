@@ -22,7 +22,8 @@ struct AssessmentView: View {
     var body: some View {
         VStack(spacing: 16) {
             if let error {
-                Text(error).foregroundStyle(.red)
+                ErrorView(error, retry: { Task { await prepare() } })
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
 
             progress
