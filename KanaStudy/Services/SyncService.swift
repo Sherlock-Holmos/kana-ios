@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 
 // MARK: - Sync Models
 
@@ -15,6 +16,29 @@ struct SyncEnvelope: Codable {
     var dailyGoal: Int?
     var bktMasteries: [String: BKTMastery]?
     var updatedAt: Date
+
+    /// Build a fresh envelope from the four local stores.
+    static func make(srs: SRSStore, bkt: BKTStore, ability: AbilityProfile, goal: DailyGoalStore) -> SyncEnvelope {
+        SyncEnvelope(
+            meta: nil,
+            srsCards: srs.cards,
+            abilities: ability.abilities,
+            activityByDay: goal.activityByDay,
+            dailyGoal: goal.dailyGoal,
+            bktMasteries: bkt.masteries,
+            updatedAt: Date()
+        )
+    }
+
+    /// Merge this server-side envelope into the local stores (last-write-wins per field).
+    /// Used after a successful sign-in to hydrate the device with the user's progress.
+    func merge(into srs: SRSStore, bkt: BKTStore, ability: AbilityProfile, goal: DailyGoalStore) {
+        if let cards = srsCards { srs.replaceAll(cards) }
+        if let abs = abilities { ability.replaceAll(abs) }
+        if let acts = activityByDay { goal.replaceActivity(acts) }
+        if let g = dailyGoal { goal.setGoal(g) }
+        if let ms = bktMasteries { bkt.replaceAll(ms) }
+    }
 }
 
 // MARK: - Keychain keys
@@ -41,6 +65,16 @@ final class SyncService: ObservableObject {
 
     let settings: SyncSettings
 
+    // MARK: - Wired stores (set via attach from App entry)
+
+    private weak var srsStore: SRSStore?
+    private weak var bktStore: BKTStore?
+    private weak var abilityStore: AbilityProfile?
+    private weak var goalStore: DailyGoalStore?
+
+    private var cancellables = Set<AnyCancellable>()
+    private var hasAttached = false
+
     init(settings: SyncSettings = SyncSettings()) {
         self.settings = settings
         // Restore session from Keychain on launch so the user stays signed in.
@@ -50,6 +84,32 @@ final class SyncService: ObservableObject {
            !token.isEmpty, !userId.isEmpty {
             self.currentUser = SyncUser(id: userId, email: email)
         }
+    }
+
+    /// Wire SyncService to the four local stores. Called once from the App entry.
+    /// After attach, every store mutation triggers a debounced push.
+    func attach(srs: SRSStore, bkt: BKTStore, ability: AbilityProfile, goal: DailyGoalStore) {
+        guard !hasAttached else { return }
+        hasAttached = true
+        self.srsStore = srs
+        self.bktStore = bkt
+        self.abilityStore = ability
+        self.goalStore = goal
+
+        // Pull from server on first attach (after Keychain-restored login) so a fresh
+        // install of a returning user lands with their progress already populated.
+        if currentUser != nil {
+            Task { await self.pullAndMerge() }
+        }
+
+        // Listen for store mutations and push the merged envelope with a 1.2s debounce
+        // so rapid-fire taps batch into a single network call.
+        SyncTrigger.shared.subject
+            .debounce(for: .seconds(1.2), scheduler: DispatchQueue.main)
+            .sink { [weak self] _ in
+                Task { await self?.pushCurrent() }
+            }
+            .store(in: &cancellables)
     }
 
     var isReady: Bool { settings.isConfigured && currentUser != nil }
@@ -68,6 +128,10 @@ final class SyncService: ObservableObject {
             currentUser = session.user
             settings.userEmail = session.user.email
             lastError = nil
+            // Hydrate this device with the user's existing cloud progress, then push
+            // the local snapshot so server sees any drift accumulated while logged out.
+            await pullAndMerge()
+            await pushCurrent()
         } catch {
             lastError = "登录失败：\(error.localizedDescription)"
         }
@@ -85,6 +149,8 @@ final class SyncService: ObservableObject {
             currentUser = session.user
             settings.userEmail = session.user.email
             lastError = nil
+            // Brand-new account — push the local snapshot up so the first sync isn't empty.
+            await pushCurrent()
         } catch {
             lastError = "注册失败：\(error.localizedDescription)"
         }
@@ -141,6 +207,32 @@ final class SyncService: ObservableObject {
         } catch {
             lastError = "拉取失败：\(error.localizedDescription)"
             return nil
+        }
+    }
+
+    // MARK: - Convenience (used by SyncTrigger subscription)
+
+    /// Build an envelope from the four attached stores and push it.
+    /// No-op when not signed in or when stores aren't attached yet.
+    func pushCurrent() async {
+        guard let srs = srsStore,
+              let bkt = bktStore,
+              let ability = abilityStore,
+              let goal = goalStore else { return }
+        let envelope = SyncEnvelope.make(srs: srs, bkt: bkt, ability: ability, goal: goal)
+        await push(envelope: envelope)
+    }
+
+    /// Pull the current user's envelope and merge it into the four attached stores.
+    /// Called on attach (returning user) and after a fresh sign-in.
+    func pullAndMerge() async {
+        guard let user = currentUser,
+              let srs = srsStore,
+              let bkt = bktStore,
+              let ability = abilityStore,
+              let goal = goalStore else { return }
+        if let envelope = await pull(user: user) {
+            envelope.merge(into: srs, bkt: bkt, ability: ability, goal: goal)
         }
     }
 }

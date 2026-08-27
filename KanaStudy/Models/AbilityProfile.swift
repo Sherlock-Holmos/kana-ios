@@ -71,5 +71,12 @@ final class AbilityProfile: ObservableObject {
     private func save() {
         guard let encoded = try? JSONEncoder().encode(abilities) else { return }
         defaults.set(encoded, forKey: storeKey)
+        SyncTrigger.shared.bump()
+    }
+
+    /// Replace the entire abilities dictionary (used when merging a server-side envelope).
+    func replaceAll(_ newAbilities: [String: Ability]) {
+        abilities = newAbilities
+        save()
     }
 }

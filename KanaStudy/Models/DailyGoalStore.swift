@@ -111,7 +111,17 @@ final class DailyGoalStore: ObservableObject {
         defaults.set(dailyGoal, forKey: goalKey)
         if let encoded = try? JSONEncoder().encode(activityByDay) {
             defaults.set(encoded, forKey: activityKey)
+            SyncTrigger.shared.bump()
         }
+    }
+
+    // MARK: - Server merge helpers
+
+    /// Replace the activity-by-day dictionary (used when merging a server-side envelope).
+    func replaceActivity(_ newActivity: [String: Int]) {
+        activityByDay = newActivity
+        totalReviews = newActivity.values.reduce(0, +)
+        save()
     }
 }
 

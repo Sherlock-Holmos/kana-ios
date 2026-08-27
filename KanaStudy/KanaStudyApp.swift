@@ -18,6 +18,14 @@ struct KanaStudyApp: App {
                 .environmentObject(dailyGoal)
                 .environmentObject(syncSettings)
                 .environmentObject(syncService)
+                .task {
+                    syncService.attach(
+                        srs: srsStore,
+                        bkt: bktStore,
+                        ability: abilityProfile,
+                        goal: dailyGoal
+                    )
+                }
         }
     }
 }

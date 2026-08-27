@@ -107,6 +107,13 @@ final class BKTStore: ObservableObject {
     private func save() {
         if let encoded = try? JSONEncoder().encode(masteries) {
             defaults.set(encoded, forKey: storeKey)
+            SyncTrigger.shared.bump()
         }
+    }
+
+    /// Replace the entire mastery dictionary (used when merging a server-side envelope).
+    func replaceAll(_ newMasteries: [String: BKTMastery]) {
+        masteries = newMasteries
+        save()
     }
 }

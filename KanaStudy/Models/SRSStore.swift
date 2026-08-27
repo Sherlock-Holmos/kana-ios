@@ -79,6 +79,13 @@ final class SRSStore: ObservableObject {
     private func save() {
         guard let encoded = try? JSONEncoder().encode(cards) else { return }
         defaults.set(encoded, forKey: storeKey)
+        SyncTrigger.shared.bump()
+    }
+
+    /// Replace the entire card dictionary (used when merging a server-side envelope).
+    func replaceAll(_ newCards: [String: SRSCard]) {
+        cards = newCards
+        save()
     }
 
     // MARK: Public
