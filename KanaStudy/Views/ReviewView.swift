@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ReviewView: View {
     @EnvironmentObject private var srsStore: SRSStore
+    @EnvironmentObject private var ability: AbilityProfile
 
     @State private var kanaItems: [KanaItem] = []
     @State private var vocabItems: [VocabularyItem] = []
@@ -37,10 +38,11 @@ struct ReviewView: View {
 
     private var summary: some View {
         let due = srsStore.dueItems().count
-        return HStack(spacing: 16) {
+        return HStack(spacing: 12) {
             stat("到期", value: due)
             stat("已跟踪", value: srsStore.totalTracked)
             stat("总复习", value: srsStore.totalReviews)
+            stat("遗忘", value: srsStore.totalLapses)
         }
     }
 
@@ -57,9 +59,10 @@ struct ReviewView: View {
     // MARK: - Card snapshot
 
     private struct CardSnapshot {
-        let display: String      // kana / expression
-        let subtitle: String     // roman / reading
-        let back: String         // meaning or roman+meaning
+        let display: String
+        let subtitle: String
+        let back: String
+        let abilities: [String]
     }
 
     private func snapshot(for id: String) -> CardSnapshot? {
@@ -67,14 +70,16 @@ struct ReviewView: View {
             return CardSnapshot(
                 display: k.kana,
                 subtitle: k.isHiragana ? "平假名" : "片假名",
-                back: "\(k.roman)\(k.memory.map { " — \($0)" } ?? "")"
+                back: "\(k.roman)\(k.memory.map { " — \($0)" } ?? "")",
+                abilities: ["kana.recognition", "kana.recall"]
             )
         }
         if let v = vocabItems.first(where: { $0.id == id }) {
             return CardSnapshot(
                 display: v.expression,
                 subtitle: v.reading,
-                back: v.primaryMeaning
+                back: v.primaryMeaning,
+                abilities: ["vocabulary.meaning", "vocabulary.reading", "vocabulary.production"]
             )
         }
         return nil
@@ -89,7 +94,6 @@ struct ReviewView: View {
             Text(s.subtitle)
                 .font(.title3)
                 .foregroundStyle(.secondary)
-
             if revealed {
                 Divider().padding(.vertical, 6)
                 Text(s.back)
@@ -111,7 +115,11 @@ struct ReviewView: View {
         HStack(spacing: 8) {
             ForEach(SRSGrade.allCases) { grade in
                 Button {
+                    let success = grade != .again
                     srsStore.grade(id, as: grade)
+                    if let snapshot = snapshot(for: id) {
+                        ability.recordOutcomes(snapshot.abilities, success: success)
+                    }
                     revealed = false
                     advance()
                 } label: {
@@ -134,8 +142,6 @@ struct ReviewView: View {
         }
     }
 
-    // MARK: - Empty state
-
     private var emptyState: some View {
         VStack(spacing: 12) {
             Image(systemName: "checkmark.circle.fill")
@@ -151,8 +157,6 @@ struct ReviewView: View {
         }
         .padding(.top, 32)
     }
-
-    // MARK: - Helpers
 
     private func advance() {
         let due = srsStore.dueItems()
@@ -176,14 +180,9 @@ struct ReviewView: View {
         }
     }
 
-    /// On first launch, enroll a small starter batch (20 kana + 20 vocab) so users have something to review.
     private func seedIfNeeded() {
         guard srsStore.totalTracked == 0 else { return }
-        for k in kanaItems.prefix(20) {
-            srsStore.enroll(k.id)
-        }
-        for v in vocabItems.prefix(20) {
-            srsStore.enroll(v.id)
-        }
+        for k in kanaItems.prefix(20) { srsStore.enroll(k.id) }
+        for v in vocabItems.prefix(20) { srsStore.enroll(v.id) }
     }
 }

@@ -1,13 +1,13 @@
 import Foundation
 import Combine
 
-// MARK: - SRS Card State
+// MARK: - SRS Grade (full SM-2)
 
 enum SRSGrade: Int, Codable, CaseIterable, Identifiable {
-    case again = 0
-    case hard = 1
-    case good = 2
-    case easy = 3
+    case again = 0   // lapse
+    case hard = 1    // q=3
+    case good = 2    // q=4
+    case easy = 3    // q=5
 
     var id: Int { rawValue }
 
@@ -20,24 +20,26 @@ enum SRSGrade: Int, Codable, CaseIterable, Identifiable {
         }
     }
 
-    /// Interval multiplier in days (simplified SM-2).
-    var multiplier: Double {
+    /// SM-2 quality score (0–5). again maps to 2 (lapse not full failure).
+    var quality: Int {
         switch self {
-        case .again: return 0.0   // relaunch today
-        case .hard:  return 1.2
-        case .good:  return 2.0
-        case .easy:  return 3.0
+        case .again: return 2
+        case .hard:  return 3
+        case .good:  return 4
+        case .easy:  return 5
         }
     }
 }
 
 struct SRSCard: Codable, Identifiable, Hashable {
-    let id: String            // matches content id (e.g. "hiragana:あ")
+    let id: String            // content id
     var ease: Double          // starting 2.5
     var interval: Double      // days until next review
-    var repetitions: Int
+    var repetitions: Int      // consecutive successful reviews
     var dueDate: Date
     var lastReviewed: Date?
+    var lapses: Int           // count of times graded .again
+    var totalReviews: Int
 
     static func new(id: String) -> SRSCard {
         SRSCard(
@@ -46,17 +48,19 @@ struct SRSCard: Codable, Identifiable, Hashable {
             interval: 0,
             repetitions: 0,
             dueDate: Date(),
-            lastReviewed: nil
+            lastReviewed: nil,
+            lapses: 0,
+            totalReviews: 0
         )
     }
 }
 
-// MARK: - SRS Store
+// MARK: - SRS Store (SM-2)
 
 final class SRSStore: ObservableObject {
     @Published private(set) var cards: [String: SRSCard] = [:]
 
-    private let storeKey = "kana-study.srs.cards.v1"
+    private let storeKey = "kana-study.srs.cards.v2"
     private let defaults = UserDefaults.standard
 
     init() {
@@ -79,56 +83,49 @@ final class SRSStore: ObservableObject {
 
     // MARK: Public
 
-    /// Enroll an item if it isn't tracked yet.
     func enroll(_ itemId: String) {
         guard cards[itemId] == nil else { return }
         cards[itemId] = .new(id: itemId)
         save()
     }
 
-    /// Grade a card and reschedule.
+    /// Grade a card using SM-2 algorithm.
     func grade(_ itemId: String, as grade: SRSGrade) {
         var card = cards[itemId] ?? .new(id: itemId)
         let now = Date()
+        let q = Double(grade.quality)
 
-        switch grade {
-        case .again:
+        // 1. Update ease factor
+        let newEase = card.ease + (0.1 - (5.0 - q) * (0.08 + (5.0 - q) * 0.02))
+        card.ease = max(1.3, newEase)
+
+        // 2. Update repetition count + interval
+        if grade == .again {
             card.repetitions = 0
-            card.interval = 0.0007   // ~1 minute
-        case .hard:
+            card.interval = 0.0007       // ~1 minute
+            card.lapses += 1
+        } else {
             card.repetitions += 1
-            card.ease = max(1.3, card.ease - 0.15)
-            card.interval = max(1, card.interval) * 1.2
-        case .good:
-            card.repetitions += 1
-            if card.repetitions == 1 {
-                card.interval = 1
-            } else if card.repetitions == 2 {
-                card.interval = 3
-            } else {
-                card.interval = card.interval * card.ease
-            }
-        case .easy:
-            card.repetitions += 1
-            card.ease = min(3.0, card.ease + 0.10)
-            if card.repetitions == 1 {
-                card.interval = 4
-            } else {
-                card.interval = card.interval * card.ease * 1.3
+            switch card.repetitions {
+            case 1: card.interval = 1
+            case 2: card.interval = 6
+            default: card.interval = (card.interval * card.ease).rounded()
             }
         }
 
         card.dueDate = now.addingTimeInterval(card.interval * 24 * 60 * 60)
         card.lastReviewed = now
+        card.totalReviews += 1
+
         cards[itemId] = card
         save()
     }
 
-    /// Items due today (or earlier).
     func dueItems(now: Date = Date()) -> [SRSCard] {
         cards.values.filter { $0.dueDate <= now }.sorted { $0.dueDate < $1.dueDate }
     }
 
     var totalTracked: Int { cards.count }
-    var totalReviews: Int { cards.values.reduce(0) { $0 + $1.repetitions } }
+    var totalReviews: Int { cards.values.reduce(0) { $0 + $1.totalReviews } }
+    var totalLapses: Int { cards.values.reduce(0) { $0 + $1.lapses } }
 }

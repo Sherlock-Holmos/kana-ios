@@ -14,23 +14,27 @@ struct KanaBrowserView: View {
             if let error {
                 Text(error).foregroundStyle(.red)
             }
-            section(title: "平假名 · \(hiragana.count)", items: hiragana)
-            section(title: "片假名 · \(katakana.count)", items: katakana)
+            Section("平假名 · \(hiragana.count)") {
+                LazyVGrid(columns: columns, spacing: 10) {
+                    ForEach(hiragana) { item in
+                        KanaTile(item: item)
+                    }
+                }
+                .padding(.vertical, 4)
+            }
+            Section("片假名 · \(katakana.count)") {
+                LazyVGrid(columns: columns, spacing: 10) {
+                    ForEach(katakana) { item in
+                        KanaTile(item: item)
+                    }
+                }
+                .padding(.vertical, 4)
+            }
         }
         .navigationTitle("假名")
         .navigationBarTitleDisplayMode(.inline)
+        .overlay { if items.isEmpty && error == nil { ProgressView() } }
         .task { await load() }
-    }
-
-    private func section(title: String, items: [KanaItem]) -> some View {
-        Section(title) {
-            LazyVGrid(columns: columns, spacing: 10) {
-                ForEach(items) { item in
-                    KanaTile(item: item)
-                }
-            }
-            .padding(.vertical, 4)
-        }
     }
 
     private func load() async {
@@ -50,6 +54,8 @@ private struct KanaTile: View {
     var body: some View {
         Button {
             showRoman.toggle()
+            if !showRoman { return }
+            AudioService.shared.speak(text: item.kana, language: "ja-JP", rate: 0.5)
         } label: {
             VStack(spacing: 4) {
                 Text(item.kana)

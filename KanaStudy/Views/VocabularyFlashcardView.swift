@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct VocabularyFlashcardView: View {
+    @EnvironmentObject private var srsStore: SRSStore
+
     @State private var items: [VocabularyItem] = []
     @State private var index: Int = 0
     @State private var revealed: Bool = false
@@ -23,6 +25,11 @@ struct VocabularyFlashcardView: View {
 
                 controls
                     .padding(.horizontal)
+
+                if revealed {
+                    enrollButton(current)
+                        .padding(.horizontal)
+                }
             } else {
                 ProgressView("加载中…")
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -43,6 +50,14 @@ struct VocabularyFlashcardView: View {
             Text(item.reading)
                 .font(.title3)
                 .foregroundStyle(.secondary)
+            HStack(spacing: 8) {
+                Button {
+                    AudioService.shared.speak(text: item.expression, language: "ja-JP")
+                } label: {
+                    Label("朗读", systemImage: "speaker.wave.2.fill")
+                }
+                .buttonStyle(.bordered)
+            }
             if revealed {
                 Divider().padding(.vertical, 8)
                 Text(item.primaryMeaning)
@@ -68,6 +83,16 @@ struct VocabularyFlashcardView: View {
         .frame(maxWidth: .infinity, minHeight: 280)
         .padding(20)
         .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 18))
+    }
+
+    private func enrollButton(_ item: VocabularyItem) -> some View {
+        Button {
+            srsStore.enroll(item.id)
+        } label: {
+            Label("加入复习", systemImage: "plus.circle.fill")
+                .frame(maxWidth: .infinity)
+        }
+        .buttonStyle(.borderedProminent)
     }
 
     private var controls: some View {

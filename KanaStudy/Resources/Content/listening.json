@@ -1,0 +1,832 @@
+[
+  {
+    "id": "listening:n5-01",
+    "type": "listening",
+    "title": "駅のホーム",
+    "transcript": "電車は十時二十分に出ます。三番ホームです。",
+    "question": "電車は何時に出ますか。",
+    "options": [
+      "十時",
+      "十時十分",
+      "十時二十分",
+      "十一時"
+    ],
+    "answer": "十時二十分",
+    "translation": "电车十点二十分出发。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time",
+        "travel"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.time-number",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-02",
+    "type": "listening",
+    "title": "店で",
+    "transcript": "すみません。この青いシャツはいくらですか。三千五百円です。",
+    "question": "シャツはいくらですか。",
+    "options": [
+      "二千五百円",
+      "三千円",
+      "三千五百円",
+      "五千円"
+    ],
+    "answer": "三千五百円",
+    "translation": "蓝色衬衫3500日元。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "food"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.time-number",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-03",
+    "type": "listening",
+    "title": "電話",
+    "transcript": "もしもし、田中です。明日の会議は午前十時からです。九時ではありません。",
+    "question": "会議は何時からですか。",
+    "options": [
+      "九時",
+      "九時半",
+      "十時",
+      "十一時"
+    ],
+    "answer": "十時",
+    "translation": "会议上午十点开始。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.time-number",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-04",
+    "type": "listening",
+    "title": "天気予報",
+    "transcript": "明日は午前中は雨ですが、午後から晴れるでしょう。",
+    "question": "午後の天気はどうですか。",
+    "options": [
+      "雨",
+      "雪",
+      "晴れ",
+      "曇り"
+    ],
+    "answer": "晴れ",
+    "translation": "下午会转晴。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "weather"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-05",
+    "type": "listening",
+    "title": "学校の案内",
+    "transcript": "図書館は一階です。二階には教室があります。食堂は三階です。",
+    "question": "食堂は何階ですか。",
+    "options": [
+      "一階",
+      "二階",
+      "三階",
+      "四階"
+    ],
+    "answer": "三階",
+    "translation": "食堂在三楼。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "food",
+        "school"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.location"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-06",
+    "type": "listening",
+    "title": "レストラン",
+    "transcript": "私はカレーをください。飲み物は水でお願いします。",
+    "question": "何を食べますか。",
+    "options": [
+      "寿司",
+      "カレー",
+      "パン",
+      "魚"
+    ],
+    "answer": "カレー",
+    "translation": "点了咖喱。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "food"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-07",
+    "type": "listening",
+    "title": "約束",
+    "transcript": "土曜日の午後三時に駅の西口で会いましょう。",
+    "question": "どこで会いますか。",
+    "options": [
+      "駅の東口",
+      "駅の西口",
+      "学校",
+      "公園"
+    ],
+    "answer": "駅の西口",
+    "translation": "在车站西口见面。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.location"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-08",
+    "type": "listening",
+    "title": "病院",
+    "transcript": "今日は熱がありますから、薬を飲んでゆっくり休んでください。",
+    "question": "何をしてくださいと言いましたか。",
+    "options": [
+      "運動する",
+      "薬を飲んで休む",
+      "学校へ行く",
+      "買い物する"
+    ],
+    "answer": "薬を飲んで休む",
+    "translation": "医生建议吃药休息。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "health"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-09",
+    "type": "listening",
+    "title": "家族",
+    "transcript": "姉は東京に住んでいます。弟は大阪の大学で勉強しています。",
+    "question": "弟はどこにいますか。",
+    "options": [
+      "東京",
+      "京都",
+      "大阪",
+      "北海道"
+    ],
+    "answer": "大阪",
+    "translation": "弟弟在大阪。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "family",
+        "daily-life"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.location"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-10",
+    "type": "listening",
+    "title": "買い物",
+    "transcript": "りんごを二つと、みかんを四つください。",
+    "question": "みかんはいくつですか。",
+    "options": [
+      "二つ",
+      "三つ",
+      "四つ",
+      "五つ"
+    ],
+    "answer": "四つ",
+    "translation": "要四个橘子。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "food"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.time-number",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-11",
+    "type": "listening",
+    "title": "朝",
+    "transcript": "毎朝六時に起きます。でも、日曜日は八時ごろ起きます。",
+    "question": "日曜日は何時ごろ起きますか。",
+    "options": [
+      "六時",
+      "七時",
+      "八時",
+      "九時"
+    ],
+    "answer": "八時",
+    "translation": "周日八点左右起床。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time",
+        "daily-life"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.time-number",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-12",
+    "type": "listening",
+    "title": "空港",
+    "transcript": "東京行きの飛行機は午後一時十五分に出発します。",
+    "question": "飛行機は何時に出発しますか。",
+    "options": [
+      "十二時十五分",
+      "一時",
+      "一時十五分",
+      "二時十五分"
+    ],
+    "answer": "一時十五分",
+    "translation": "飞机下午一点十五分起飞。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time",
+        "travel"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.time-number",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-13",
+    "type": "listening",
+    "title": "趣味",
+    "transcript": "休みの日はよく本を読みます。映画も好きですが、スポーツはあまりしません。",
+    "question": "よく何をしますか。",
+    "options": [
+      "スポーツをする",
+      "本を読む",
+      "料理をする",
+      "泳ぐ"
+    ],
+    "answer": "本を読む",
+    "translation": "休息日经常读书。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-14",
+    "type": "listening",
+    "title": "駅員",
+    "transcript": "新宿へ行くなら、この電車ではなく、次の電車に乗ってください。",
+    "question": "どの電車に乗りますか。",
+    "options": [
+      "この電車",
+      "次の電車",
+      "バス",
+      "地下鉄"
+    ],
+    "answer": "次の電車",
+    "translation": "去新宿要坐下一班车。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "travel"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-15",
+    "type": "listening",
+    "title": "授業",
+    "transcript": "今日の宿題は教科書の二十ページから二十三ページまでです。",
+    "question": "宿題はどこまでですか。",
+    "options": [
+      "二十ページ",
+      "二十一ページ",
+      "二十三ページ",
+      "三十ページ"
+    ],
+    "answer": "二十三ページ",
+    "translation": "作业做到23页。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.location"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-16",
+    "type": "listening",
+    "title": "家",
+    "transcript": "冷蔵庫の中に牛乳があります。パンはテーブルの上です。",
+    "question": "パンはどこですか。",
+    "options": [
+      "冷蔵庫の中",
+      "テーブルの上",
+      "机の下",
+      "鞄の中"
+    ],
+    "answer": "テーブルの上",
+    "translation": "面包在桌上。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "daily-life"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.location"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-17",
+    "type": "listening",
+    "title": "旅行",
+    "transcript": "京都へは金曜日に行って、日曜日の夜に帰ります。",
+    "question": "いつ帰りますか。",
+    "options": [
+      "金曜日",
+      "土曜日の朝",
+      "日曜日の夜",
+      "月曜日"
+    ],
+    "answer": "日曜日の夜",
+    "translation": "周日晚上回来。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "travel"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-18",
+    "type": "listening",
+    "title": "電話番号",
+    "transcript": "私の電話番号は、ゼロ・ハチ・ゼロ、ニ・サン・ヨン・ゴ、ロク・ナナ・ハチ・キュウです。",
+    "question": "最初の三つの数字は何ですか。",
+    "options": [
+      "080",
+      "090",
+      "234",
+      "678"
+    ],
+    "answer": "080",
+    "translation": "电话号码开头是080。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-19",
+    "type": "listening",
+    "title": "コンビニ",
+    "transcript": "コピーは一枚十円です。二十枚コピーしたいです。",
+    "question": "いくらかかりますか。",
+    "options": [
+      "百円",
+      "二百円",
+      "三百円",
+      "千円"
+    ],
+    "answer": "二百円",
+    "translation": "20张复印件共200日元。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.time-number",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-20",
+    "type": "listening",
+    "title": "先生",
+    "transcript": "来週の月曜日は休みです。火曜日から授業があります。",
+    "question": "授業はいつからですか。",
+    "options": [
+      "月曜日",
+      "火曜日",
+      "水曜日",
+      "金曜日"
+    ],
+    "answer": "火曜日",
+    "translation": "课程周二开始。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "school"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-21",
+    "type": "listening",
+    "title": "映画館",
+    "transcript": "映画は六時半に始まります。今は六時十分です。",
+    "question": "映画が始まるまで何分ありますか。",
+    "options": [
+      "十分",
+      "二十分",
+      "三十分",
+      "四十分"
+    ],
+    "answer": "二十分",
+    "translation": "还有20分钟开场。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.time-number",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-22",
+    "type": "listening",
+    "title": "道案内",
+    "transcript": "この道をまっすぐ行って、二つ目の交差点を右に曲がってください。銀行は左側です。",
+    "question": "二つ目の交差点でどうしますか。",
+    "options": [
+      "左に曲がる",
+      "右に曲がる",
+      "止まる",
+      "戻る"
+    ],
+    "answer": "右に曲がる",
+    "translation": "第二个十字路口右转。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-23",
+    "type": "listening",
+    "title": "プレゼント",
+    "transcript": "母の誕生日に花を買いました。赤い花と白い花です。",
+    "question": "何を買いましたか。",
+    "options": [
+      "本",
+      "鞄",
+      "花",
+      "ケーキ"
+    ],
+    "answer": "花",
+    "translation": "给妈妈买了花。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.conversation"
+      ]
+    }
+  },
+  {
+    "id": "listening:n5-24",
+    "type": "listening",
+    "title": "勉強",
+    "transcript": "今日は漢字を二十個復習して、新しい単語を十個覚えます。",
+    "question": "新しい単語はいくつ覚えますか。",
+    "options": [
+      "五個",
+      "十個",
+      "二十個",
+      "三十個"
+    ],
+    "answer": "十個",
+    "translation": "学习10个新词。",
+    "level": "N5",
+    "tags": [
+      "N5听力"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "listening.detail",
+        "listening.time-number",
+        "listening.conversation"
+      ]
+    }
+  }
+]

@@ -15,11 +15,11 @@ final class ContentService {
     private var grammarCache: [GrammarItem]?
     private var kanjiCache: [KanjiItem]?
     private var sentenceCache: [SentenceItem]?
+    private var readingCache: [ReadingItem]?
+    private var listeningCache: [ListeningItem]?
+    private var questionBankCache: [QuestionVariant]?
 
-    private let decoder: JSONDecoder = {
-        let d = JSONDecoder()
-        return d
-    }()
+    private let decoder = JSONDecoder()
 
     // MARK: - Loaders
 
@@ -58,7 +58,28 @@ final class ContentService {
         return items
     }
 
-    // MARK: - Convenience counts
+    func loadReading() throws -> [ReadingItem] {
+        if let cached = readingCache { return cached }
+        let items = try decode([ReadingItem].self, resource: "reading")
+        readingCache = items
+        return items
+    }
+
+    func loadListening() throws -> [ListeningItem] {
+        if let cached = listeningCache { return cached }
+        let items = try decode([ListeningItem].self, resource: "listening")
+        listeningCache = items
+        return items
+    }
+
+    func loadQuestionBank() throws -> [QuestionVariant] {
+        if let cached = questionBankCache { return cached }
+        let items = try decode([QuestionVariant].self, resource: "question-bank")
+        questionBankCache = items
+        return items
+    }
+
+    // MARK: - Convenience
 
     struct Counts {
         let kana: Int
@@ -66,6 +87,9 @@ final class ContentService {
         let grammar: Int
         let kanji: Int
         let sentence: Int
+        let reading: Int
+        let listening: Int
+        let questionVariants: Int
     }
 
     func counts() throws -> Counts {
@@ -74,7 +98,10 @@ final class ContentService {
             vocabulary: try loadVocabulary().count,
             grammar: try loadGrammar().count,
             kanji: try loadKanji().count,
-            sentence: try loadSentences().count
+            sentence: try loadSentences().count,
+            reading: try loadReading().count,
+            listening: try loadListening().count,
+            questionVariants: try loadQuestionBank().count
         )
     }
 

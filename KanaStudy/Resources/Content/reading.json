@@ -1,0 +1,828 @@
+[
+  {
+    "id": "reading:n5-01",
+    "type": "reading",
+    "title": "自己紹介",
+    "passage": "私は王です。中国から来ました。今、東京の大学で日本語を勉強しています。毎朝七時に起きて、八時に学校へ行きます。",
+    "question": "王さんは今、何を勉強していますか。",
+    "options": [
+      "英語",
+      "日本語",
+      "数学",
+      "音楽"
+    ],
+    "answer": "日本語",
+    "translation": "王来自中国，现在在东京的大学学习日语。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-02",
+    "type": "reading",
+    "title": "家族",
+    "passage": "私の家族は四人です。父と母と妹と私です。父は会社員で、母は先生です。妹は高校生です。",
+    "question": "妹は何をしていますか。",
+    "options": [
+      "会社員",
+      "先生",
+      "高校生",
+      "大学生"
+    ],
+    "answer": "高校生",
+    "translation": "一家四口，妹妹是高中生。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "family",
+        "daily-life"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-03",
+    "type": "reading",
+    "title": "朝の生活",
+    "passage": "毎朝六時半に起きます。顔を洗って、七時に朝ご飯を食べます。七時半に家を出て、電車で会社へ行きます。",
+    "question": "何時に家を出ますか。",
+    "options": [
+      "六時半",
+      "七時",
+      "七時半",
+      "八時"
+    ],
+    "answer": "七時半",
+    "translation": "每天七点半离家去公司。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time",
+        "daily-life"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.numeric-detail"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-04",
+    "type": "reading",
+    "title": "図書館",
+    "passage": "図書館は駅の近くにあります。月曜日から土曜日まで開いています。日曜日は休みです。平日は午後八時までです。",
+    "question": "図書館が休みなのは何曜日ですか。",
+    "options": [
+      "月曜日",
+      "金曜日",
+      "土曜日",
+      "日曜日"
+    ],
+    "answer": "日曜日",
+    "translation": "图书馆周日休息。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time",
+        "school"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.numeric-detail"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-05",
+    "type": "reading",
+    "title": "買い物",
+    "passage": "今日はスーパーでりんごを三つ、牛乳を二本、パンを一つ買いました。全部で千二百円でした。",
+    "question": "牛乳を何本買いましたか。",
+    "options": [
+      "一本",
+      "二本",
+      "三本",
+      "四本"
+    ],
+    "answer": "二本",
+    "translation": "买了两瓶牛奶。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "food"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-06",
+    "type": "reading",
+    "title": "天気",
+    "passage": "今日は朝から雨です。少し寒いです。明日は晴れて、暖かくなるでしょう。私は明日、公園を散歩したいです。",
+    "question": "明日の天気はどうなりそうですか。",
+    "options": [
+      "雨で寒い",
+      "雪が降る",
+      "晴れて暖かい",
+      "曇りで涼しい"
+    ],
+    "answer": "晴れて暖かい",
+    "translation": "明天预计晴朗温暖。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "weather"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-07",
+    "type": "reading",
+    "title": "週末",
+    "passage": "土曜日は友達と映画を見ました。そのあと、駅の近くのレストランで晩ご飯を食べました。日曜日は家でゆっくりしました。",
+    "question": "土曜日の晩ご飯はどこで食べましたか。",
+    "options": [
+      "家",
+      "学校",
+      "駅の近く",
+      "公園"
+    ],
+    "answer": "駅の近く",
+    "translation": "周六在车站附近的餐厅吃晚饭。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time",
+        "food"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-08",
+    "type": "reading",
+    "title": "学校",
+    "passage": "私の学校は大きくありませんが、きれいです。教室は二階にあります。図書館は一階で、食堂は三階です。",
+    "question": "図書館は何階ですか。",
+    "options": [
+      "一階",
+      "二階",
+      "三階",
+      "四階"
+    ],
+    "answer": "一階",
+    "translation": "图书馆在一楼。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "school"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-09",
+    "type": "reading",
+    "title": "旅行",
+    "passage": "来月、家族と京都へ旅行します。新幹線で行きます。京都で寺を見たり、おいしい料理を食べたりしたいです。",
+    "question": "京都へ何で行きますか。",
+    "options": [
+      "バス",
+      "飛行機",
+      "新幹線",
+      "自転車"
+    ],
+    "answer": "新幹線",
+    "translation": "下个月坐新干线去京都。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "travel"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-10",
+    "type": "reading",
+    "title": "誕生日",
+    "passage": "今日は妹の誕生日です。私は妹に赤い鞄をあげました。母はケーキを作りました。夜、家族みんなで食べます。",
+    "question": "母は何を作りましたか。",
+    "options": [
+      "パン",
+      "ケーキ",
+      "弁当",
+      "カレー"
+    ],
+    "answer": "ケーキ",
+    "translation": "妈妈做了蛋糕。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "family"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-11",
+    "type": "reading",
+    "title": "仕事",
+    "passage": "田中さんは銀行で働いています。仕事は九時から五時までです。昼休みは十二時から一時までです。",
+    "question": "仕事は何時に終わりますか。",
+    "options": [
+      "四時",
+      "五時",
+      "六時",
+      "七時"
+    ],
+    "answer": "五時",
+    "translation": "工作到下午五点。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time",
+        "daily-life"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.numeric-detail"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-12",
+    "type": "reading",
+    "title": "駅で",
+    "passage": "駅で切符を二枚買いました。電車は十時十五分に出ます。今は九時五十分ですから、まだ時間があります。",
+    "question": "電車は何時に出ますか。",
+    "options": [
+      "九時五十分",
+      "十時",
+      "十時十五分",
+      "十時五十分"
+    ],
+    "answer": "十時十五分",
+    "translation": "电车十点十五分出发。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time",
+        "travel"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.numeric-detail"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-13",
+    "type": "reading",
+    "title": "料理",
+    "passage": "私は料理があまり上手ではありません。でも、日曜日によくカレーを作ります。簡単でおいしいからです。",
+    "question": "どうしてカレーを作りますか。",
+    "options": [
+      "安いから",
+      "簡単でおいしいから",
+      "家族がいないから",
+      "時間がないから"
+    ],
+    "answer": "簡単でおいしいから",
+    "translation": "因为简单又好吃。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "food"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-14",
+    "type": "reading",
+    "title": "趣味",
+    "passage": "山田さんの趣味は写真です。休みの日にカメラを持って公園や山へ行きます。花や鳥の写真をよく撮ります。",
+    "question": "山田さんは何の写真をよく撮りますか。",
+    "options": [
+      "車と電車",
+      "花と鳥",
+      "料理と本",
+      "家と学校"
+    ],
+    "answer": "花と鳥",
+    "translation": "经常拍花和鸟。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-15",
+    "type": "reading",
+    "title": "病院",
+    "passage": "朝から頭が痛くて、熱もあります。今日は会社を休んで、午後病院へ行きます。",
+    "question": "今日はどうしますか。",
+    "options": [
+      "会社へ行く",
+      "学校へ行く",
+      "病院へ行く",
+      "買い物へ行く"
+    ],
+    "answer": "病院へ行く",
+    "translation": "因为头痛发烧，下午去医院。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "health"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-16",
+    "type": "reading",
+    "title": "部屋",
+    "passage": "私の部屋にはベッドと机があります。机の上にパソコンと本があります。窓の横に小さいテレビがあります。",
+    "question": "パソコンはどこにありますか。",
+    "options": [
+      "ベッドの上",
+      "机の上",
+      "窓の横",
+      "テレビの下"
+    ],
+    "answer": "机の上",
+    "translation": "电脑在桌子上。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "daily-life"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-17",
+    "type": "reading",
+    "title": "日本語の勉強",
+    "passage": "毎日三十分、日本語を勉強しています。朝は漢字を十個覚えて、夜は短い文章を読みます。週末は友達と日本語で話します。",
+    "question": "朝は何をしますか。",
+    "options": [
+      "文章を読む",
+      "漢字を覚える",
+      "映画を見る",
+      "友達と話す"
+    ],
+    "answer": "漢字を覚える",
+    "translation": "早上记十个汉字。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time",
+        "daily-life"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-18",
+    "type": "reading",
+    "title": "約束",
+    "passage": "明日の午後二時に駅で友達と会います。駅の東口で待ち合わせます。遅れないように一時半に家を出ます。",
+    "question": "どこで友達と会いますか。",
+    "options": [
+      "学校の入口",
+      "駅の東口",
+      "公園の南口",
+      "店の前"
+    ],
+    "answer": "駅の東口",
+    "translation": "在车站东口见面。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-19",
+    "type": "reading",
+    "title": "郵便局",
+    "passage": "郵便局は銀行の隣にあります。駅から歩いて五分ぐらいです。平日は九時から五時まで開いています。",
+    "question": "駅から郵便局までどのくらいですか。",
+    "options": [
+      "歩いて五分",
+      "電車で五分",
+      "歩いて十五分",
+      "バスで十分"
+    ],
+    "answer": "歩いて五分",
+    "translation": "从车站步行约五分钟。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "travel"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-20",
+    "type": "reading",
+    "title": "レストラン",
+    "passage": "このレストランは昼は十一時半から二時まで、夜は五時から十時までです。火曜日は休みです。",
+    "question": "火曜日はどうですか。",
+    "options": [
+      "昼だけ開く",
+      "夜だけ開く",
+      "休み",
+      "二時から開く"
+    ],
+    "answer": "休み",
+    "translation": "餐厅周二休息。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time",
+        "food"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-21",
+    "type": "reading",
+    "title": "プレゼント",
+    "passage": "友達が来月日本へ帰ります。私は友達に日本語の本をプレゼントしたいです。でも、どの本がいいかまだ分かりません。",
+    "question": "何をプレゼントしたいですか。",
+    "options": [
+      "日本語の本",
+      "赤い鞄",
+      "時計",
+      "写真"
+    ],
+    "answer": "日本語の本",
+    "translation": "想送一本日语书。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-22",
+    "type": "reading",
+    "title": "バス",
+    "passage": "学校へ行くバスは朝七時から十五分ごとに来ます。私はいつも七時半のバスに乗ります。",
+    "question": "バスはどのくらいの間隔で来ますか。",
+    "options": [
+      "五分",
+      "十分",
+      "十五分",
+      "三十分"
+    ],
+    "answer": "十五分",
+    "translation": "公交车每十五分钟一班。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-23",
+    "type": "reading",
+    "title": "部活",
+    "passage": "妹は学校でテニスをしています。練習は火曜日と木曜日の放課後です。土曜日には時々試合があります。",
+    "question": "練習はいつですか。",
+    "options": [
+      "月曜と水曜",
+      "火曜と木曜",
+      "金曜と土曜",
+      "毎日"
+    ],
+    "answer": "火曜と木曜",
+    "translation": "练习在周二和周四。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "general"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  },
+  {
+    "id": "reading:n5-24",
+    "type": "reading",
+    "title": "朝の駅",
+    "passage": "朝の駅はとても人が多いです。私は混んでいる電車が苦手なので、いつも少し早く家を出ます。",
+    "question": "どうして早く家を出ますか。",
+    "options": [
+      "朝ご飯を食べるため",
+      "混んだ電車が苦手だから",
+      "学校が遠いから",
+      "雨が降るから"
+    ],
+    "answer": "混んだ電車が苦手だから",
+    "translation": "因为不喜欢拥挤的电车。",
+    "level": "N5",
+    "tags": [
+      "N5阅读"
+    ],
+    "source": "Japanese Study 内置内容",
+    "reviewStatus": "automated-validated",
+    "contentVersion": 2,
+    "confidence": 0.86,
+    "pedagogy": {
+      "schemaVersion": 1,
+      "release": "n5-2026.08-v16",
+      "topics": [
+        "time",
+        "travel",
+        "daily-life"
+      ],
+      "abilities": [
+        "reading.detail",
+        "reading.main-idea"
+      ]
+    }
+  }
+]

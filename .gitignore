@@ -32,3 +32,7 @@ xcuserdata/
 # Misc
 *.log
 *.tmp
+
+# Tooling artifacts
+.playwright-mcp/
+.claude/

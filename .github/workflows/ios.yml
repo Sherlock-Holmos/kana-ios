@@ -12,7 +12,7 @@ permissions:
 jobs:
   build-simulator:
     name: Build (Simulator)
-    runs-on: macos-14
+    runs-on: macos-15
     env:
       SCHEME: KanaStudy
       DERIVED_DATA: build/DerivedData-sim
@@ -97,7 +97,7 @@ jobs:
 
   build-ipa:
     name: Build (Device IPA, unsigned)
-    runs-on: macos-14
+    runs-on: macos-15
     needs: build-simulator
     env:
       SCHEME: KanaStudy
