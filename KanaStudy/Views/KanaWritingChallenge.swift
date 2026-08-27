@@ -133,6 +133,7 @@ struct KanaWritingChallenge: View {
             }
             Spacer()
             timerPill
+        }
     }
 
     private var timerPill: some View {
