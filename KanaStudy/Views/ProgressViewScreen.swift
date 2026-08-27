@@ -2,7 +2,6 @@ import SwiftUI
 
 struct ProgressViewScreen: View {
     @EnvironmentObject private var srsStore: SRSStore
-    @EnvironmentObject private var ability: AbilityProfile
     @EnvironmentObject private var bkt: BKTStore
     @EnvironmentObject private var goal: DailyGoalStore
 
@@ -90,27 +89,6 @@ struct ProgressViewScreen: View {
                                         .font(.caption2)
                                         .foregroundStyle(Color.textTertiary)
                                 }
-                            }
-                            .padding(.vertical, 2)
-                        }
-                    }
-                }
-
-                if !ability.abilities.isEmpty {
-                    Section("能力画像（旧版 Bayesian）") {
-                        let top = ability.abilities.values.sorted { $0.mastery > $1.mastery }.prefix(6)
-                        ForEach(Array(top), id: \.id) { ab in
-                            VStack(alignment: .leading, spacing: 4) {
-                                HStack {
-                                    Text(ab.id)
-                                        .font(.caption.monospaced())
-                                    Spacer()
-                                    Text(String(format: "%.0f%%", ab.mastery * 100))
-                                        .font(.caption.monospacedDigit())
-                                        .foregroundStyle(masteryColor(ab.mastery))
-                                }
-                                ProgressView(value: ab.mastery)
-                                    .tint(masteryColor(ab.mastery))
                             }
                             .padding(.vertical, 2)
                         }
