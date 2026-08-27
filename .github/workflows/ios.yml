@@ -95,6 +95,15 @@ jobs:
           if-no-files-found: error
           retention-days: 7
 
+      - name: Upload build log (always)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: KanaStudy-simulator-build-log
+          path: build.log
+          if-no-files-found: ignore
+          retention-days: 3
+
   build-ipa:
     name: Build (Device IPA, unsigned)
     runs-on: macos-15

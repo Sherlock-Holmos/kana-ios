@@ -53,11 +53,11 @@ final class AudioService: NSObject, ObservableObject {
 }
 
 extension AudioService: AVSpeechSynthesizerDelegate {
-    nonisolated func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
         Task { @MainActor in self.isSpeaking = false }
     }
 
-    nonisolated func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
         Task { @MainActor in self.isSpeaking = false }
     }
 }
