@@ -12,6 +12,8 @@ struct ReviewView: View {
     @State private var revealed: Bool = false
     @State private var error: String?
     @State private var dragOffset: CGSize = .zero
+    @State private var successTrigger = 0
+    @State private var errorTrigger = 0
 
     var body: some View {
         NavigationStack {
@@ -34,6 +36,8 @@ struct ReviewView: View {
             .padding()
             .navigationTitle("复习")
             .task { await prepare() }
+            .sensoryFeedback(.success, trigger: successTrigger)
+            .sensoryFeedback(.error, trigger: errorTrigger)
         }
     }
 
@@ -219,6 +223,7 @@ struct ReviewView: View {
         goal.recordReview()
         revealed = false
         advance()
+        if success { successTrigger += 1 } else { errorTrigger += 1 }
     }
 
     private func color(for grade: SRSGrade) -> Color {

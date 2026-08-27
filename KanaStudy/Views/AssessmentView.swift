@@ -11,6 +11,8 @@ struct AssessmentView: View {
     @State private var correctCount = 0
     @State private var error: String?
     @State private var autoAdvanceTask: Task<Void, Never>?
+    @State private var successTrigger = 0
+    @State private var errorTrigger = 0
 
     private var current: ExercisePrompt? {
         guard prompts.indices.contains(index) else { return nil }
@@ -45,6 +47,8 @@ struct AssessmentView: View {
         .navigationBarTitleDisplayMode(.inline)
         .task { await prepare() }
         .onDisappear { autoAdvanceTask?.cancel() }
+        .sensoryFeedback(.success, trigger: successTrigger)
+        .sensoryFeedback(.error, trigger: errorTrigger)
     }
 
     private var progress: some View {
@@ -81,7 +85,12 @@ struct AssessmentView: View {
                     guard !revealed else { return }
                     selected = option
                     revealed = true
-                    if option == p.correctAnswer { correctCount += 1 }
+                    if option == p.correctAnswer {
+                        correctCount += 1
+                        successTrigger += 1
+                    } else {
+                        errorTrigger += 1
+                    }
                     scheduleAutoAdvance()
                 } label: {
                     HStack {

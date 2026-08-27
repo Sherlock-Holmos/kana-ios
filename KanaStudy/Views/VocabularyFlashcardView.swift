@@ -7,6 +7,7 @@ struct VocabularyFlashcardView: View {
     @State private var index: Int = 0
     @State private var revealed: Bool = false
     @State private var error: String?
+    @State private var enrollTrigger = 0
 
     private var current: VocabularyItem? {
         guard items.indices.contains(index) else { return nil }
@@ -41,6 +42,7 @@ struct VocabularyFlashcardView: View {
         .navigationTitle("词汇")
         .navigationBarTitleDisplayMode(.inline)
         .task { await load() }
+        .sensoryFeedback(.impact(weight: .medium), trigger: enrollTrigger)
     }
 
     private func card(for item: VocabularyItem) -> some View {
@@ -88,6 +90,7 @@ struct VocabularyFlashcardView: View {
     private func enrollButton(_ item: VocabularyItem) -> some View {
         Button {
             srsStore.enroll(item.id)
+            enrollTrigger += 1
         } label: {
             Label("加入复习", systemImage: "plus.circle.fill")
                 .frame(maxWidth: .infinity)

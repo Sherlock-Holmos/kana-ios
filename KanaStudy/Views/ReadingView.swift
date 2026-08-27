@@ -43,6 +43,8 @@ struct ReadingDetailView: View {
     @State private var selectedAnswer: String?
     @State private var revealed = false
     @State private var autoDismissTask: Task<Void, Never>?
+    @State private var successTrigger = 0
+    @State private var errorTrigger = 0
     @Environment(\.dismiss) private var dismiss
 
     private var isCorrect: Bool { selectedAnswer == item.answer }
@@ -67,6 +69,7 @@ struct ReadingDetailView: View {
                         guard !revealed else { return }
                         selectedAnswer = option
                         revealed = true
+                        if option == item.answer { successTrigger += 1 } else { errorTrigger += 1 }
                         scheduleAutoDismiss()
                     } label: {
                         HStack {
@@ -116,6 +119,8 @@ struct ReadingDetailView: View {
         .navigationTitle(item.title)
         .navigationBarTitleDisplayMode(.inline)
         .onDisappear { autoDismissTask?.cancel() }
+        .sensoryFeedback(.success, trigger: successTrigger)
+        .sensoryFeedback(.error, trigger: errorTrigger)
     }
 
     private func scheduleAutoDismiss() {

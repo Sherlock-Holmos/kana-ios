@@ -13,6 +13,9 @@ struct LoginSheet: View {
     @State private var password: String = ""
     @State private var mode: Mode = .signIn
     @State private var busy: Bool = false
+    @State private var successTrigger = 0
+    @State private var errorTrigger = 0
+    @State private var lastUserId: String?
 
     enum Mode: String, CaseIterable, Identifiable {
         case signIn = "登录"
@@ -49,13 +52,21 @@ struct LoginSheet: View {
             }
             .onChange(of: sync.currentUser) { _, new in
                 // Auto-dismiss after a fresh sign-in so the user lands back on Home.
-                if new != nil, mode != .signIn {
-                    // Stay open if user wants to see confirmation; for signIn mode, dismiss.
-                }
                 if new != nil, mode == .signIn {
                     dismiss()
                 }
+                if let id = new?.id, id != lastUserId {
+                    successTrigger += 1
+                    lastUserId = id
+                } else if new == nil {
+                    lastUserId = nil
+                }
             }
+            .onChange(of: sync.lastError) { _, new in
+                if new != nil { errorTrigger += 1 }
+            }
+            .sensoryFeedback(.success, trigger: successTrigger)
+            .sensoryFeedback(.error, trigger: errorTrigger)
         }
     }
 
