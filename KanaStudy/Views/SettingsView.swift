@@ -3,52 +3,19 @@ import SwiftUI
 struct SettingsView: View {
     @EnvironmentObject private var settings: SyncSettings
     @EnvironmentObject private var sync: SyncService
+    @EnvironmentObject private var goal: DailyGoalStore
 
     @State private var email = ""
     @State private var password = ""
     @State private var urlInput = ""
     @State private var keyInput = ""
+    @State private var showAdvanced = false
 
     @State private var busy = false
 
     var body: some View {
         Form {
-            Section("云端同步（可选）") {
-                Text("填入 Supabase 项目 URL + anon key 开启多设备同步。留空 = 完全本地模式，所有功能可用。")
-                    .font(.footnote)
-                    .foregroundStyle(.secondary)
-
-                TextField("https://xxx.supabase.co", text: $urlInput)
-                    .textInputAutocapitalization(.never)
-                    .autocorrectionDisabled()
-                    .keyboardType(.URL)
-
-                SecureField("anon / public key", text: $keyInput)
-                    .textInputAutocapitalization(.never)
-                    .autocorrectionDisabled()
-
-                HStack {
-                    Text("Schema 版本")
-                    Spacer()
-                    Stepper("\(settings.schemaVersion)", value: $settings.schemaVersion, in: 12...16)
-                }
-
-                Button("保存") {
-                    settings.supabaseURL = urlInput.trimmingCharacters(in: .whitespaces)
-                    settings.anonKey = keyInput.trimmingCharacters(in: .whitespaces)
-                }
-                .disabled(urlInput.isEmpty && keyInput.isEmpty)
-
-                if settings.isConfigured {
-                    Button("清除", role: .destructive) {
-                        settings.reset()
-                        urlInput = ""
-                        keyInput = ""
-                    }
-                }
-            }
-
-            Section("账号") {
+            Section {
                 if let user = sync.currentUser {
                     HStack {
                         Text("已登录")
@@ -88,10 +55,70 @@ struct SettingsView: View {
                         .disabled(email.isEmpty || password.isEmpty || busy)
                     }
                 } else {
-                    Text("填入 URL + key 后启用登录")
+                    Text("后端未配置")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 }
+            } header: {
+                Text("账号")
+            } footer: {
+                if settings.isConfigured {
+                    Text("后端：\(settings.supabaseURL)")
+                        .font(.caption.monospaced())
+                        .foregroundStyle(.secondary)
+                }
+            }
+
+            Section {
+                if !settings.isUsingCustomBackend {
+                    HStack {
+                        Image(systemName: "checkmark.circle.fill")
+                            .foregroundStyle(.green)
+                        Text("已使用 kana-study 共享后端")
+                        Spacer()
+                    }
+                    Button("切换到自定义后端") {
+                        urlInput = settings.supabaseURL
+                        keyInput = settings.anonKey
+                        showAdvanced = true
+                    }
+                } else {
+                    Button("恢复默认后端") {
+                        settings.reset()
+                        urlInput = ""
+                        keyInput = ""
+                    }
+                }
+            } header: {
+                Text("云端同步")
+            } footer: {
+                Text("App 已默认连接到 kana-study Web 版相同的 Supabase 项目（公开 publishable key，开箱即用）。多设备登录同一账号自动同步学习数据。")
+            }
+
+            if showAdvanced || settings.isUsingCustomBackend {
+                Section("自定义 Supabase") {
+                    TextField("https://xxx.supabase.co", text: $urlInput)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled()
+                        .keyboardType(.URL)
+
+                    SecureField("anon / publishable key", text: $keyInput)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled()
+
+                    Button("保存") {
+                        settings.supabaseURL = urlInput.trimmingCharacters(in: .whitespaces)
+                        settings.anonKey = keyInput.trimmingCharacters(in: .whitespaces)
+                    }
+                    .disabled(urlInput.isEmpty && keyInput.isEmpty)
+                }
+            }
+
+            Section("每日目标") {
+                Stepper("每日复习目标：\(goal.dailyGoal)", value: Binding(
+                    get: { goal.dailyGoal },
+                    set: { goal.setGoal($0) }
+                ), in: 5...200, step: 5)
             }
 
             Section("同步状态") {
@@ -113,14 +140,6 @@ struct SettingsView: View {
                 if sync.isSyncing {
                     HStack { ProgressView(); Text("同步中…") }
                 }
-            }
-
-            Section {
-                Text("需要在 Supabase 控制台创建表 user_learning_meta (user_id uuid PK, schema_version int, meta jsonb, updated_at timestamptz)，并配置 RLS 允许当前用户读写自己的行。详见仓库 README。")
-                    .font(.footnote)
-                    .foregroundStyle(.secondary)
-            } header: {
-                Text("Supabase 配置说明")
             }
         }
         .navigationTitle("设置")
