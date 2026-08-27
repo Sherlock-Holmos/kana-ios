@@ -10,6 +10,7 @@ struct AssessmentView: View {
     @State private var revealed = false
     @State private var correctCount = 0
     @State private var error: String?
+    @State private var autoAdvanceTask: Task<Void, Never>?
 
     private var current: ExercisePrompt? {
         guard prompts.indices.contains(index) else { return nil }
@@ -43,6 +44,7 @@ struct AssessmentView: View {
         .navigationTitle("阶段测验")
         .navigationBarTitleDisplayMode(.inline)
         .task { await prepare() }
+        .onDisappear { autoAdvanceTask?.cancel() }
     }
 
     private var progress: some View {
@@ -80,15 +82,20 @@ struct AssessmentView: View {
                     selected = option
                     revealed = true
                     if option == p.correctAnswer { correctCount += 1 }
+                    scheduleAutoAdvance()
                 } label: {
                     HStack {
                         Text(option).foregroundStyle(.primary)
                         Spacer()
                         if revealed {
                             if option == p.correctAnswer {
-                                Image(systemName: "checkmark.circle.fill").foregroundStyle(.green)
+                                Image(systemName: "checkmark.circle.fill")
+                                    .foregroundStyle(.green)
+                                    .symbolEffect(.bounce, value: revealed)
                             } else if option == selected {
-                                Image(systemName: "xmark.circle.fill").foregroundStyle(.red)
+                                Image(systemName: "xmark.circle.fill")
+                                    .foregroundStyle(.red)
+                                    .symbolEffect(.wiggle, value: revealed)
                             }
                         }
                     }
@@ -101,6 +108,21 @@ struct AssessmentView: View {
         }
     }
 
+    private func scheduleAutoAdvance() {
+        autoAdvanceTask?.cancel()
+        autoAdvanceTask = Task {
+            try? await Task.sleep(for: .seconds(1.5))
+            guard !Task.isCancelled else { return }
+            await MainActor.run { advance() }
+        }
+    }
+
+    private func advance() {
+        revealed = false
+        selected = nil
+        index += 1
+    }
+
     private func feedbackRow(_ p: ExercisePrompt) -> some View {
         let correct = selected == p.correctAnswer
         return Text(correct ? "正确" : "正确答案：\(p.correctAnswer)")
@@ -110,9 +132,8 @@ struct AssessmentView: View {
 
     private var nextButton: some View {
         Button {
-            revealed = false
-            selected = nil
-            index += 1
+            autoAdvanceTask?.cancel()
+            advance()
         } label: {
             Text(index == prompts.count - 1 ? "完成" : "下一题")
                 .frame(maxWidth: .infinity)

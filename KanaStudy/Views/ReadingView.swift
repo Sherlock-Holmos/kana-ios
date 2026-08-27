@@ -42,6 +42,8 @@ struct ReadingDetailView: View {
     let item: ReadingItem
     @State private var selectedAnswer: String?
     @State private var revealed = false
+    @State private var autoDismissTask: Task<Void, Never>?
+    @Environment(\.dismiss) private var dismiss
 
     private var isCorrect: Bool { selectedAnswer == item.answer }
 
@@ -65,6 +67,7 @@ struct ReadingDetailView: View {
                         guard !revealed else { return }
                         selectedAnswer = option
                         revealed = true
+                        scheduleAutoDismiss()
                     } label: {
                         HStack {
                             Text(option)
@@ -74,9 +77,11 @@ struct ReadingDetailView: View {
                                 if option == item.answer {
                                     Image(systemName: "checkmark.circle.fill")
                                         .foregroundStyle(.green)
+                                        .symbolEffect(.bounce, value: revealed)
                                 } else if option == selectedAnswer {
                                     Image(systemName: "xmark.circle.fill")
                                         .foregroundStyle(.red)
+                                        .symbolEffect(.wiggle, value: revealed)
                                 }
                             }
                         }
@@ -95,15 +100,31 @@ struct ReadingDetailView: View {
                 }
 
                 if revealed {
-                    Text(isCorrect ? "正确" : "正确答案是：\(item.answer)")
-                        .font(.headline)
-                        .foregroundStyle(isCorrect ? .green : .red)
+                    HStack {
+                        Text(isCorrect ? "正确" : "正确答案是：\(item.answer)")
+                            .font(.headline)
+                            .foregroundStyle(isCorrect ? .green : .red)
+                        Spacer()
+                        Text("2 秒后自动返回")
+                            .font(.caption)
+                            .foregroundStyle(Color.textTertiary)
+                    }
                 }
             }
             .padding()
         }
         .navigationTitle(item.title)
         .navigationBarTitleDisplayMode(.inline)
+        .onDisappear { autoDismissTask?.cancel() }
+    }
+
+    private func scheduleAutoDismiss() {
+        autoDismissTask?.cancel()
+        autoDismissTask = Task {
+            try? await Task.sleep(for: .seconds(2))
+            guard !Task.isCancelled else { return }
+            await MainActor.run { dismiss() }
+        }
     }
 
     private func buttonBackground(for option: String) -> Color {
