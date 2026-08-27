@@ -72,7 +72,7 @@ struct LearnView: View {
             }
             VStack(alignment: .leading, spacing: 2) {
                 HStack(spacing: 6) {
-                    Text("5 分钟手写挑战")
+                    Text("听写挑战")
                         .font(.body.weight(.semibold))
                     Text("NEW")
                         .font(.caption2.bold())
@@ -81,7 +81,7 @@ struct LearnView: View {
                         .padding(.vertical, 2)
                         .background(Color.indigo, in: Capsule())
                 }
-                Text("10 个假名，临摹笔形")
+                Text("看罗马音，写假名 · 真校验")
                     .font(.caption)
                     .foregroundStyle(Color.textSecondary)
             }

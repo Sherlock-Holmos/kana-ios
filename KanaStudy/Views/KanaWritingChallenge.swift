@@ -24,16 +24,25 @@ struct DrawingCanvas: UIViewRepresentable {
 
 // MARK: - Challenge view
 
-/// KanaWritingChallenge — 5-minute mini-loop embedded at the top of the Learn tab.
-/// 10 randomly chosen hiragana, 30 seconds each. User draws with finger in a
-/// PKCanvasView. "Done" submits (counts toward today's learn target); "Skip"
-/// moves on without counting. Stroke-order templates + accuracy scoring land
-/// in v2; the MVP just confirms "did the user draw something at all".
+/// KanaWritingChallenge — 5-minute mini-loop at the top of the Learn tab.
+///
+/// Mode: production test. The screen shows romaji; the user must write the
+/// matching kana in the canvas. We don't reveal the answer until after each
+/// attempt so the exercise measures recall, not copying.
+///
+/// MVP validation runs three heuristic checks against KanaStrokeLibrary:
+///   1. stroke count must match the canonical count for that kana
+///   2. bounding-box aspect ratio must fall in the expected range
+///   3. drawing must occupy at least minPathCoverage of the canvas perimeter
+///
+/// This catches scribbles and wrong-stroke-count attempts cleanly. It does NOT
+/// distinguish kana with the same stroke count and similar aspect ratio —
+/// those slip through until the KanjiVG + DTW matcher lands next week.
 struct KanaWritingChallenge: View {
     @Environment(\.dismiss) private var dismiss
     @EnvironmentObject private var goal: DailyGoalStore
 
-    @State private var pool: [String] = []
+    @State private var pool: [(character: String, romaji: String)] = []
     @State private var currentIndex: Int = 0
     @State private var timeRemaining: Int = 30
     @State private var completedCount: Int = 0
@@ -41,23 +50,17 @@ struct KanaWritingChallenge: View {
     @State private var canvasView = PKCanvasView()
     @State private var timerTask: Task<Void, Never>?
     @State private var sessionStartedAt: Date = Date()
+    @State private var drawingStartedAt: Date?
+    @State private var lastFailure: String?
+    @State private var showAnswer: Bool = false
+    @State private var passTrigger: Int = 0
+    @State private var failTrigger: Int = 0
 
     private let totalCharacters = 10
     private let secondsPerCharacter = 30
-
-    /// All 46 basic hiragana. Drawn as a flat array so the picker can shuffle freely.
-    private let hiraganaBank: [String] = [
-        "あ","い","う","え","お",
-        "か","き","く","け","こ",
-        "さ","し","す","せ","そ",
-        "た","ち","つ","て","と",
-        "な","に","ぬ","ね","の",
-        "は","ひ","ふ","へ","ほ",
-        "ま","み","む","め","も",
-        "や","ゆ","よ",
-        "ら","り","る","れ","ろ",
-        "わ","を","ん"
-    ]
+    /// Failures aren't rewarded even if the user eventually draws something
+    /// correct — only the first valid attempt counts.
+    private let canvasSize = CGSize(width: 320, height: 280)
 
     var body: some View {
         VStack(spacing: 0) {
@@ -80,6 +83,8 @@ struct KanaWritingChallenge: View {
         }
         .onAppear { startSession() }
         .onDisappear { timerTask?.cancel() }
+        .sensoryFeedback(.success, trigger: passTrigger)
+        .sensoryFeedback(.error, trigger: failTrigger)
     }
 
     // MARK: - Progress bar
@@ -91,13 +96,14 @@ struct KanaWritingChallenge: View {
                     .fill(colorForSlot(i))
                     .frame(height: 6)
                     .animation(.easeInOut(duration: 0.3), value: currentIndex)
+                    .animation(.easeInOut(duration: 0.3), value: completedCount)
             }
         }
     }
 
     private func colorForSlot(_ i: Int) -> Color {
-        if i < completedCount           { return .green }
-        if i == currentIndex && !isFinished { return .accentColor }
+        if i < completedCount                  { return .green }
+        if i == currentIndex && !isFinished    { return .accentColor }
         return Color(.tertiarySystemBackground)
     }
 
@@ -106,14 +112,25 @@ struct KanaWritingChallenge: View {
     private var challengeBody: some View {
         VStack(spacing: 16) {
             header
-            targetCard
+            promptCard
                 .padding(.horizontal)
             DrawingCanvas(canvasView: $canvasView)
                 .frame(maxWidth: .infinity)
-                .frame(height: 280)
+                .frame(height: canvasSize.height)
                 .background(Color(.secondarySystemBackground))
                 .clipShape(RoundedRectangle(cornerRadius: 18))
                 .padding(.horizontal)
+                .overlay(alignment: .topTrailing) {
+                        if showAnswer, let current = currentItem {
+                            Text(current.character)
+                                .font(.system(size: 28, weight: .light, design: .serif))
+                                .foregroundStyle(.secondary)
+                                .padding(8)
+                                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 8))
+                                .padding(12)
+                        }
+                    }
+            feedbackArea
             actionRow
                 .padding(.horizontal)
             Spacer(minLength: 0)
@@ -127,7 +144,7 @@ struct KanaWritingChallenge: View {
                 Text("第 \(currentIndex + 1) / \(totalCharacters) 个")
                     .font(.caption.monospacedDigit())
                     .foregroundStyle(Color.textSecondary)
-                Text("用手指在下方画出这个假名")
+                Text("根据罗马音写出假名")
                     .font(.subheadline)
                     .foregroundStyle(Color.textSecondary)
             }
@@ -150,24 +167,48 @@ struct KanaWritingChallenge: View {
         .animation(.easeInOut(duration: 0.2), value: timeRemaining)
     }
 
-    private var targetCard: some View {
-        VStack(spacing: 4) {
-            Text(currentCharacter ?? "")
-                .font(.system(size: 160, weight: .light, design: .serif))
-                .foregroundStyle(.primary)
-                .frame(minHeight: 200)
-                .accessibilityIdentifier("target-kana")
-            Text("对照上方字形，在下方画一画")
-                .font(.footnote)
-                .foregroundStyle(Color.textTertiary)
+    private var promptCard: some View {
+        VStack(spacing: 8) {
+            if let current = currentItem {
+                Text(current.romaji)
+                    .font(.system(size: 88, weight: .semibold, design: .rounded))
+                    .foregroundStyle(.primary)
+                    .accessibilityIdentifier("romaji-prompt")
+                Text("\(current.character)  ·  \(current.romaji.count) 笔")
+                    .font(.footnote)
+                    .foregroundStyle(Color.textTertiary)
+            } else {
+                Text("—")
+                    .font(.system(size: 88, weight: .semibold))
+            }
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical, 16)
+        .padding(.vertical, 20)
         .background(Color(.systemBackground), in: RoundedRectangle(cornerRadius: 16))
         .overlay(
             RoundedRectangle(cornerRadius: 16)
                 .stroke(Color(.separator), lineWidth: 0.5)
         )
+    }
+
+    @ViewBuilder
+    private var feedbackArea: some View {
+        if let message = lastFailure {
+            HStack(spacing: 6) {
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .foregroundStyle(.orange)
+                Text(message)
+                    .font(.caption)
+                    .foregroundStyle(.primary)
+                    .multilineTextAlignment(.leading)
+                Spacer()
+            }
+            .padding(.horizontal, 14)
+            .padding(.vertical, 8)
+            .background(Color.orange.opacity(0.12), in: RoundedRectangle(cornerRadius: 10))
+            .padding(.horizontal)
+            .transition(.move(edge: .top).combined(with: .opacity))
+        }
     }
 
     private var actionRow: some View {
@@ -181,7 +222,15 @@ struct KanaWritingChallenge: View {
             .buttonStyle(.bordered)
 
             Button {
-                advance(counted: canvasHasContent)
+                showAnswer = true
+            } label: {
+                Label("提示", systemImage: "lightbulb")
+                    .frame(maxWidth: .infinity, minHeight: 44)
+            }
+            .buttonStyle(.bordered)
+
+            Button {
+                submit()
             } label: {
                 Label("完成", systemImage: "checkmark.circle.fill")
                     .frame(maxWidth: .infinity, minHeight: 44)
@@ -202,7 +251,7 @@ struct KanaWritingChallenge: View {
                 .symbolEffect(.bounce, value: completedCount)
             Text("挑战结束")
                 .font(.title.bold())
-            Text("\(completedCount) / \(totalCharacters) 完成")
+            Text("\(completedCount) / \(totalCharacters) 通过")
                 .font(.title3.monospacedDigit())
                 .foregroundStyle(Color.textSecondary)
 
@@ -245,13 +294,20 @@ struct KanaWritingChallenge: View {
 
     // MARK: - Logic
 
-    private var currentCharacter: String? {
+    private var currentItem: (character: String, romaji: String)? {
         guard currentIndex < pool.count else { return nil }
         return pool[currentIndex]
     }
 
     private var canvasHasContent: Bool {
         !canvasView.drawing.bounds.isEmpty
+    }
+
+    private var drawingDuration: TimeInterval {
+        if let start = drawingStartedAt {
+            return Date().timeIntervalSince(start)
+        }
+        return 0
     }
 
     private var durationText: String {
@@ -262,13 +318,19 @@ struct KanaWritingChallenge: View {
     }
 
     private func startSession() {
-        let shuffled = hiraganaBank.shuffled().prefix(totalCharacters)
-        pool = Array(shuffled)
+        let candidates = KanaStrokeLibrary.allCharacters.shuffled().prefix(totalCharacters)
+        pool = candidates.compactMap { character in
+            guard let t = KanaStrokeLibrary.template(for: character) else { return nil }
+            return (t.character, t.romaji)
+        }
         currentIndex = 0
         completedCount = 0
         isFinished = false
         sessionStartedAt = Date()
+        lastFailure = nil
+        showAnswer = false
         canvasView.drawing = PKDrawing()
+        drawingStartedAt = nil
         startTimer()
     }
 
@@ -287,12 +349,47 @@ struct KanaWritingChallenge: View {
         }
     }
 
+    private func submit() {
+        guard let item = currentItem,
+              let template = KanaStrokeLibrary.template(for: item.character) else {
+            advance(counted: false)
+            return
+        }
+        // Record drawing start time when user first makes a mark.
+        if drawingStartedAt == nil, canvasHasContent {
+            drawingStartedAt = Date()
+        }
+
+        let metrics = computeMetrics()
+        let verdict = KanaStrokeTemplate.evaluate(
+            template,
+            strokeCount: metrics.strokeCount,
+            aspect: metrics.aspect,
+            pathCoverage: metrics.pathCoverage
+        )
+        switch verdict {
+        case .pass:
+            lastFailure = nil
+            passTrigger += 1
+            advance(counted: true)
+        case .fail(let reason):
+            lastFailure = reason
+            failTrigger += 1
+            // Reset canvas so the user can retry the same character without counting.
+            canvasView.drawing = PKDrawing()
+            drawingStartedAt = nil
+        }
+    }
+
     private func advance(counted: Bool) {
-        if counted, canvasHasContent {
+        if counted {
             completedCount += 1
             goal.recordLearned()
         }
+        lastFailure = nil
+        showAnswer = false
         canvasView.drawing = PKDrawing()
+        drawingStartedAt = nil
         if currentIndex + 1 >= totalCharacters {
             finish(commit: true)
         } else {
@@ -305,5 +402,31 @@ struct KanaWritingChallenge: View {
         timerTask?.cancel()
         isFinished = true
         _ = commit
+    }
+
+    // MARK: - Drawing metrics
+
+    private func computeMetrics() -> DrawingMetrics {
+        let drawing = canvasView.drawing
+        let strokeCount = drawing.strokes.count
+
+        let bounds = drawing.bounds
+        let w = max(bounds.width, 1)
+        let h = max(bounds.height, 1)
+        let aspect = Double(w / h)
+
+        // Sum each PKStroke's parametricLength (already in points), then divide
+        // by the canvas perimeter. Anything < ~30% means the user barely drew.
+        let totalLength = drawing.strokes.reduce(0.0) { acc, stroke in
+            acc + Double(stroke.path.parametricLength)
+        }
+        let perimeter = Double(canvasSize.width + canvasSize.height)
+        let pathCoverage = totalLength / perimeter
+
+        return DrawingMetrics(
+            strokeCount: strokeCount,
+            aspect: aspect,
+            pathCoverage: pathCoverage
+        )
     }
 }
