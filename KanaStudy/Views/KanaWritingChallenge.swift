@@ -415,10 +415,19 @@ struct KanaWritingChallenge: View {
         let h = max(bounds.height, 1)
         let aspect = Double(w / h)
 
-        // Sum each PKStroke's parametricLength (already in points), then divide
-        // by the canvas perimeter. Anything < ~30% means the user barely drew.
+        // Sum each PKStroke's path length by sampling interpolated points.
+        // PKStrokePath has no built-in length, so walk its interpolated points
+        // and accumulate Euclidean distance. Anything < ~30% of canvas perimeter
+        // means the user barely drew.
         let totalLength = drawing.strokes.reduce(0.0) { acc, stroke in
-            acc + Double(stroke.path.parametricLength)
+            let points = stroke.path.interpolatedPoints(by: PKStrokePath.IndexInterval.stride(by: 1))
+            var length = 0.0
+            for i in 1..<points.count {
+                let dx = Double(points[i].location.x - points[i - 1].location.x)
+                let dy = Double(points[i].location.y - points[i - 1].location.y)
+                length += (dx * dx + dy * dy).squareRoot()
+            }
+            return acc + length
         }
         let perimeter = Double(canvasSize.width + canvasSize.height)
         let pathCoverage = totalLength / perimeter
