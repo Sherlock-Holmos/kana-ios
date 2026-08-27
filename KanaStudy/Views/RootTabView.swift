@@ -6,6 +6,7 @@ enum AppTab: Hashable {
 
 struct RootTabView: View {
     @State private var selection: AppTab = .home
+    @State private var showOnboarding: Bool = !OnboardingGate.isCompleted
 
     var body: some View {
         TabView(selection: $selection) {
@@ -24,6 +25,11 @@ struct RootTabView: View {
             ProgressViewScreen()
                 .tabItem { Label("进度", systemImage: "chart.bar.fill") }
                 .tag(AppTab.progress)
+        }
+        .fullScreenCover(isPresented: $showOnboarding) {
+            OnboardingView {
+                showOnboarding = false
+            }
         }
     }
 }

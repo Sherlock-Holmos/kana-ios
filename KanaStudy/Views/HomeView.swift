@@ -9,7 +9,6 @@ struct HomeView: View {
     @EnvironmentObject private var goal: DailyGoalStore
     @EnvironmentObject private var sync: SyncService
 
-    @State private var counts: ContentService.Counts?
     @State private var recommendations: [Planner.Recommendation] = []
     @State private var loadError: String?
     @State private var showLoginSheet = false
@@ -20,8 +19,11 @@ struct HomeView: View {
                 VStack(alignment: .leading, spacing: 20) {
                     header
                     syncCard
-                    goalCard
-                    if let counts { countsCard(counts) }
+                    DailyMissionCard(
+                        onTapReview: { onJump(.review) },
+                        onTapLearn:  { onJump(.learn) },
+                        onTapListen: { onJump(.learn) }
+                    )
                     quickActions
                     recommendationsCard
                     if let loadError {
@@ -98,78 +100,23 @@ struct HomeView: View {
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text("N5 自适应学习系统")
+            Text("每天 20 分钟，过 JLPT N5")
                 .font(.headline)
                 .foregroundStyle(Color.textSecondary)
-            Text("开始今天的学习")
+            Text(greeting)
                 .font(.largeTitle.bold())
         }
     }
 
-    private var goalCard: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            HStack {
-                Text("今日目标")
-                    .font(.headline)
-                Spacer()
-                Text("\(goal.reviewsToday) / \(goal.dailyGoal)")
-                    .font(.caption.monospacedDigit())
-                    .foregroundStyle(Color.textSecondary)
-            }
-            ProgressView(value: goal.goalProgress)
-                .tint(goal.goalHitToday ? .green : .accentColor)
-            HStack(spacing: 16) {
-                streakPill(value: goal.currentStreak, label: "连续天数")
-                streakPill(value: goal.goalStreak, label: "达成连续")
-            }
+    private var greeting: String {
+        let h = Calendar.current.component(.hour, from: Date())
+        switch h {
+        case 5..<11:  return "早上好"
+        case 11..<14: return "中午好"
+        case 14..<18: return "下午好"
+        case 18..<22: return "晚上好"
+        default:      return "夜深了"
         }
-        .padding()
-        .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 14))
-    }
-
-    private func streakPill(value: Int, label: String) -> some View {
-        VStack(spacing: 2) {
-            HStack(spacing: 4) {
-                Image(systemName: "flame.fill").foregroundStyle(.orange)
-                Text("\(value)").font(.headline.monospacedDigit())
-            }
-            Text(label).font(.caption2).foregroundStyle(Color.textSecondary)
-        }
-        .frame(maxWidth: .infinity)
-        .padding(.vertical, 6)
-        .background(Color(.systemBackground), in: RoundedRectangle(cornerRadius: 10))
-    }
-
-    private func countsCard(_ c: ContentService.Counts) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("当前内容规模")
-                .font(.headline)
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
-                stat("假名", c.kana)
-                stat("词汇", c.vocabulary)
-                stat("语法", c.grammar)
-                stat("汉字", c.kanji)
-                stat("例句", c.sentence)
-                stat("阅读", c.reading)
-                stat("听力", c.listening)
-                stat("题目变体", c.questionVariants)
-            }
-        }
-        .padding()
-        .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 14))
-    }
-
-    private func stat(_ label: String, _ value: Int) -> some View {
-        VStack(spacing: 4) {
-            Text("\(value)")
-                .font(.title2.bold())
-            Text(label)
-                .font(.caption)
-                .foregroundStyle(Color.textSecondary)
-        }
-        .frame(maxWidth: .infinity)
-        .padding(.vertical, 8)
-        .background(Color(.systemBackground), in: RoundedRectangle(cornerRadius: 10))
     }
 
     private var quickActions: some View {
@@ -243,7 +190,6 @@ struct HomeView: View {
 
     private func load() async {
         do {
-            counts = try ContentService.shared.counts()
             let kana = try ContentService.shared.loadKana()
             let vocab = try ContentService.shared.loadVocabulary()
             recommendations = Planner(srs: srs, bkt: bkt, goal: goal)
