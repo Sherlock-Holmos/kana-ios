@@ -69,8 +69,8 @@ final class SupabaseClient {
 
     func signIn(email: String, password: String) async throws -> AuthSession {
         let body = try JSONEncoder().encode(["email": email, "password": password])
-        var req = try request("/auth/v1/token?grant_type=password", method: "POST", body: body)
-        req.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        let req = try request("/auth/v1/token", method: "POST", body: body,
+                              query: [URLQueryItem(name: "grant_type", value: "password")])
         return try await performAuth(req)
     }
 
