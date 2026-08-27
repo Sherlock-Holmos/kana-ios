@@ -12,12 +12,14 @@ struct HomeView: View {
     @State private var counts: ContentService.Counts?
     @State private var recommendations: [Planner.Recommendation] = []
     @State private var loadError: String?
+    @State private var showLoginSheet = false
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     header
+                    syncCard
                     goalCard
                     if let counts { countsCard(counts) }
                     quickActions
@@ -41,7 +43,56 @@ struct HomeView: View {
                     }
                 }
             }
+            .sheet(isPresented: $showLoginSheet) {
+                LoginSheet()
+            }
             .task { await load() }
+        }
+    }
+
+    @ViewBuilder
+    private var syncCard: some View {
+        if let user = sync.currentUser {
+            HStack(spacing: 12) {
+                Image(systemName: "checkmark.seal.fill")
+                    .foregroundStyle(.green)
+                    .font(.title3)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("已同步").font(.subheadline.weight(.semibold))
+                    Text(user.email)
+                        .font(.caption)
+                        .foregroundStyle(Color.textSecondary)
+                }
+                Spacer()
+                Button("管理") { showLoginSheet = true }
+                    .buttonStyle(.bordered)
+                    .controlSize(.small)
+            }
+            .padding()
+            .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 12))
+        } else {
+            Button {
+                showLoginSheet = true
+            } label: {
+                HStack(spacing: 12) {
+                    Image(systemName: "icloud.and.arrow.up")
+                        .foregroundStyle(.tint)
+                        .font(.title3)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("未登录 · 登录以同步进度")
+                            .font(.subheadline.weight(.semibold))
+                        Text("多设备共享 SRS / BKT / 每日目标")
+                            .font(.caption)
+                            .foregroundStyle(Color.textSecondary)
+                    }
+                    Spacer()
+                    Image(systemName: "chevron.right")
+                        .foregroundStyle(Color.textTertiary)
+                }
+                .padding()
+                .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 12))
+            }
+            .buttonStyle(.plain)
         }
     }
 

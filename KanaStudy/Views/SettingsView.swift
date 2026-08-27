@@ -5,70 +5,52 @@ struct SettingsView: View {
     @EnvironmentObject private var sync: SyncService
     @EnvironmentObject private var goal: DailyGoalStore
 
-    @State private var email = ""
-    @State private var password = ""
     @State private var urlInput = ""
     @State private var keyInput = ""
     @State private var showAdvanced = false
-
-    @State private var busy = false
+    @State private var showLoginSheet = false
 
     var body: some View {
         Form {
+            // MARK: Account (login lives in its own sheet)
             Section {
                 if let user = sync.currentUser {
                     HStack {
-                        Text("已登录")
-                        Spacer()
-                        Text(user.email)
-                            .foregroundStyle(Color.textSecondary)
-                    }
-                    Button("登出", role: .destructive) {
-                        sync.signOut()
-                    }
-                } else if settings.isConfigured {
-                    TextField("邮箱", text: $email)
-                        .textInputAutocapitalization(.never)
-                        .keyboardType(.emailAddress)
-                        .autocorrectionDisabled()
-                    SecureField("密码", text: $password)
-
-                    HStack {
-                        Button("登录") {
-                            Task {
-                                busy = true
-                                await sync.signIn(email: email, password: password)
-                                busy = false
-                            }
+                        Image(systemName: "person.crop.circle.fill")
+                            .foregroundStyle(.tint)
+                            .font(.title2)
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(user.email)
+                                .font(.body.weight(.medium))
+                            Text("已登录")
+                                .font(.caption)
+                                .foregroundStyle(Color.textSecondary)
                         }
-                        .disabled(email.isEmpty || password.isEmpty || busy)
-
                         Spacer()
-
-                        Button("注册") {
-                            Task {
-                                busy = true
-                                await sync.signUp(email: email, password: password)
-                                busy = false
-                            }
-                        }
-                        .disabled(email.isEmpty || password.isEmpty || busy)
                     }
+                    Button("管理账号") { showLoginSheet = true }
                 } else {
-                    Text("后端未配置")
-                        .font(.footnote)
-                        .foregroundStyle(Color.textSecondary)
+                    HStack {
+                        Image(systemName: "person.crop.circle")
+                            .foregroundStyle(Color.textTertiary)
+                            .font(.title2)
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("未登录")
+                                .font(.body.weight(.medium))
+                            Text("登录后可在多设备间同步进度")
+                                .font(.caption)
+                                .foregroundStyle(Color.textSecondary)
+                        }
+                        Spacer()
+                    }
+                    Button("登录或注册") { showLoginSheet = true }
+                        .buttonStyle(.borderedProminent)
                 }
             } header: {
                 Text("账号")
-            } footer: {
-                if settings.isConfigured {
-                    Text("后端：\(settings.supabaseURL)")
-                        .font(.caption.monospaced())
-                        .foregroundStyle(Color.textSecondary)
-                }
             }
 
+            // MARK: Backend
             Section {
                 if !settings.isUsingCustomBackend {
                     HStack {
@@ -114,6 +96,7 @@ struct SettingsView: View {
                 }
             }
 
+            // MARK: Daily goal
             Section("每日目标") {
                 Stepper("每日复习目标：\(goal.dailyGoal)", value: Binding(
                     get: { goal.dailyGoal },
@@ -121,6 +104,7 @@ struct SettingsView: View {
                 ), in: 5...200, step: 5)
             }
 
+            // MARK: Sync status
             Section("同步状态") {
                 if let last = sync.lastSyncedAt {
                     HStack {
@@ -140,14 +124,25 @@ struct SettingsView: View {
                 if sync.isSyncing {
                     HStack { ProgressView(); Text("同步中…") }
                 }
+                HStack {
+                    Text("后端")
+                    Spacer()
+                    Text(settings.supabaseURL)
+                        .font(.caption.monospaced())
+                        .foregroundStyle(Color.textSecondary)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                }
             }
         }
         .navigationTitle("设置")
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $showLoginSheet) {
+            LoginSheet()
+        }
         .onAppear {
             urlInput = settings.supabaseURL
             keyInput = settings.anonKey
-            email = settings.userEmail
         }
     }
 }
