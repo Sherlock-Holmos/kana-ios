@@ -3,7 +3,6 @@ import AVFoundation
 
 /// SpeakingService — privacy-respecting shadowing recorder.
 /// Recording is held only in memory (file URL on tmp), never written to UserDefaults or backend.
-@MainActor
 final class SpeakingService: NSObject, ObservableObject {
     static let shared = SpeakingService()
 
@@ -14,7 +13,7 @@ final class SpeakingService: NSObject, ObservableObject {
     private var player: AVAudioPlayer?
     private var currentURL: URL?
 
-    override private init() {
+    override init() {
         super.init()
     }
 

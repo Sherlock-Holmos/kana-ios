@@ -76,6 +76,12 @@ jobs:
           if [ "${PIPESTATUS[0]}" -ne 0 ]; then
             echo "::error::xcodebuild failed; tail of build.log:"
             tail -100 build.log
+            {
+              echo "## xcodebuild error tail"
+              echo '```'
+              tail -80 build.log
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
 

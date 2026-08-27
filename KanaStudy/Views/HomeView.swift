@@ -112,7 +112,7 @@ struct HomeView: View {
                         Text(rec.reason)
                             .font(.caption)
                             .padding(.horizontal, 8).padding(.vertical, 4)
-                            .background(Color.tint.opacity(0.15), in: Capsule())
+                            .background(Color.accentColor.opacity(0.15), in: Capsule())
                     }
                 }
             }
@@ -153,6 +153,3 @@ struct HomeView: View {
     }
 }
 
-extension Color {
-    static let tint = Color.accentColor
-}

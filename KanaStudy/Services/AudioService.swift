@@ -3,7 +3,6 @@ import AVFoundation
 
 /// AudioService — wraps AVSpeechSynthesizer for kana/vocab/sentence playback,
 /// and AVPlayer for fixed audio URLs (Audio 3.0 layer).
-@MainActor
 final class AudioService: NSObject, ObservableObject {
     static let shared = AudioService()
 
@@ -12,7 +11,7 @@ final class AudioService: NSObject, ObservableObject {
     private let synthesizer = AVSpeechSynthesizer()
     private var player: AVPlayer?
 
-    override private init() {
+    override init() {
         super.init()
         synthesizer.delegate = self
         configureAudioSession()
@@ -54,10 +53,14 @@ final class AudioService: NSObject, ObservableObject {
 
 extension AudioService: AVSpeechSynthesizerDelegate {
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
-        Task { @MainActor in self.isSpeaking = false }
+        DispatchQueue.main.async { [weak self] in
+            self?.isSpeaking = false
+        }
     }
 
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
-        Task { @MainActor in self.isSpeaking = false }
+        DispatchQueue.main.async { [weak self] in
+            self?.isSpeaking = false
+        }
     }
 }
