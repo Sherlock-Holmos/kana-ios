@@ -32,6 +32,14 @@ struct LearnView: View {
     var body: some View {
         NavigationStack {
             List {
+                Section {
+                    NavigationLink {
+                        KanaWritingChallenge()
+                    } label: {
+                        writingChallengeRow
+                    }
+                }
+
                 Section("内容") {
                     ForEach([LearnMode.kana, .vocabulary, .grammar, .kanji, .sentence].filter { LearnMode.allCases.contains($0) }) { mode in
                         link(for: mode)
@@ -50,6 +58,36 @@ struct LearnView: View {
             }
             .navigationTitle("学习")
         }
+    }
+
+    private var writingChallengeRow: some View {
+        HStack(spacing: 14) {
+            ZStack {
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(Color.indigo.opacity(0.15))
+                    .frame(width: 44, height: 44)
+                Image(systemName: "applepencil.tip")
+                    .font(.title3)
+                    .foregroundStyle(.indigo)
+            }
+            VStack(alignment: .leading, spacing: 2) {
+                HStack(spacing: 6) {
+                    Text("5 分钟手写挑战")
+                        .font(.body.weight(.semibold))
+                    Text("NEW")
+                        .font(.caption2.bold())
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 6)
+                        .padding(.vertical, 2)
+                        .background(Color.indigo, in: Capsule())
+                }
+                Text("10 个假名，临摹笔形")
+                    .font(.caption)
+                    .foregroundStyle(Color.textSecondary)
+            }
+            Spacer()
+        }
+        .padding(.vertical, 4)
     }
 
     @ViewBuilder
