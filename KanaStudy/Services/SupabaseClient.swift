@@ -98,20 +98,39 @@ final class SupabaseClient {
 
     // MARK: - Sync (PostgREST)
 
+    /// Wire payload — encoded via JSONEncoder so Swift Date fields become ISO8601
+    /// strings. JSONSerialization was rejecting Swift values as `__SwiftValue` and
+    /// crashing the app on the first push after sign-in.
+    private struct PushPayload: Encodable {
+        struct Meta: Encodable {
+            let srsCards: [String: SRSCard]
+            let abilities: [String: Ability]
+            let activityByDay: [String: Int]
+            let dailyGoal: Int
+            let bktMasteries: [String: BKTMastery]
+        }
+        let user_id: String
+        let schema_version: Int
+        let meta: Meta
+        let updated_at: String
+    }
+
     func upsertUserMeta(userId: String, schema: Int, envelope: SyncEnvelope) async throws {
-        let payload: [String: Any] = [
-            "user_id": userId,
-            "schema_version": schema,
-            "meta": [
-                "srsCards": envelope.srsCards ?? [:],
-                "abilities": envelope.abilities ?? [:],
-                "activityByDay": envelope.activityByDay ?? [:],
-                "dailyGoal": envelope.dailyGoal ?? 20,
-                "bktMasteries": envelope.bktMasteries ?? [:]
-            ],
-            "updated_at": ISO8601DateFormatter().string(from: envelope.updatedAt)
-        ]
-        let body = try JSONSerialization.data(withJSONObject: payload)
+        let payload = PushPayload(
+            user_id: userId,
+            schema_version: schema,
+            meta: PushPayload.Meta(
+                srsCards: envelope.srsCards ?? [:],
+                abilities: envelope.abilities ?? [:],
+                activityByDay: envelope.activityByDay ?? [:],
+                dailyGoal: envelope.dailyGoal ?? 20,
+                bktMasteries: envelope.bktMasteries ?? [:]
+            ),
+            updated_at: ISO8601DateFormatter().string(from: envelope.updatedAt)
+        )
+        let encoder = JSONEncoder()
+        encoder.dateEncodingStrategy = .iso8601
+        let body = try encoder.encode(payload)
         let req = try request("/rest/v1/user_learning_meta", method: "POST", body: body,
                               query: [URLQueryItem(name: "on_conflict", value: "user_id")])
         let (data, resp) = try await URLSession.shared.data(for: req)
