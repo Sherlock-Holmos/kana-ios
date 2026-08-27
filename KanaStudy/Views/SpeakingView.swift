@@ -1,4 +1,5 @@
 import SwiftUI
+import AVFoundation
 
 struct SpeakingView: View {
     @ObservedObject private var speaker = SpeakingService.shared
