@@ -28,14 +28,13 @@ targets:
         buildPhase: resources
     resources:
       - KanaStudy/Assets.xcassets
+      - KanaStudy/PrivacyInfo.xcprivacy
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: dev.kana-study.KanaStudy
         PRODUCT_NAME: KanaStudy
         MARKETING_VERSION: "1.0.0"
         CURRENT_PROJECT_VERSION: "1"
-        INFOPLIST_FILE: KanaStudy/Info.plist
-        GENERATE_INFOPLIST_FILE: NO
         CODE_SIGNING_ALLOWED: NO
         CODE_SIGN_IDENTITY: ""
         CODE_SIGNING_REQUIRED: NO
