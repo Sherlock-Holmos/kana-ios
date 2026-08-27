@@ -36,3 +36,6 @@ xcuserdata/
 # Tooling artifacts
 .playwright-mcp/
 .claude/
+
+# Local docs / design notes (kept out of source control)
+docs/

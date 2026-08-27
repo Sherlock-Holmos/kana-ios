@@ -177,15 +177,11 @@ struct HomeView: View {
             Text("快速进入")
                 .font(.headline)
             Button { onJump(.learn) } label: {
-                row(icon: "book.fill", title: "开始学习", subtitle: "假名 / 词汇 / 语法 / 汉字 / 例句 / 阅读 / 听力")
+                row(icon: "book.fill", title: "开始学习", subtitle: "假名 / 词汇 / 语法 / 汉字 / 例句 / 阅读 / 听力 / 跟读")
             }
             .buttonStyle(.plain)
             Button { onJump(.review) } label: {
-                row(icon: "arrow.clockwise", title: "复习", subtitle: "SRS 间隔重复 · \(srs.dueItems().count) 张到期")
-            }
-            .buttonStyle(.plain)
-            Button { onJump(.library) } label: {
-                row(icon: "books.vertical.fill", title: "浏览内容库", subtitle: "全部 7 类内容")
+                row(icon: "arrow.clockwise", title: "今日复习", subtitle: "SRS 间隔重复 · \(srs.dueItems().count) 张到期")
             }
             .buttonStyle(.plain)
         }
