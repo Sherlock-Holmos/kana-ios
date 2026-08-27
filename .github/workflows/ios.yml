@@ -16,16 +16,35 @@ jobs:
 
     env:
       SCHEME: KanaStudy
-      DESTINATION: 'generic/platform=iOS Simulator'
       DERIVED_DATA: build/DerivedData
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Select Xcode
-        run: sudo xcode-select -s /Applications/Xcode_15.4.app/Contents/Developer
-        # If 15.4 is unavailable in your runner image, switch to /Applications/Xcode.app.
+      - name: List available Xcodes
+        run: |
+          echo "=== /Applications contents ==="
+          ls -la /Applications | grep -i xcode || true
+          echo "=== xcode-select current ==="
+          xcode-select -p || true
+          echo "=== xcrun simctl list runtimes (sanity) ==="
+          xcrun simctl list runtimes 2>&1 | head -20 || true
+
+      - name: Pick latest stable Xcode
+        run: |
+          set -e
+          # Prefer newest Xcode_* app that exists; fall back to whatever xcode-select currently points at.
+          CANDIDATE="$(ls -d /Applications/Xcode_*.app 2>/dev/null | sort -V | tail -n 1 || true)"
+          if [ -z "$CANDIDATE" ]; then
+            CANDIDATE="$(xcode-select -p 2>/dev/null | sed 's|/Contents/Developer||' || true)"
+          fi
+          if [ -z "$CANDIDATE" ] || [ ! -d "$CANDIDATE" ]; then
+            echo "::error::No usable Xcode found in /Applications"
+            exit 1
+          fi
+          echo "Selected Xcode: $CANDIDATE"
+          sudo xcode-select -s "$CANDIDATE/Contents/Developer"
 
       - name: Show toolchain
         run: |
@@ -33,7 +52,12 @@ jobs:
           swift --version
 
       - name: Install XcodeGen
-        run: brew install xcodegen
+        run: |
+          if ! command -v xcodegen >/dev/null 2>&1; then
+            brew install xcodegen
+          else
+            echo "xcodegen already installed: $(xcodegen --version)"
+          fi
 
       - name: Generate Xcode project
         run: xcodegen generate
@@ -45,12 +69,17 @@ jobs:
             -project KanaStudy.xcodeproj \
             -scheme "$SCHEME" \
             -configuration Debug \
-            -destination "$DESTINATION" \
+            -destination 'generic/platform=iOS Simulator' \
             -derivedDataPath "$DERIVED_DATA" \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
-            build | xcpretty || (exit 1)
+            build 2>&1 | tee build.log | tail -200
+          if [ "${PIPESTATUS[0]}" -ne 0 ]; then
+            echo "::error::xcodebuild failed; tail of build.log:"
+            tail -100 build.log
+            exit 1
+          fi
 
       - name: Verify .app artifact
         run: |
@@ -69,3 +98,12 @@ jobs:
           path: build/DerivedData/Build/Products/Debug-iphonesimulator/KanaStudy.app
           if-no-files-found: error
           retention-days: 7
+
+      - name: Upload build log on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: KanaStudy-build-log
+          path: build.log
+          if-no-files-found: ignore
+          retention-days: 3
