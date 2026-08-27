@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct SpeakingView: View {
-    @StateObject private var speaker = SpeakingService.shared
-    @StateObject private var audio = AudioService.shared
+    @ObservedObject private var speaker = SpeakingService.shared
+    @ObservedObject private var audio = AudioService.shared
 
     @State private var sentences: [SentenceItem] = []
     @State private var index: Int = 0
