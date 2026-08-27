@@ -187,7 +187,7 @@ struct ReviewView: View {
                 } else {
                     action = dy < -threshold ? .easy : dy > threshold ? .hard : nil
                 }
-                if let g = action { grade(id, as: g) }
+                if let g = action { applyGrade(id, as: g) }
             }
     }
 
@@ -195,7 +195,7 @@ struct ReviewView: View {
         HStack(spacing: 8) {
             ForEach(SRSGrade.allCases) { grade in
                 Button {
-                    grade(id, as: grade)
+                    applyGrade(id, as: grade)
                 } label: {
                     VStack(spacing: 2) {
                         Image(systemName: directionSymbol(grade))
@@ -212,7 +212,7 @@ struct ReviewView: View {
         }
     }
 
-    private func grade(_ id: String, as grade: SRSGrade) {
+    private func applyGrade(_ id: String, as grade: SRSGrade) {
         let success = grade != .again
         srsStore.grade(id, as: grade)
         if let snapshot = snapshot(for: id) {
