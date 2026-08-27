@@ -415,22 +415,14 @@ struct KanaWritingChallenge: View {
         let h = max(bounds.height, 1)
         let aspect = Double(w / h)
 
-        // Sum each PKStroke's path length by sampling interpolated points.
-        // PKStrokePath has no built-in length, so walk its interpolated points
-        // and accumulate Euclidean distance. Anything < ~30% of canvas perimeter
-        // means the user barely drew.
-        let totalLength = drawing.strokes.reduce(0.0) { acc, stroke in
-            let points = stroke.path.controlPoints
-            var length = 0.0
-            for i in 1..<points.count {
-                let dx = Double(points[i].location.x - points[i - 1].location.x)
-                let dy = Double(points[i].location.y - points[i - 1].location.y)
-                length += (dx * dx + dy * dy).squareRoot()
-            }
-            return acc + length
-        }
-        let perimeter = Double(canvasSize.width + canvasSize.height)
-        let pathCoverage = totalLength / perimeter
+        // PKStrokePath has no public access to its control points (the path is
+        // opaque in PencilKit). We use the drawing's bounding-box area relative
+        // to the canvas as a coarse "did the user fill enough" proxy. A thin
+        // scribble covers little area; a full character fills a reasonable share.
+        // KanjiVG + DTW in W3 will replace this with proper stroke comparison.
+        let drawnArea = Double(bounds.width * bounds.height)
+        let canvasArea = Double(canvasSize.width * canvasSize.height)
+        let pathCoverage = min(1.0, drawnArea / canvasArea * 1.8)   // 1.8 = empirical char-to-bbox ratio
 
         return DrawingMetrics(
             strokeCount: strokeCount,
