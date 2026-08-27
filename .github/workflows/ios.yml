@@ -74,14 +74,10 @@ jobs:
             CODE_SIGN_IDENTITY="" \
             build 2>&1 | tee build.log | tail -200
           if [ "${PIPESTATUS[0]}" -ne 0 ]; then
-            echo "::error::xcodebuild failed; tail of build.log:"
-            tail -100 build.log
-            {
-              echo "## xcodebuild error tail"
-              echo '```'
-              tail -80 build.log
-              echo '```'
-            } >> "$GITHUB_STEP_SUMMARY"
+            echo "::error::xcodebuild failed; emitting errors as annotations:"
+            grep -E '(error:|warning:)' build.log | head -50 | while read -r line; do
+              echo "::error::$line"
+            done
             exit 1
           fi
 
