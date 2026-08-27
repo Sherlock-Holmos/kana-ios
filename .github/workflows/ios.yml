@@ -74,10 +74,12 @@ jobs:
             CODE_SIGN_IDENTITY="" \
             build 2>&1 | tee build.log | tail -200
           if [ "${PIPESTATUS[0]}" -ne 0 ]; then
-            echo "::error::xcodebuild failed; emitting errors as annotations:"
-            grep -E '(error:|warning:)' build.log | head -50 | while read -r line; do
+            echo "::error::xcodebuild failed; emitting Swift compile errors as annotations:"
+            grep -E '^/.*\.swift:[0-9]+:[0-9]+: error:' build.log | head -30 | while read -r line; do
               echo "::error::$line"
             done
+            echo "::error::=== build.log tail ==="
+            tail -40 build.log
             exit 1
           fi
 
