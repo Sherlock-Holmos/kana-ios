@@ -2,15 +2,15 @@ name: KanaStudy
 options:
   bundleIdPrefix: dev.kana-study
   deploymentTarget:
-    iOS: "26.0"
+    iOS: "18.0"
   developmentLanguage: zh-Hans
   createIntermediateGroups: true
   generateEmptyDirectories: true
 
 settings:
   base:
-    SWIFT_VERSION: "6.0"
-    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+    SWIFT_VERSION: "5.10"
+    IPHONEOS_DEPLOYMENT_TARGET: "18.0"
     ENABLE_USER_SCRIPT_SANDBOXING: NO
     SWIFT_TREAT_WARNINGS_AS_ERRORS: NO
 
@@ -18,7 +18,7 @@ targets:
   KanaStudy:
     type: application
     platform: iOS
-    deploymentTarget: "26.0"
+    deploymentTarget: "18.0"
     sources:
       - path: KanaStudy
         excludes:

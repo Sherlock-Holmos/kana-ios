@@ -46,6 +46,8 @@ jobs:
         run: |
           xcodebuild -version
           swift --version
+          echo "=== Available iOS SDKs ==="
+          xcodebuild -showsdks 2>&1 | grep -i ios || echo "(none found)"
 
       - name: Install XcodeGen
         run: |
@@ -134,6 +136,8 @@ jobs:
         run: |
           xcodebuild -version
           swift --version
+          echo "=== Available iOS SDKs ==="
+          xcodebuild -showsdks 2>&1 | grep -i ios || echo "(none found)"
 
       - name: Install XcodeGen
         run: |
