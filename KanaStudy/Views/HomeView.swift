@@ -22,7 +22,7 @@ struct HomeView: View {
                     if let counts { countsCard(counts) }
                     quickActions
                     recommendationsCard
-                    if let loadError = {
+                    if let loadError {
                         Text(loadError)
                             .font(.footnote)
                             .foregroundStyle(.red)
