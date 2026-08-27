@@ -420,7 +420,7 @@ struct KanaWritingChallenge: View {
         // and accumulate Euclidean distance. Anything < ~30% of canvas perimeter
         // means the user barely drew.
         let totalLength = drawing.strokes.reduce(0.0) { acc, stroke in
-            let points = stroke.path.interpolatedPoints(by: PKStrokePath.IndexInterval.stride(by: 1))
+            let points = stroke.path.interpolatedPoints(by: PKStrokePath.IndexInterval.distance(2.0))
             var length = 0.0
             for i in 1..<points.count {
                 let dx = Double(points[i].location.x - points[i - 1].location.x)
