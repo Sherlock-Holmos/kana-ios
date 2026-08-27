@@ -2,7 +2,7 @@ import Foundation
 
 /// SupabaseClient — minimal REST client (no SDK) that talks to a Supabase project
 /// via PostgREST + GoTrue auth. Works on iOS 16+ with only Foundation / URLSession.
-struct SupabaseClient {
+final class SupabaseClient {
     enum ClientError: Error, LocalizedError {
         case badURL(String)
         case http(Int, String)
