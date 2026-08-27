@@ -59,20 +59,28 @@ final class SupabaseClient {
         }
     }
 
-    func signIn(email: String, password: String) async throws -> SyncUser {
+    /// Result of a successful auth — includes the JWT and (optional) refresh token
+    /// so the caller can persist them to Keychain and restore on next launch.
+    struct AuthSession {
+        let accessToken: String
+        let refreshToken: String?
+        let user: SyncUser
+    }
+
+    func signIn(email: String, password: String) async throws -> AuthSession {
         let body = try JSONEncoder().encode(["email": email, "password": password])
         var req = try request("/auth/v1/token?grant_type=password", method: "POST", body: body)
         req.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         return try await performAuth(req)
     }
 
-    func signUp(email: String, password: String) async throws -> SyncUser {
+    func signUp(email: String, password: String) async throws -> AuthSession {
         let body = try JSONEncoder().encode(["email": email, "password": password])
         let req = try request("/auth/v1/signup", method: "POST", body: body)
         return try await performAuth(req)
     }
 
-    private func performAuth(_ req: URLRequest) async throws -> SyncUser {
+    private func performAuth(_ req: URLRequest) async throws -> AuthSession {
         let (data, resp) = try await URLSession.shared.data(for: req)
         guard let http = resp as? HTTPURLResponse else { throw ClientError.noData }
         guard (200..<300).contains(http.statusCode) else {
@@ -81,7 +89,8 @@ final class SupabaseClient {
         do {
             let r = try JSONDecoder().decode(AuthResponse.self, from: data)
             self.token = r.access_token
-            return SyncUser(id: r.user.id, email: r.user.email)
+            let user = SyncUser(id: r.user.id, email: r.user.email)
+            return AuthSession(accessToken: r.access_token, refreshToken: r.refresh_token, user: user)
         } catch {
             throw ClientError.decoding(error)
         }
