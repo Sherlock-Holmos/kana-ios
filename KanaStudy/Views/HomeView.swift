@@ -107,36 +107,6 @@ struct HomeView: View {
         }
     }
 
-    private var quickActions: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("快速进入")
-                .font(.headline)
-            Button { onJump(.learn) } label: {
-                row(icon: "book.fill", title: "开始学习", subtitle: "假名 / 词汇 / 语法 / 汉字 / 例句 / 阅读 / 听力 / 跟读")
-            }
-            .buttonStyle(.plain)
-            Button { onJump(.review) } label: {
-                row(icon: "arrow.clockwise", title: "今日复习", subtitle: "SRS 间隔重复 · \(srs.dueItems().count) 张到期")
-            }
-            .buttonStyle(.plain)
-        }
-    }
-
-    private var quickActions: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("快速进入")
-                .font(.headline)
-            Button { onJump(.learn) } label: {
-                row(icon: "book.fill", title: "开始学习", subtitle: "假名 / 词汇 / 语法 / 汉字 / 例句 / 阅读 / 听力 / 跟读")
-            }
-            .buttonStyle(.plain)
-            Button { onJump(.review) } label: {
-                row(icon: "arrow.clockwise", title: "今日复习", subtitle: "SRS 间隔重复 · \(srs.dueItems().count) 张到期")
-            }
-            .buttonStyle(.plain)
-        }
-    }
-
     private func row(icon: String, title: String, subtitle: String) -> some View {
         HStack(spacing: 14) {
             Image(systemName: icon)
