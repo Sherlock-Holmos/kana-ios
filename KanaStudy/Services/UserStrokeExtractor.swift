@@ -60,14 +60,14 @@ enum UserStrokeExtractor {
         return strokes
     }
 
-    /// Run VNDetectContoursRequest on the CGImage and return top-level contour
-    /// CGPaths. Async wrapper around Vision's callback API.
-    private static func detectContours(cgImage: CGImage) async -> [CGPath] {
+    /// Run VNDetectContoursRequest on the CGImage and return top-level
+    /// VNContours. Async wrapper around Vision's callback API.
+    private static func detectContours(cgImage: CGImage) async -> [VNContour] {
         await withCheckedContinuation { continuation in
             let request = VNDetectContoursRequest { req, _ in
                 let observation = (req.results as? [VNContoursObservation])?.first
-                let paths = observation?.topLevelContours.map { $0.path } ?? []
-                continuation.resume(returning: paths)
+                let contours = observation?.topLevelContours ?? []
+                continuation.resume(returning: contours)
             }
             request.contrastAdjustment = 1.0
             request.detectsDarkOnLight = true   // pencil ink on light background
