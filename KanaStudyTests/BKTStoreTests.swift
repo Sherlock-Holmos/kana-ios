@@ -95,7 +95,8 @@ final class BKTStoreTests: XCTestCase {
         for _ in 0..<30 { store.update(abilityId: "x", correct: false) }
         let final = store.masteries["x"]!.pMaster
         XCTAssertLessThan(final, 0.20, "wrong updates must reduce mastery below pInit")
-        XCTAssertGreaterThan(final, 0.25, accuracy: 0.05)
+        XCTAssert(final > 0.25 && final < 0.32,
+                  "expected ~0.29 BKT steady state, got \(final)")
     }
 
     // MARK: - Queries
