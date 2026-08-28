@@ -23,8 +23,8 @@ final class BKTStoreTests: XCTestCase {
 
     func testEnsure_seedsAtInitialProbability() {
         store.ensure("kana.recognition")
-        let m = store.masteries["kana.recognition"]
-        XCTAssertEqual(m?.pMaster, 0.20, accuracy: 0.001,
+        let m = store.masteries["kana.recognition"]!
+        XCTAssertEqual(m.pMaster, 0.20, accuracy: 0.001,
                        "first-time ability should start at pInit = 0.20")
     }
 
