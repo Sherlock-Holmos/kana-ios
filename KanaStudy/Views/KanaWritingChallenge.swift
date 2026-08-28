@@ -1,5 +1,6 @@
 import SwiftUI
 import PencilKit
+import CoreGraphics
 
 // MARK: - Drawing canvas wrapper
 
@@ -230,7 +231,7 @@ struct KanaWritingChallenge: View {
             .buttonStyle(.bordered)
 
             Button {
-                submit()
+                Task { await submit() }
             } label: {
                 Label("完成", systemImage: "checkmark.circle.fill")
                     .frame(maxWidth: .infinity, minHeight: 44)
@@ -349,9 +350,8 @@ struct KanaWritingChallenge: View {
         }
     }
 
-    private func submit() {
-        guard let item = currentItem,
-              let template = KanaStrokeLibrary.template(for: item.character) else {
+    private func submit() async {
+        guard let item = currentItem else {
             advance(counted: false)
             return
         }
@@ -360,24 +360,52 @@ struct KanaWritingChallenge: View {
             drawingStartedAt = Date()
         }
 
-        let metrics = computeMetrics()
-        let verdict = KanaStrokeTemplate.evaluate(
-            template,
-            strokeCount: metrics.strokeCount,
-            aspect: metrics.aspect,
-            pathCoverage: metrics.pathCoverage
+        let strokes = await UserStrokeExtractor.extractStrokes(
+            from: canvasView.drawing,
+            size: canvasSize
         )
-        switch verdict {
-        case .pass:
-            lastFailure = nil
-            passTrigger += 1
-            advance(counted: true)
-        case .fail(let reason):
-            lastFailure = reason
-            failTrigger += 1
-            // Reset canvas so the user can retry the same character without counting.
-            canvasView.drawing = PKDrawing()
-            drawingStartedAt = nil
+
+        if !strokes.isEmpty {
+            let (passed, message) = StrokeMatcher.verify(
+                userStrokes: strokes,
+                expectedCharacter: item.character
+            )
+            if passed {
+                lastFailure = nil
+                passTrigger += 1
+                advance(counted: true)
+            } else {
+                failTrigger += 1
+                lastFailure = message
+                canvasView.drawing = PKDrawing()
+                drawingStartedAt = nil
+            }
+        } else {
+            // Vision extraction failed (canvas empty or low contrast). Fall
+            // back to the cheap heuristic so we don't punish legitimate
+            // attempts when Apple fails us.
+            if let template = KanaStrokeLibrary.template(for: item.character) {
+                let metrics = computeMetrics()
+                let verdict = KanaStrokeTemplate.evaluate(
+                    template,
+                    strokeCount: metrics.strokeCount,
+                    aspect: metrics.aspect,
+                    pathCoverage: metrics.pathCoverage
+                )
+                switch verdict {
+                case .pass:
+                    lastFailure = nil
+                    passTrigger += 1
+                    advance(counted: true)
+                case .fail(let reason):
+                    failTrigger += 1
+                    lastFailure = reason
+                    canvasView.drawing = PKDrawing()
+                    drawingStartedAt = nil
+                }
+            } else {
+                advance(counted: false)
+            }
         }
     }
 
