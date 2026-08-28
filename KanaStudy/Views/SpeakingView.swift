@@ -54,7 +54,7 @@ struct SpeakingView: View {
     private func promptCard(_ s: SentenceItem) -> some View {
         VStack(spacing: 8) {
             Text(s.jp)
-                .font(.system(size: 28, weight: .medium, design: .serif))
+                .font(.heroSentence)
             if let reading = s.reading {
                 Text(reading)
                     .font(.title3)

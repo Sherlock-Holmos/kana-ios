@@ -62,7 +62,7 @@ struct KanjiDetailView: View {
         ScrollView {
             VStack(spacing: 16) {
                 Text(item.character)
-                    .font(.system(size: 96, weight: .medium, design: .serif))
+                    .font(.heroCharacter)
                     .padding(.top, 24)
 
                 if !item.primaryMeaning.isEmpty {

@@ -47,7 +47,7 @@ struct SentenceDetailView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 Text(item.jp)
-                    .font(.system(size: 28, weight: .medium, design: .serif))
+                    .font(.heroSentence)
                     .padding(.top)
 
                 if let reading = item.reading {

@@ -49,7 +49,7 @@ struct VocabularyFlashcardView: View {
     private func card(for item: VocabularyItem) -> some View {
         VStack(spacing: 12) {
             Text(item.expression)
-                .font(.system(size: 56, weight: .medium, design: .serif))
+                .font(.heroPhrase)
             Text(item.reading)
                 .font(.title3)
                 .foregroundStyle(Color.textSecondary)

@@ -98,7 +98,7 @@ struct ReviewView: View {
     private func cardView(_ s: CardSnapshot) -> some View {
         VStack(spacing: 12) {
             Text(s.display)
-                .font(.system(size: 64, weight: .medium, design: .serif))
+                .font(.heroPhrase)
             Text(s.subtitle)
                 .font(.title3)
                 .foregroundStyle(Color.textSecondary)
