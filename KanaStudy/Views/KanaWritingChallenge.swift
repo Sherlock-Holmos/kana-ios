@@ -58,7 +58,7 @@ struct KanaWritingChallenge: View {
     @State private var failTrigger: Int = 0
 
     private let totalCharacters = 10
-    private let secondsPerCharacter = 30
+    private let secondsPerCharacter = 20
     /// Failures aren't rewarded even if the user eventually draws something
     /// correct — only the first valid attempt counts.
     private let canvasSize = CGSize(width: 320, height: 280)
@@ -175,9 +175,6 @@ struct KanaWritingChallenge: View {
                     .font(.system(size: 88, weight: .semibold, design: .rounded))
                     .foregroundStyle(.primary)
                     .accessibilityIdentifier("romaji-prompt")
-                Text("\(current.character)  ·  \(current.romaji.count) 笔")
-                    .font(.footnote)
-                    .foregroundStyle(Color.textTertiary)
             } else {
                 Text("—")
                     .font(.system(size: 88, weight: .semibold))
