@@ -7,20 +7,32 @@ struct VGStroke: Codable, Hashable {
     /// Normalized to [-1, 1] unit box, centroid at origin, Y flipped to math-up.
     var points: [CGPoint]
 
-    enum CodingKeys: String, CodingKey { case points }
-
     init(points: [CGPoint]) { self.points = points }
 
+    // JSON format on disk:
+    //   "strokes": [
+    //     [[x, y], [x, y], ...],
+    //     [[x, y], [x, y], ...]
+    //   ]
+    // i.e. each stroke is an UNWRAPPED array of [x, y] pairs, not a {"points": ...}
+    // object. The bundled kana-vg-data.json uses this flat shape.
     init(from decoder: Decoder) throws {
-        let c = try decoder.container(keyedBy: CodingKeys.self)
-        // JSON points come as [Double] pairs — [x, y].
-        let raw = try c.decode([[Double]].self, forKey: .points)
-        self.points = raw.map { CGPoint(x: $0[0], y: $0[1]) }
+        var container = try decoder.unkeyedContainer()
+        var pts: [CGPoint] = []
+        while !container.isAtEnd {
+            let pair = try container.decode([Double].self)
+            if pair.count >= 2 {
+                pts.append(CGPoint(x: pair[0], y: pair[1]))
+            }
+        }
+        self.points = pts
     }
 
     func encode(to encoder: Encoder) throws {
-        var c = encoder.container(keyedBy: CodingKeys.self)
-        try c.encode(points.map { [Double($0.x), Double($0.y)] }, forKey: .points)
+        var container = encoder.unkeyedContainer()
+        for p in points {
+            try container.encode([Double(p.x), Double(p.y)])
+        }
     }
 }
 
