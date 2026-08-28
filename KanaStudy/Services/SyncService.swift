@@ -1,7 +1,9 @@
 import Foundation
 import Combine
 
-// MARK: - Sync Models
+// MARK: - Sync Models (kept here so SyncEnvelope / SyncUser / AnyCodable live with
+// the model that originally owned them — no view or other service depends on their
+// physical location, only on SyncService / SyncEnvelope being available.)
 
 struct SyncUser: Codable, Hashable {
     let id: String
@@ -41,199 +43,89 @@ struct SyncEnvelope: Codable {
     }
 }
 
-// MARK: - Keychain keys
+// MARK: - SyncService (facade)
 
-private enum Key {
-    static let accessToken = "sync.accessToken"
-    static let refreshToken = "sync.refreshToken"
-    static let userId = "sync.userId"
-    static let userEmail = "sync.userEmail"
-}
-
-// MARK: - SyncService
-
-/// SyncService — pulls/pushes the user's learning state to Supabase.
-/// Fully local-first: when not signed in, push/pull are no-ops.
+/// SyncService — thin facade preserved for view-layer compatibility.
+/// The actual work is delegated to three single-responsibility components:
+///   • AuthService    — JWT / Keychain / currentUser
+///   • SyncTransport  — pure HTTP push/pull
+///   • SyncCoordinator — wires stores + debounce subscription + envelope flow
+///
+/// Views continue to call `sync.signIn`, read `sync.currentUser`, etc.
+/// Adding a new sync capability now means editing one of the three inner
+/// services instead of this 280-line god object.
 @MainActor
 final class SyncService: ObservableObject {
+
+    /// Backwards-compatible shared instance. KanaStudyApp constructs SyncService
+    /// through `SyncService.shared`; new code should inject AuthService / SyncCoordinator
+    /// directly when feasible.
     static let shared = SyncService()
 
-    @Published private(set) var lastSyncedAt: Date?
-    @Published private(set) var lastError: String?
-    @Published private(set) var isSyncing: Bool = false
-    @Published private(set) var currentUser: SyncUser?
+    let auth: AuthService
+    let coordinator: SyncCoordinator
 
+    /// Exposed for SettingsView so users can override the Supabase URL / anon key.
     let settings: SyncSettings
 
-    // MARK: - Wired stores (set via attach from App entry)
+    // MARK: - Passthrough UI state
 
-    private weak var srsStore: SRSStore?
-    private weak var bktStore: BKTStore?
-    private weak var abilityStore: AbilityProfile?
-    private weak var goalStore: DailyGoalStore?
+    /// Currently-signed-in user, mirrored from AuthService.
+    var currentUser: SyncUser? { auth.currentUser }
 
-    private var cancellables = Set<AnyCancellable>()
-    private var hasAttached = false
+    /// Last successful push or pull.
+    var lastSyncedAt: Date? { coordinator.lastSyncedAt }
 
-    init(settings: SyncSettings = SyncSettings()) {
+    /// Most recent sync error message.
+    var lastError: String? { coordinator.lastError }
+
+    /// True while a push or pull is in flight.
+    var isSyncing: Bool { coordinator.isSyncing }
+
+    /// True when configured AND signed in.
+    var isReady: Bool { coordinator.isReady }
+
+    // MARK: - Init
+
+    init(auth: AuthService = AuthService(),
+         settings: SyncSettings = SyncSettings()) {
+        self.auth = auth
         self.settings = settings
-        // Restore session from Keychain on launch so the user stays signed in.
-        if let token = Keychain.get(Key.accessToken),
-           let userId = Keychain.get(Key.userId),
-           let email = Keychain.get(Key.userEmail),
-           !token.isEmpty, !userId.isEmpty {
-            self.currentUser = SyncUser(id: userId, email: email)
-        }
+        self.coordinator = SyncCoordinator(auth: auth, settings: settings)
     }
 
     /// Wire SyncService to the four local stores. Called once from the App entry.
     /// After attach, every store mutation triggers a debounced push.
     func attach(srs: SRSStore, bkt: BKTStore, ability: AbilityProfile, goal: DailyGoalStore) {
-        guard !hasAttached else { return }
-        hasAttached = true
-        self.srsStore = srs
-        self.bktStore = bkt
-        self.abilityStore = ability
-        self.goalStore = goal
-
-        // Pull from server on first attach (after Keychain-restored login) so a fresh
-        // install of a returning user lands with their progress already populated.
-        if currentUser != nil {
-            Task { await self.pullAndMerge() }
-        }
-
-        // Listen for store mutations and push the merged envelope with a 1.2s debounce
-        // so rapid-fire taps batch into a single network call.
-        SyncTrigger.shared.subject
-            .debounce(for: .seconds(1.2), scheduler: DispatchQueue.main)
-            .sink { [weak self] _ in
-                Task { await self?.pushCurrent() }
-            }
-            .store(in: &cancellables)
+        coordinator.attach(srs: srs, bkt: bkt, ability: ability, goal: goal)
     }
 
-    var isReady: Bool { settings.isConfigured && currentUser != nil }
-
-    // MARK: - Auth
+    // MARK: - Auth (forwarded)
 
     func signIn(email: String, password: String) async {
-        guard settings.isConfigured else {
-            lastError = "未配置 Supabase URL 或 anon key"
-            return
-        }
-        do {
-            let client = try SupabaseClient(url: settings.supabaseURL, anonKey: settings.anonKey)
-            let session = try await client.signIn(email: email, password: password)
-            persist(session: session)
-            currentUser = session.user
-            settings.userEmail = session.user.email
-            lastError = nil
-            // Hydrate this device with the user's existing cloud progress, then push
-            // the local snapshot so server sees any drift accumulated while logged out.
-            await pullAndMerge()
-            await pushCurrent()
-        } catch {
-            lastError = "登录失败：\(error.localizedDescription)"
-        }
+        await coordinator.signIn(email: email, password: password)
     }
 
     func signUp(email: String, password: String) async {
-        guard settings.isConfigured else {
-            lastError = "未配置 Supabase URL 或 anon key"
-            return
-        }
-        do {
-            let client = try SupabaseClient(url: settings.supabaseURL, anonKey: settings.anonKey)
-            let session = try await client.signUp(email: email, password: password)
-            persist(session: session)
-            currentUser = session.user
-            settings.userEmail = session.user.email
-            lastError = nil
-            // Brand-new account — push the local snapshot up so the first sync isn't empty.
-            await pushCurrent()
-        } catch {
-            lastError = "注册失败：\(error.localizedDescription)"
-        }
+        await coordinator.signUp(email: email, password: password)
     }
 
     func signOut() {
-        Keychain.delete(Key.accessToken)
-        Keychain.delete(Key.refreshToken)
-        Keychain.delete(Key.userId)
-        Keychain.delete(Key.userEmail)
-        currentUser = nil
+        auth.signOut()
         settings.userEmail = ""
     }
 
-    private func persist(session: SupabaseClient.AuthSession) {
-        Keychain.set(session.accessToken, forKey: Key.accessToken)
-        if let refresh = session.refreshToken {
-            Keychain.set(refresh, forKey: Key.refreshToken)
-        }
-        Keychain.set(session.user.id, forKey: Key.userId)
-        Keychain.set(session.user.email, forKey: Key.userEmail)
-    }
-
-    // MARK: - Sync
-
-    /// Push local state to server.
-    func push(envelope: SyncEnvelope) async {
-        guard isReady, let user = currentUser,
-              let token = Keychain.get(Key.accessToken), !token.isEmpty else { return }
-        isSyncing = true
-        defer { isSyncing = false }
-        do {
-            let client = try SupabaseClient(url: settings.supabaseURL, anonKey: settings.anonKey, token: token)
-            try await client.upsertUserMeta(userId: user.id, schema: settings.schemaVersion, envelope: envelope)
-            lastSyncedAt = Date()
-            lastError = nil
-        } catch {
-            lastError = "上传失败：\(error.localizedDescription)"
-        }
-    }
-
-    /// Pull server state into a fresh envelope (or nil if not present).
-    func pull(user: SyncUser) async -> SyncEnvelope? {
-        guard settings.isConfigured,
-              let token = Keychain.get(Key.accessToken), !token.isEmpty else { return nil }
-        isSyncing = true
-        defer { isSyncing = false }
-        do {
-            let client = try SupabaseClient(url: settings.supabaseURL, anonKey: settings.anonKey, token: token)
-            let envelope = try await client.fetchUserMeta(userId: user.id, schema: settings.schemaVersion)
-            lastSyncedAt = Date()
-            lastError = nil
-            return envelope
-        } catch {
-            lastError = "拉取失败：\(error.localizedDescription)"
-            return nil
-        }
-    }
-
-    // MARK: - Convenience (used by SyncTrigger subscription)
+    // MARK: - Sync (forwarded)
 
     /// Build an envelope from the four attached stores and push it.
     /// No-op when not signed in or when stores aren't attached yet.
     func pushCurrent() async {
-        guard let srs = srsStore,
-              let bkt = bktStore,
-              let ability = abilityStore,
-              let goal = goalStore else { return }
-        let envelope = SyncEnvelope.make(srs: srs, bkt: bkt, ability: ability, goal: goal)
-        await push(envelope: envelope)
+        await coordinator.pushCurrent()
     }
 
     /// Pull the current user's envelope and merge it into the four attached stores.
-    /// Called on attach (returning user) and after a fresh sign-in.
     func pullAndMerge() async {
-        guard let user = currentUser,
-              let srs = srsStore,
-              let bkt = bktStore,
-              let ability = abilityStore,
-              let goal = goalStore else { return }
-        if let envelope = await pull(user: user) {
-            envelope.merge(into: srs, bkt: bkt, ability: ability, goal: goal)
-        }
+        await coordinator.pullAndMerge()
     }
 }
 
