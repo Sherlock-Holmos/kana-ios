@@ -25,7 +25,17 @@ struct KanjiListView: View {
         }
         .navigationTitle("汉字 · \(items.count)")
         .navigationBarTitleDisplayMode(.inline)
-        .overlay { if items.isEmpty && error == nil { ProgressView() } }
+        .overlay {
+            if let error {
+                ContentUnavailableView("加载失败", systemImage: "exclamationmark.triangle", description: Text(error))
+            } else if items.isEmpty {
+                ContentUnavailableView(
+                    "还没有汉字",
+                    systemImage: "character.square",
+                    description: Text("去「学」里添加第一项")
+                )
+            }
+        }
         .task { await load() }
     }
 

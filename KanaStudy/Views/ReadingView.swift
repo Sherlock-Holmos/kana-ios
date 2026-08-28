@@ -26,7 +26,11 @@ struct ReadingListView: View {
             if let error {
                 ContentUnavailableView("加载失败", systemImage: "exclamationmark.triangle", description: Text(error))
             } else if items.isEmpty {
-                ProgressView()
+                ContentUnavailableView(
+                    "还没有阅读",
+                    systemImage: "doc.text",
+                    description: Text("去「学」里添加第一项")
+                )
             }
         }
         .task { await load() }
