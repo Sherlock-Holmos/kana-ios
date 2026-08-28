@@ -27,7 +27,7 @@ final class SyncCoordinator {
     private var cancellables = Set<AnyCancellable>()
     private var hasAttached = false
 
-    init(auth: AuthService = AuthService(), settings: SyncSettings = SyncSettings()) {
+    init(auth: AuthService, settings: SyncSettings) {
         self.auth = auth
         self.settings = settings
     }

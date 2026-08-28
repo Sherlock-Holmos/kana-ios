@@ -60,7 +60,7 @@ final class SyncService: ObservableObject {
     /// Backwards-compatible shared instance. KanaStudyApp constructs SyncService
     /// through `SyncService.shared`; new code should inject AuthService / SyncCoordinator
     /// directly when feasible.
-    static let shared = SyncService()
+    static let shared = SyncService(auth: AuthService(), settings: SyncSettings())
 
     let auth: AuthService
     let coordinator: SyncCoordinator
@@ -87,8 +87,7 @@ final class SyncService: ObservableObject {
 
     // MARK: - Init
 
-    init(auth: AuthService = AuthService(),
-         settings: SyncSettings = SyncSettings()) {
+    init(auth: AuthService, settings: SyncSettings) {
         self.auth = auth
         self.settings = settings
         self.coordinator = SyncCoordinator(auth: auth, settings: settings)
