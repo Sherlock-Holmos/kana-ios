@@ -6,6 +6,7 @@ struct ProgressViewScreen: View {
     @EnvironmentObject private var goal: DailyGoalStore
 
     @State private var counts: ContentService.Counts?
+    @State private var recommendations: [Planner.Recommendation] = []
 
     var body: some View {
         NavigationStack {
@@ -40,6 +41,32 @@ struct ProgressViewScreen: View {
                 Section("12 周热力图") {
                     HeatmapGrid(cells: goal.heatmapLast12Weeks())
                         .padding(.vertical, 6)
+                }
+
+                if !recommendations.isEmpty {
+                    Section("BKT 自适应推荐") {
+                        ForEach(recommendations) { rec in
+                            HStack {
+                                Image(systemName: "sparkles")
+                                    .foregroundStyle(.tint)
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(rec.id.abilityDisplayName)
+                                        .font(.body.weight(.medium))
+                                    if rec.id != rec.id.abilityDisplayName {
+                                        Text(rec.id)
+                                            .font(.caption2.monospaced())
+                                            .foregroundStyle(Color.textTertiary)
+                                    }
+                                }
+                                Spacer()
+                                Text(rec.reason)
+                                    .font(.caption)
+                                    .padding(.horizontal, 8).padding(.vertical, 4)
+                                    .background(Color.accentColor.opacity(0.15), in: Capsule())
+                                    .foregroundStyle(Color.accentColor)
+                            }
+                        }
+                    }
                 }
 
                 Section("学习进度") {
@@ -116,6 +143,11 @@ struct ProgressViewScreen: View {
 
     private func load() async {
         counts = try? await ContentService.shared.counts()
+        if let kana = try? await ContentService.shared.loadKana(),
+           let vocab = try? await ContentService.shared.loadVocabulary() {
+            recommendations = Planner(srs: srsStore, bkt: bkt, goal: goal)
+                .recommend(limit: 6, kana: kana, vocab: vocab)
+        }
     }
 }
 

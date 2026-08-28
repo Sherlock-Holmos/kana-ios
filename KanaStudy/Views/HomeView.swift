@@ -4,13 +4,9 @@ struct HomeView: View {
     let onJump: (AppTab) -> Void
 
     @EnvironmentObject private var srs: SRSStore
-    @EnvironmentObject private var ability: AbilityProfile
-    @EnvironmentObject private var bkt: BKTStore
     @EnvironmentObject private var goal: DailyGoalStore
     @EnvironmentObject private var sync: SyncService
 
-    @State private var recommendations: [Planner.Recommendation] = []
-    @State private var loadError: String?
     @State private var showLoginSheet = false
 
     var body: some View {
@@ -24,13 +20,6 @@ struct HomeView: View {
                         onTapLearn:  { onJump(.learn) },
                         onTapListen: { onJump(.learn) }
                     )
-                    quickActions
-                    recommendationsCard
-                    if let loadError {
-                        Text(loadError)
-                            .font(.footnote)
-                            .foregroundStyle(.red)
-                    }
                     Spacer(minLength: 24)
                 }
                 .padding()
@@ -41,14 +30,13 @@ struct HomeView: View {
                     NavigationLink {
                         SettingsView()
                     } label: {
-                        Image(systemName: "gearshape.fill")
+                        Image(systemName: "gearshape")
                     }
                 }
             }
             .sheet(isPresented: $showLoginSheet) {
                 LoginSheet()
             }
-            .task { await load() }
         }
     }
 
@@ -134,40 +122,19 @@ struct HomeView: View {
         }
     }
 
-    private var recommendationsCard: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("BKT 自适应推荐")
+    private var quickActions: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("快速进入")
                 .font(.headline)
-            if recommendations.isEmpty {
-                Text("暂无推荐 — 去「学习」里走一遍即可生成。")
-                    .font(.footnote)
-                    .foregroundStyle(Color.textSecondary)
-            } else {
-                ForEach(recommendations) { rec in
-                    HStack {
-                        Image(systemName: "sparkles")
-                            .foregroundStyle(.tint)
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text(rec.id.abilityDisplayName)
-                                .font(.body.weight(.medium))
-                            if rec.id != rec.id.abilityDisplayName {
-                                Text(rec.id)
-                                    .font(.caption2.monospaced())
-                                    .foregroundStyle(Color.textTertiary)
-                            }
-                        }
-                        Spacer()
-                        Text(rec.reason)
-                            .font(.caption)
-                            .padding(.horizontal, 8).padding(.vertical, 4)
-                            .background(Color.accentColor.opacity(0.15), in: Capsule())
-                            .foregroundStyle(Color.accentColor)
-                    }
-                }
+            Button { onJump(.learn) } label: {
+                row(icon: "book.fill", title: "开始学习", subtitle: "假名 / 词汇 / 语法 / 汉字 / 例句 / 阅读 / 听力 / 跟读")
             }
+            .buttonStyle(.plain)
+            Button { onJump(.review) } label: {
+                row(icon: "arrow.clockwise", title: "今日复习", subtitle: "SRS 间隔重复 · \(srs.dueItems().count) 张到期")
+            }
+            .buttonStyle(.plain)
         }
-        .padding()
-        .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 14))
     }
 
     private func row(icon: String, title: String, subtitle: String) -> some View {
@@ -186,17 +153,5 @@ struct HomeView: View {
         }
         .padding()
         .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 12))
-    }
-
-    private func load() async {
-        do {
-            let kana = try await ContentService.shared.loadKana()
-            let vocab = try await ContentService.shared.loadVocabulary()
-            recommendations = Planner(srs: srs, bkt: bkt, goal: goal)
-                .recommend(limit: 6, kana: kana, vocab: vocab)
-            loadError = nil
-        } catch {
-            loadError = "内容加载失败：\(error)"
-        }
     }
 }

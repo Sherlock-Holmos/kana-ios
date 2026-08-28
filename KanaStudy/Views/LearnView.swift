@@ -29,6 +29,10 @@ enum LearnMode: String, CaseIterable, Identifiable {
 }
 
 struct LearnView: View {
+    let onJump: (AppTab) -> Void
+
+    @EnvironmentObject private var srs: SRSStore
+
     var body: some View {
         NavigationStack {
             List {
@@ -38,6 +42,12 @@ struct LearnView: View {
                     } label: {
                         writingChallengeRow
                     }
+                    Button {
+                        onJump(.review)
+                    } label: {
+                        reviewShortcutRow
+                    }
+                    .buttonStyle(.plain)
                 }
 
                 Section("内容") {
@@ -58,6 +68,38 @@ struct LearnView: View {
             }
             .navigationTitle("学习")
         }
+    }
+
+    private var reviewShortcutRow: some View {
+        HStack(spacing: 14) {
+            ZStack {
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(Color.red.opacity(0.15))
+                    .frame(width: 44, height: 44)
+                Image(systemName: "arrow.clockwise")
+                    .font(.title3)
+                    .foregroundStyle(.red)
+            }
+            VStack(alignment: .leading, spacing: 2) {
+                HStack(spacing: 6) {
+                    Text("今日复习")
+                        .font(.body.weight(.semibold))
+                    Text("SRS")
+                        .font(.caption2.bold())
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 6)
+                        .padding(.vertical, 2)
+                        .background(Color.red, in: Capsule())
+                }
+                Text("间隔重复 · \(srs.dueItems().count) 张到期")
+                    .font(.caption)
+                    .foregroundStyle(Color.textSecondary)
+            }
+            Spacer()
+            Image(systemName: "chevron.right")
+                .foregroundStyle(Color.textTertiary)
+        }
+        .padding(.vertical, 4)
     }
 
     private var writingChallengeRow: some View {

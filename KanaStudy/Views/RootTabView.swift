@@ -11,11 +11,11 @@ struct RootTabView: View {
     var body: some View {
         TabView(selection: $selection) {
             HomeView(onJump: { selection = $0 })
-                .tabItem { Label("我的", systemImage: "person.crop.circle.fill") }
+                .tabItem { Label("我的", systemImage: "person.crop.circle") }
                 .tag(AppTab.home)
 
-            LearnView()
-                .tabItem { Label("学", systemImage: "book.fill") }
+            LearnView(onJump: { selection = $0 })
+                .tabItem { Label("学", systemImage: "book") }
                 .tag(AppTab.learn)
 
             ReviewView()
@@ -23,7 +23,7 @@ struct RootTabView: View {
                 .tag(AppTab.review)
 
             ProgressViewScreen()
-                .tabItem { Label("进度", systemImage: "chart.bar.fill") }
+                .tabItem { Label("进度", systemImage: "chart.bar") }
                 .tag(AppTab.progress)
         }
         .fullScreenCover(isPresented: $showOnboarding) {
