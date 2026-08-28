@@ -23,6 +23,7 @@ targets:
       - path: KanaStudy
         excludes:
           - "Resources/Content/**/*.json"
+          - "KanaStudyTests/**"
       - path: KanaStudy/Resources/Content
         type: folder
         buildPhase: resources
@@ -63,3 +64,18 @@ targets:
         ITSAppUsesNonExemptEncryption: false
         NSMicrophoneUsageDescription: 用于日语跟读录音与即时回听，不上传任何后端。
         NSSpeechRecognitionUsageDescription: 用于日语发音识别（可选）。
+
+  KanaStudyTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "18.0"
+    sources:
+      - path: KanaStudyTests
+    dependencies:
+      - target: KanaStudy
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.kana-study.KanaStudyTests
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/KanaStudy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KanaStudy"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        GENERATE_INFOPLIST_FILE: YES

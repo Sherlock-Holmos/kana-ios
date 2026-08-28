@@ -110,6 +110,77 @@ jobs:
           if-no-files-found: ignore
           retention-days: 3
 
+  unit-tests:
+    name: Unit tests (iOS Simulator)
+    runs-on: macos-15
+    needs: build-simulator
+    env:
+      SCHEME: KanaStudy
+      DERIVED_DATA: build/DerivedData-sim
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Pick latest stable Xcode
+        run: |
+          set -e
+          CANDIDATE="$(ls -d /Applications/Xcode_*.app 2>/dev/null | sort -V | tail -n 1 || true)"
+          if [ -z "$CANDIDATE" ]; then
+            CANDIDATE="$(xcode-select -p 2>/dev/null | sed 's|/Contents/Developer||' || true)"
+          fi
+          if [ -z "$CANDIDATE" ] || [ ! -d "$CANDIDATE" ]; then
+            echo "::error::No usable Xcode found in /Applications"
+            exit 1
+          fi
+          sudo xcode-select -s "$CANDIDATE/Contents/Developer"
+
+      - name: Install XcodeGen
+        run: |
+          if ! command -v xcodegen >/dev/null 2>&1; then
+            brew install xcodegen
+          else
+            echo "xcodegen already installed: $(xcodegen --version)"
+          fi
+
+      - name: Generate Xcode project
+        run: xcodegen generate
+
+      - name: Run unit tests
+        run: |
+          set -o pipefail
+          DEST="$(xcrun simctl list devices available 2>/dev/null | grep -E 'iPhone (15|16) \(' | head -n1 | grep -oE '[0-9A-F-]{36}' || echo '')"
+          if [ -z "$DEST" ]; then
+            DEST='platform=iOS Simulator,OS=latest,name=iPhone 16'
+          else
+            DEST="platform=iOS Simulator,id=$DEST"
+          fi
+          echo "Test destination: $DEST"
+          xcodebuild \
+            -project KanaStudy.xcodeproj \
+            -scheme "$SCHEME" \
+            -configuration Debug \
+            -destination "$DEST" \
+            -derivedDataPath "$DERIVED_DATA" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            test 2>&1 | tee test.log | tail -200
+          if [ "${PIPESTATUS[0]}" -ne 0 ]; then
+            echo "::error::xcodebuild test failed; tail of test.log:"
+            tail -100 test.log
+            exit 1
+          fi
+
+      - name: Upload test log (always)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: KanaStudy-test-log
+          path: test.log
+          if-no-files-found: ignore
+          retention-days: 7
+
   build-ipa:
     name: Build (Device IPA, unsigned)
     runs-on: macos-15
