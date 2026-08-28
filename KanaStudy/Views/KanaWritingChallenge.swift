@@ -12,8 +12,12 @@ struct DrawingCanvas: UIViewRepresentable {
 
     func makeUIView(context: Context) -> PKCanvasView {
         canvasView.drawingPolicy = .anyInput            // finger OR Apple Pencil
-        canvasView.tool = PKInkingTool(.pen, color: .label, width: 14)
-        canvasView.backgroundColor = .secondarySystemBackground
+        // Use absolute black on white background so Vision's
+        // detectsDarkOnLight=true always sees ink regardless of system
+        // light/dark mode. .label would flip to white in dark mode and
+        // Vision would return zero contours.
+        canvasView.tool = PKInkingTool(.pen, color: .black, width: 14)
+        canvasView.backgroundColor = .white
         canvasView.isOpaque = true
         canvasView.alwaysBounceVertical = false
         canvasView.alwaysBounceHorizontal = false
