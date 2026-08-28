@@ -34,7 +34,7 @@ struct DailyMissionCard: View {
                     title: "复习",
                     progress: goal.missionReviewProgress,
                     label: "\(goal.reviewsToday) / \(goal.dailyGoal)",
-                    tint: .blue,
+                    tint: .red,
                     action: onTapReview
                 )
                 missionRing(
@@ -42,7 +42,7 @@ struct DailyMissionCard: View {
                     title: "学新",
                     progress: goal.missionLearnProgress,
                     label: "\(goal.learnedToday) / \(DailyGoalStore.dailyLearnTarget)",
-                    tint: .indigo,
+                    tint: .green,
                     action: onTapLearn
                 )
                 missionRing(
@@ -50,7 +50,7 @@ struct DailyMissionCard: View {
                     title: "听读",
                     progress: goal.missionListenProgress,
                     label: "\(goal.listeningToday + goal.readingToday) / \(DailyGoalStore.dailyListenTarget)",
-                    tint: .teal,
+                    tint: .blue,
                     action: onTapListen
                 )
             }
