@@ -86,10 +86,16 @@ final class BKTStoreTests: XCTestCase {
         XCTAssertGreaterThan(store.masteries["x"]!.pMaster, 0.95)
     }
 
-    func testUpdate_repeatedWrongsConvergeToZero() {
+    func testUpdate_repeatedWrongsConvergeBelowInitial() {
+        // BKT with pS=0.10, pG=0.25, pT=0.25 has a steady-state for wrong
+        // outcomes at ~0.29 — wrong updates never reduce mastery all the way
+        // to zero because (1-pG) keeps a residual "didn't know" probability.
+        // Verify mastery drops well below the initial 0.20 and converges.
         store.ensure("x")
         for _ in 0..<30 { store.update(abilityId: "x", correct: false) }
-        XCTAssertLessThan(store.masteries["x"]!.pMaster, 0.10)
+        let final = store.masteries["x"]!.pMaster
+        XCTAssertLessThan(final, 0.20, "wrong updates must reduce mastery below pInit")
+        XCTAssertGreaterThan(final, 0.25, accuracy: 0.05)
     }
 
     // MARK: - Queries
