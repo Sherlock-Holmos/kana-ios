@@ -163,6 +163,16 @@ enum StrokeMatcher {
 
     /// Verify the user wrote the prompted character. Returns (pass, debugInfo).
     static func verify(userStrokes: [[CGPoint]], expectedCharacter: String, threshold: Double = 0.18) -> (Bool, String) {
+        // Distinguish the two "can't recognize" failure modes so the UI can
+        // tell the user whether the problem is the matcher (no templates
+        // loaded) or the Vision pipeline (no strokes extracted from the canvas).
+        let templates = KanaVGLoader.all()
+        if templates.isEmpty {
+            return (false, "模板加载失败")
+        }
+        if userStrokes.isEmpty {
+            return (false, "未检测到笔画，请再写一次")
+        }
         guard let result = recognize(userStrokes) else {
             return (false, "无法识别笔画")
         }
