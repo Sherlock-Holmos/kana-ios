@@ -26,6 +26,15 @@ struct KanaStudyApp: App {
                         ability: abilityProfile,
                         goal: dailyGoal
                     )
+                    // Fire-and-forget warm of the two heaviest content collections so
+                    // the first navigation into Learn / Review / Progress hits cache
+                    // instead of paying a JSON parse on the main thread. Detached so
+                    // the launch task returns immediately — warmup never blocks UI.
+                    Task.detached(priority: .userInitiated) {
+                        async let kana: Void = ContentService.shared.warmKana()
+                        async let vocab: Void = ContentService.shared.warmVocabulary()
+                        _ = await (kana, vocab)
+                    }
                 }
         }
     }

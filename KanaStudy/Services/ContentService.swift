@@ -9,6 +9,11 @@ enum ContentError: Error {
 
 /// Actor-isolated content loader. All caches live inside actor state, so concurrent
 /// callers (background tasks, SwiftUI `.task`, sync engine, etc.) cannot race.
+///
+/// IO is performed on a detached background thread (`Task.detached(priority: .userInitiated)`)
+/// so `Data(contentsOf:)` and `JSONDecoder.decode` never block the actor executor —
+/// a long JSON parse would otherwise stall every concurrent view that calls into
+/// the service at the same time.
 actor ContentService {
     static let shared = ContentService()
 
@@ -21,64 +26,76 @@ actor ContentService {
     private var listeningCache: [ListeningItem]?
     private var questionBankCache: [QuestionVariant]?
 
-    private let decoder = JSONDecoder()
-
     // MARK: - Loaders
 
-    func loadKana() throws -> [KanaItem] {
+    func loadKana() async throws -> [KanaItem] {
         if let cached = kanaCache { return cached }
-        let items = try decode([KanaItem].self, resource: "kana")
+        let items = try await Self.loadResource([KanaItem].self, resource: "kana")
         kanaCache = items
         return items
     }
 
-    func loadVocabulary() throws -> [VocabularyItem] {
+    func loadVocabulary() async throws -> [VocabularyItem] {
         if let cached = vocabCache { return cached }
-        let items = try decode([VocabularyItem].self, resource: "vocabulary")
+        let items = try await Self.loadResource([VocabularyItem].self, resource: "vocabulary")
         vocabCache = items
         return items
     }
 
-    func loadGrammar() throws -> [GrammarItem] {
+    func loadGrammar() async throws -> [GrammarItem] {
         if let cached = grammarCache { return cached }
-        let items = try decode([GrammarItem].self, resource: "grammar")
+        let items = try await Self.loadResource([GrammarItem].self, resource: "grammar")
         grammarCache = items
         return items
     }
 
-    func loadKanji() throws -> [KanjiItem] {
+    func loadKanji() async throws -> [KanjiItem] {
         if let cached = kanjiCache { return cached }
-        let items = try decode([KanjiItem].self, resource: "kanji")
+        let items = try await Self.loadResource([KanjiItem].self, resource: "kanji")
         kanjiCache = items
         return items
     }
 
-    func loadSentences() throws -> [SentenceItem] {
+    func loadSentences() async throws -> [SentenceItem] {
         if let cached = sentenceCache { return cached }
-        let items = try decode([SentenceItem].self, resource: "sentence")
+        let items = try await Self.loadResource([SentenceItem].self, resource: "sentence")
         sentenceCache = items
         return items
     }
 
-    func loadReading() throws -> [ReadingItem] {
+    func loadReading() async throws -> [ReadingItem] {
         if let cached = readingCache { return cached }
-        let items = try decode([ReadingItem].self, resource: "reading")
+        let items = try await Self.loadResource([ReadingItem].self, resource: "reading")
         readingCache = items
         return items
     }
 
-    func loadListening() throws -> [ListeningItem] {
+    func loadListening() async throws -> [ListeningItem] {
         if let cached = listeningCache { return cached }
-        let items = try decode([ListeningItem].self, resource: "listening")
+        let items = try await Self.loadResource([ListeningItem].self, resource: "listening")
         listeningCache = items
         return items
     }
 
-    func loadQuestionBank() throws -> [QuestionVariant] {
+    func loadQuestionBank() async throws -> [QuestionVariant] {
         if let cached = questionBankCache { return cached }
-        let items = try decode([QuestionVariant].self, resource: "question-bank")
+        let items = try await Self.loadResource([QuestionVariant].self, resource: "question-bank")
         questionBankCache = items
         return items
+    }
+
+    // MARK: - Warm-cache (fire-and-forget)
+
+    /// Background-warm the kana cache without forcing the caller to await — fires
+    /// the decode off the main thread and stores the result so the first view that
+    /// asks for kana lands on an instant cache hit.
+    func warmKana() async {
+        _ = try? await loadKana()
+    }
+
+    /// Background-warm the vocabulary cache (same pattern as warmKana).
+    func warmVocabulary() async {
+        _ = try? await loadVocabulary()
     }
 
     // MARK: - Convenience
@@ -94,31 +111,45 @@ actor ContentService {
         let questionVariants: Int
     }
 
-    func counts() throws -> Counts {
-        Counts(
-            kana: try loadKana().count,
-            vocabulary: try loadVocabulary().count,
-            grammar: try loadGrammar().count,
-            kanji: try loadKanji().count,
-            sentence: try loadSentences().count,
-            reading: try loadReading().count,
-            listening: try loadListening().count,
-            questionVariants: try loadQuestionBank().count
+    /// Count every content collection in parallel. Useful for the progress dashboard.
+    func counts() async throws -> Counts {
+        async let kana = loadKana()
+        async let vocab = loadVocabulary()
+        async let grammar = loadGrammar()
+        async let kanji = loadKanji()
+        async let sentence = loadSentences()
+        async let reading = loadReading()
+        async let listening = loadListening()
+        async let question = loadQuestionBank()
+        return try await Counts(
+            kana: kana.count,
+            vocabulary: vocab.count,
+            grammar: grammar.count,
+            kanji: kanji.count,
+            sentence: sentence.count,
+            reading: reading.count,
+            listening: listening.count,
+            questionVariants: question.count
         )
     }
 
-    // MARK: - Private
+    // MARK: - Private (nonisolated static — runs off actor)
 
-    private func decode<T: Decodable>(_ type: T.Type, resource: String) throws -> T {
-        guard let url = Bundle.main.url(forResource: resource, withExtension: "json", subdirectory: "Content")
-                ?? Bundle.main.url(forResource: resource, withExtension: "json") else {
-            throw ContentError.fileNotFound(resource)
-        }
-        do {
+    /// Run `Data(contentsOf:)` + `JSONDecoder.decode` on a detached background thread.
+    /// `static` makes this method nonisolated by default — `Task.detached` further
+    /// guarantees it never blocks the actor's executor or the calling view's main thread.
+    private static func loadResource<T: Decodable>(_ type: T.Type, resource: String) async throws -> T {
+        try await Task.detached(priority: .userInitiated) {
+            guard let url = Bundle.main.url(forResource: resource, withExtension: "json", subdirectory: "Content")
+                    ?? Bundle.main.url(forResource: resource, withExtension: "json") else {
+                throw ContentError.fileNotFound(resource)
+            }
             let data = try Data(contentsOf: url)
-            return try decoder.decode(T.self, from: data)
-        } catch {
-            throw ContentError.decodeFailed(resource, error)
-        }
+            do {
+                return try JSONDecoder().decode(T.self, from: data)
+            } catch {
+                throw ContentError.decodeFailed(resource, error)
+            }
+        }.value
     }
 }
