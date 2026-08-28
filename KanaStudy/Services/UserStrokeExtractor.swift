@@ -33,24 +33,23 @@ enum UserStrokeExtractor {
         // 2. Run contour detection.
         let contours = await detectContours(cgImage: cgImage)
 
-        // 3. Convert each contour's normalized points into a sampled polyline
-        //    in the original canvas coordinate space. VNContour exposes the
-        //    raw CGPoint array via points() / pointCount (normalized 0-1).
+        // 3. Convert each contour's normalized CGPath into a sampled polyline in
+        //    the original canvas coordinate space. VNContour exposes only
+        //    normalizedPath (a CGPath) as the public geometry access; we walk
+        //    it with applyWithBlock to collect the path points.
         let renderW = renderBounds.width
         let renderH = renderBounds.height
         let offset = CGPoint(x: renderBounds.minX, y: renderBounds.minY)
 
         var strokes: [[CGPoint]] = []
         for contour in contours {
-            let n = contour.pointCount
-            guard n > 1 else { continue }
-            let rawPtr = contour.points()
+            let path = contour.normalizedPath
             var pts: [CGPoint] = []
-            for i in 0..<n {
-                let p = rawPtr[i]
+            path.applyWithBlock { elementPtr in
+                let el = elementPtr.pointee
                 pts.append(CGPoint(
-                    x: p.x * renderW + offset.x,
-                    y: p.y * renderH + offset.y
+                    x: el.points[0].x * renderW + offset.x,
+                    y: el.points[0].y * renderH + offset.y
                 ))
             }
             if pts.count >= 3 {
@@ -71,7 +70,6 @@ enum UserStrokeExtractor {
             }
             request.contrastAdjustment = 1.0
             request.detectsDarkOnLight = true   // pencil ink on light background
-            request.maximumObservations = 12
             request.contrastPivot = 0.5
 
             let handler = VNImageRequestHandler(cgImage: cgImage, orientation: .up)
