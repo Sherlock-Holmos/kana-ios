@@ -33,25 +33,28 @@ enum UserStrokeExtractor {
         // 2. Run contour detection.
         let contours = await detectContours(cgImage: cgImage)
 
-        // 3. Convert each contour's CGPath into a sampled polyline in the
-        //    original canvas coordinate space.
-        let scaleFactor: CGFloat = 1.0 / scale
+        // 3. Convert each contour's normalized points into a sampled polyline
+        //    in the original canvas coordinate space. VNContour exposes the
+        //    raw CGPoint array via points() / pointCount (normalized 0-1).
+        let renderW = renderBounds.width
+        let renderH = renderBounds.height
         let offset = CGPoint(x: renderBounds.minX, y: renderBounds.minY)
 
         var strokes: [[CGPoint]] = []
-        for path in contours {
+        for contour in contours {
+            let n = contour.pointCount
+            guard n > 1 else { continue }
+            let rawPtr = contour.points()
             var pts: [CGPoint] = []
-            path.applyWithBlock { elementPtr in
-                let el = elementPtr.pointee
-                let pt = el.points.pointee
-                pts.append(CGPoint(x: (pt.x * scaleFactor) + offset.x,
-                                   y: (pt.y * scaleFactor) + offset.y))
+            for i in 0..<n {
+                let p = rawPtr[i]
+                pts.append(CGPoint(
+                    x: p.x * renderW + offset.x,
+                    y: p.y * renderH + offset.y
+                ))
             }
-            // ApplyWithBlock yields the start point first, then 0 length for
-            // moves, then line/curve endpoints. Filter out degenerate points.
-            let filtered = pts.filter { hypot($0.x, $0.y) > 0 || pts.count < 4 }
-            if filtered.count >= 3 {
-                strokes.append(filtered)
+            if pts.count >= 3 {
+                strokes.append(pts)
             }
         }
         return strokes
